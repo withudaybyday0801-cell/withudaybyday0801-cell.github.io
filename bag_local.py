@@ -196,13 +196,25 @@ def upstream(url,key,payload,kind='application/json',deadline=None):
 def completion(messages,deadline,json_mode=False,max_tokens=2200):
  payload={'model':MODEL,'messages':messages,'max_tokens':max_tokens,'temperature':0 if json_mode else 0.55}
  if json_mode:payload['response_format']={'type':'json_object'}
- result=upstream(BASE+'/chat/completions',KEY,json.dumps(payload,ensure_ascii=False).encode(),deadline=deadline)
- try:
-  choice=result['choices'][0];raw=choice['message']['content'];finish=choice.get('finish_reason')
- except (KeyError,IndexError,TypeError):raise ProviderError('模型服务返回的消息结构不正确，请核对模型名称。')
- if finish=='length':raise ProviderError('模型回答超过长度限制，请缩短问题或减少比较商品后重试。')
- if not isinstance(raw,str) or not raw.strip():raise ProviderError('模型暂时没有返回文字，请重试。')
- return raw.strip()
+ for attempt in range(2):
+  if attempt:
+   if deadline-time.monotonic()<8:break
+   payload['max_tokens']=min(max_tokens*2,6000)
+   # Official DeepSeek thinking-mode control. Never display reasoning_content as an answer.
+   if urlsplit(BASE).hostname=='api.deepseek.com':payload['thinking']={'type':'disabled'}
+  result=upstream(BASE+'/chat/completions',KEY,json.dumps(payload,ensure_ascii=False).encode(),deadline=deadline)
+  try:
+   choice=result['choices'][0];message=choice['message'];raw=message.get('content');finish=choice.get('finish_reason')
+  except (KeyError,IndexError,TypeError,AttributeError):raise ProviderError('模型服务返回的消息结构不正确，请核对模型名称。')
+  if isinstance(raw,list):
+   raw=''.join(part.get('text','') for part in raw if isinstance(part,dict) and part.get('type') in ('text','output_text') and isinstance(part.get('text'),str))
+  # Diagnostics record only response metadata, never prompts, answers, keys, or reasoning text.
+  if not isinstance(raw,str) or not raw.strip() or finish=='length':
+   print(json.dumps({'event':'model_incomplete','attempt':attempt+1,'finish_reason':finish,'content_type':type(message.get('content')).__name__,'reasoning_present':bool(message.get('reasoning_content'))},ensure_ascii=False),flush=True)
+  if finish in ('content_filter','safety'):raise ProviderError('模型服务未提供可用回答，请调整问题后重试。')
+  if isinstance(raw,str) and raw.strip() and finish!='length':return raw.strip()
+  if finish=='length' and attempt:raise ProviderError('模型输出达到长度限制，自动重试仍未完成，请减少比较商品或缩短问题后重试。')
+ raise ProviderError('AI服务本次没有提供可用正文，已自动重试一次仍未成功。请稍后重试；无需更换密钥。')
 
 def parse_object(text):
  t=text.strip()
