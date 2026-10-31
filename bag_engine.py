@@ -456,18 +456,72 @@ def item_answer(p,kind,text,c):
  return '【包型与用途】'+p.get('design_note','')+'。\n【容量与携带】'+str(p.get('capacity','未提供'))+'L，空包'+str(p.get('weight','未提供'))+'g。\n【主要特点】'+'；'.join(p.get('advantages',[])[:3])+'。\n【使用时留意】'+'；'.join(p.get('limits',[])[:2])+'。'
 
 
+def recommendation_opening(c,text,primary):
+ """Respond to this turn before inherited context; never alter matching or ranking."""
+ turn=local_patch(text);u=turn['updates'];removed=set(turn['remove']);clauses=[]
+ capacity_now=any(k in u and c.get(k)==u[k] for k in ('capacity','capacity_max'))
+ if capacity_now:
+  lo=c.get('capacity');hi=c.get('capacity_max')
+  amount=f'{number(lo)}—{number(hi)}L' if lo is not None and hi is not None else '至少'+number(lo,'L') if lo is not None else '不超过'+number(hi,'L')
+  clauses.append(('capacity',amount+'容量'))
+ if u.get('laptop') is not None and c.get('laptop')==u['laptop'] and not c.get('without_laptop'):
+  clauses.append(('laptop',number(c['laptop'],'英寸')+'电脑适配'))
+ if u.get('budget') is not None and c.get('budget')==u['budget']:clauses.append(('budget',number(c['budget'],'元以内')))
+ if u.get('maxweight') is not None and c.get('maxweight')==u['maxweight']:clauses.append(('weight','空包不超过'+number(c['maxweight'],'g')))
+ # These are factual promises only when the matched set actually supports them.
+ if len(clauses)>1:
+  description='、'.join(v for _,v in clauses)
+  return f'按【{description}】来选，下面这几款符合这些要求。'+('电脑外壳尺寸仍需和内仓核对。' if any(k=='laptop' for k,_ in clauses) else '') if primary else f'【{description}】与其余要求放在一起，目前没有同时符合的款式。'
+ if clauses:
+  key,value=clauses[0]
+  if not primary:return f'按【{value}】结合其余要求筛选，目前没有同时符合的款式。'
+  if key=='capacity':return f'就按【{value}】来挑，下面这几款都在这个容量范围内。'
+  if key=='laptop':return f'要装【{number(c["laptop"],"英寸")}电脑】，下面这几款的标称适配尺寸都符合。购买前再核对电脑外壳与内仓尺寸。'
+  if key=='budget':return f'预算控制在【{value}】，下面这几款都在这个价位范围内。'
+  return f'想控制包的自重，就看【{value}】的款式；下面这几款都符合。'
+ if not primary:return '这些要求放在一起，目前没有对应的款式。'
+ if u.get('without_laptop') is True and c.get('without_laptop'):
+  return '不带电脑的话，就重点看【日常物品收纳和携带方便】，下面这几款可以继续看。'
+ if re.search(r'不要太大|别太大|不想.{0,3}太大|不要.{0,3}大包|小巧|小一点|小一些|别太笨重',text):
+  sizes=[p['capacity'] for p in primary if type(p.get('capacity')) in (int,float)]
+  extent=(number(min(sizes))+'—'+number(max(sizes))+'L') if sizes and min(sizes)!=max(sizes) else number(sizes[0],'L') if sizes else ''
+  lead='上班用、不想太大，可以先看看下面几款' if c.get('scene')=='通勤' else '想要小巧一些，可以先看看下面几款'
+  return lead+('，容量在【'+extent+'】；再结合商品尺寸确认日常携带是否合适。' if extent else '，可以结合商品尺寸与日常装载量来选。')
+ if u.get('color') and c.get('color')==u['color']:return f'想要【{c["color"]}】，下面这几款的配色符合，包型和收纳各有特点。'
+ excluded=[v for v in u.get('excluded_colors',[]) if v in c.get('excluded_colors',[])]
+ if excluded:return '避开【'+'、'.join(excluded)+'】，下面这些款式可以继续看。'
+ labels=[('budget','预算'),('color','颜色'),('water_need','防水'),('capacity','容量'),('laptop','电脑尺寸'),('material','面料'),('aesthetics','风格')]
+ cancelled=[label for key,label in labels if key in removed and key not in c]
+ if cancelled:return '这次先不限制【'+'、'.join(dict.fromkeys(cancelled))+'】，再按其余要求看看下面这些款式。'
+ styles=u.get('aesthetics') or u.get('preferred_aesthetics')
+ if styles:return '想要【'+'、'.join(styles)+'】的感觉，可以看看下面这些包型和配色。'
+ if u.get('water_need') and u['water_need']==c.get('water_need'):
+  water=c['water_need']
+  if water=='待确认':return '在意雨天使用的话，要先区分【防泼水和持续淋雨防护】；下面可以结合每款的防护资料来看。'
+  return '按【'+('有防水测试依据' if water=='有防水证明' else water)+'】来挑，下面这几款有对应资料。'
+ features=[f for f in u.get('features',[]) if f in c.get('features',[])]
+ if features:return '你要的【'+'、'.join(features)+'】，下面这几款都有对应结构。'
+ preferred=u.get('preferred_features',[])
+ if preferred:return '更在意【'+'、'.join(preferred)+'】，可以对照下面各款的结构和携带特点来选。'
+ soft=u.get('soft_preferences',[])
+ if soft:
+  wording={'透气':'背部透气','背负舒适':'背负舒服一些','容量余量':'装载余量','耐脏':'耐脏','耐用':'结实耐用','易清洁':'容易打理','拿取方便':'物品好拿'}
+  return '想要【'+'、'.join(wording[v] for v in soft if v in wording)+'】，下面就围绕相关面料、结构和使用特点来看。'
+ if u.get('carrying')=='随身小物':return '只带随身小物，重点看【拿取方便和包身轻巧】，下面这些款式可以结合尺寸来选。'
+ if u.get('carrying')=='书本和日常用品':return '要装书本和日常用品，重点看【书本尺寸、主仓空间和收纳位置】；下面这些款式可以逐款对照。'
+ if turn.get('remove_features'):return '这次不再要求【'+'、'.join(turn['remove_features'])+'】，再按其余需求看看下面这些款式。'
+ if u.get('priority')=='轻便':return '想轻一点，就重点看【空包重量】；下面把各款的实际包重和携带特点列清楚。'
+ if u.get('material') and c.get('material')==u['material']:return '按【'+c['material']+'面料】来选，下面这几款可以看看。'
+ if re.search(r'换一组|换几款|再来几款|其他款式',text):return '继续按原来的要求，换一组款式给你看。'
+ if u.get('scene')==c.get('scene') and c.get('scene'):
+  return {'通勤':'上班用，可以先看看下面这些通勤款式，日常收纳和包型各有侧重。','校园':'上课用，可以先看书本和随身用品的收纳，再结合包重来选。','休闲':'日常出门用，可以从随身物品好拿、携带方便的款式里挑。','旅行':'出行用，可以结合行李多少和背负需求，看看下面这些款式。','运动':'运动时用，可以结合随身装备和收纳方式，看看下面这些款式。'}.get(c['scene'],'下面这几款可以结合日常用法来选。')
+ return '下面这几款符合目前的要求，可以结合各自的包型和收纳特点来选。'
+
+
 def blueprint(intent,products,primary,backup,c,text,kind='general'):
  if intent=='recommend':
-  if not primary:return dict(opening='这些要求放在一起，目前没有对应的款式。',items=[],closing='')
-  if colors_in(text) or re.search(r'简约|少女|酷|风格|好看|撞色',text):opening='按你这次说的颜色和风格，挑了下面几款；各自的包型和收纳特点可以直接看。'
-  elif (c.get('needs_laptop') or c.get('laptop')) and not c.get('without_laptop'):opening='每天带电脑，主要看【电脑仓的缓冲和空包重量】。这几款各有侧重，可以从你平时带的东西来选。'
-  elif c.get('scene')=='通勤':opening='上班通勤，先看【随身物品好拿、包身轻便】。'+('不带电脑的话，重点放在水杯、雨伞和日常小物的收纳。' if c.get('without_laptop') else '可以从包身大小、物品拿取和日常搭配来选。')
-  elif c.get('scene')=='校园':opening='上课和校园日常，先看【书本收纳和空包重量】。这几款适合把书本和随身物品一起带走。'
-  elif c.get('scene')=='休闲':opening='平时出门，主要看【物品好拿、携带方便】。下面这几款各有自己的日常用法。'
-  elif c.get('color'):opening=f"这几款{c['color']}背包可以先看看，包型和收纳各有特点。"
-  elif c.get('aesthetics'):opening='这几款的外观比较贴近你想要的感觉，下面把各自适合的日常用法说清楚。'
-  else:opening='先看这几款，日常携带、收纳和外观各有侧重。'
-  return dict(opening=opening,items=recommendation_items(products,c),closing='')
+  opening=recommendation_opening(c,text,primary)
+  return dict(opening=opening,items=recommendation_items(products,c),closing='',request=text)
  if intent=='analysis':return dict(opening='',items=[dict(id=p['id'],text=('当前资料没有明确记录这一点，暂时不能直接确认。' if kind=='open_question' else item_answer(p,kind,text,c))) for p in products],closing='',question=text if kind=='open_question' else '',mode='answer_question' if kind=='open_question' else 'overview')
  if intent=='compare':
   opening='';ps=products
