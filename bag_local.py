@@ -7,7 +7,7 @@ KEY=os.getenv('BAG_AI_KEY','').strip()
 BASE=os.getenv('BAG_AI_BASE_URL','https://api.deepseek.com').rstrip('/')
 MODEL=os.getenv('BAG_AI_MODEL','deepseek-chat')
 PORT=int(os.getenv('BAG_PORT','8001'))
-VERSION='2026.10.31-v11.1'
+VERSION='2026.10.31-v11.2'
 GOODS=load_catalog(Path(__file__).parent)
 
 class ProviderError(Exception):

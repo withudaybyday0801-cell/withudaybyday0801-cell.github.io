@@ -81,13 +81,40 @@ class CatalogTests(unittest.TestCase):
   items=be.recommendation_items(products,c)
   self.assertEqual(len({i['focus'] for i in items}),5)
   self.assertEqual(len({i['text'].split('。')[0] for i in items}),5)
+ def test_daily_scenes_never_recommend_technical_hiking(self):
+  engine=ExplicitEngine(app.GOODS,None)
+  for text in ['上课和校园日常','日常用','平时用的','上学用的','不登山，只上课','没有登山需求，只要日常背','上班通勤','周末逛街','酷酷的机能风，日常用']:
+   with self.subTest(text=text):
+    result=engine.handle({'text':text},time.monotonic()+10)
+    self.assertIn(result['conditions']['scene'],('校园','通勤','休闲'))
+    self.assertEqual(len(result['primary_ids']),5)
+    all_ids=result['primary_ids']+result['backup_ids']+[p['id'] for p in be.search(app.GOODS,result['conditions'])]
+    self.assertTrue(all('户外登山包' not in app.GOODS[i]['categories'] for i in all_ids))
+ def test_scene_metadata_is_not_reputation_override(self):
+  bad={**app.GOODS[38],'scene':['校园','通勤','休闲'],'rating':100,'sales':999999}
+  for scene in ['校园','通勤','休闲']:
+   self.assertFalse(be.match(bad,{'scene':scene})[0])
+   self.assertNotIn(bad,be.search([bad]+[app.GOODS[22]],{'scene':scene}))
+  for product in app.GOODS:
+   if '户外登山包' in product['categories']:self.assertTrue(set(product['scene']).isdisjoint(be.DAILY_SCENES))
+ def test_explicit_outdoor_remains_available(self):
+  for text in ['周末去徒步','登山露营用','我去爬山用']:
+   c=be.merge_state({},be.local_patch(text));self.assertEqual(c['category'],'户外登山包')
+   results=be.search(app.GOODS,c);self.assertGreaterEqual(len(results),5)
+   self.assertTrue(all('户外登山包' in p['categories'] for p in results))
+ def test_switch_outdoor_to_daily_removes_old_category(self):
+  current={'category':'户外登山包','scene':'旅行','budget':300}
+  for text in ['上课和校园日常','上学用的','不去登山了，改成日常用','不登山，只上课','不要登山包，平时背的']:
+   c=be.merge_state(current,be.local_patch(text,current));self.assertNotIn('category',c)
+   self.assertEqual(c['budget'],300);self.assertIn(c['scene'],be.DAILY_SCENES)
+   self.assertTrue(all('户外登山包' not in p['categories'] for p in be.search(app.GOODS,c)))
  def test_avoid_invented_hard_weight(self):
   self.assertNotIn('maxweight',be.local_patch('我想轻便一点')['updates'])
   self.assertNotIn('budget',be.local_patch('不超过450克')['updates'])
   patch=be.combine_patches({'intent':'recommend','updates':{'color':'蓝色','budget':200},'remove':[]},be.local_patch('预算不限',{'budget':200}))
   self.assertNotIn('budget',be.merge_state({'budget':200},patch))
  def test_water_levels_and_default_bag_type(self):
-  rain=be.search(app.GOODS,{'water_need':'防泼水'});self.assertTrue(any(p['water_protection']=='有防水证明' for p in rain))
+  rain=be.search(app.GOODS,{'water_need':'防泼水','category':'户外登山包'});self.assertTrue(any(p['water_protection']=='有防水证明' for p in rain))
   self.assertTrue(all('托特包' not in p['categories'] and '胸包' not in p['categories'] for p in be.search(app.GOODS,{})))
 
 class ModelBoundaryTests(unittest.TestCase):
@@ -121,6 +148,16 @@ class ModelBoundaryTests(unittest.TestCase):
   with patch.object(app.urllib.request,'urlopen',side_effect=error):
    with self.assertRaises(app.ProviderError) as failure:app.upstream('https://api.deepseek.com/chat/completions','test-only',b'{}')
    self.assertEqual(failure.exception.status,401)
+ def test_daily_answer_rejects_model_inferred_outdoor_category(self):
+  def stale(*a,**kw):return json.dumps({'intent':'recommend','updates':{'category':'户外登山包','scene':'旅行'},'remove':[]})
+  engine=be.Engine(app.GOODS,stale);p,_=engine.interpret('上课和校园日常',{},[],[],[],time.monotonic()+10)
+  c=be.merge_state({},p);self.assertEqual(c['scene'],'校园');self.assertNotEqual(c.get('category'),'户外登山包')
+  self.assertTrue(all('户外登山包' not in g['categories'] for g in be.search(app.GOODS,c)))
+ def test_model_cannot_sell_campus_bag_as_hiking_gear(self):
+  p=app.GOODS[22];plan=be.blueprint('recommend',[p],[p],[],{'scene':'校园'},'上课用')
+  draft={'opening':'','items':[{'id':p['id'],'text':'空包390g，适合徒步登山携带装备。'}],'closing':''}
+  engine=be.Engine(app.GOODS,lambda *a,**kw:json.dumps(draft,ensure_ascii=False))
+  self.assertFalse(engine.validated_wording(plan,[p],time.monotonic()+10)[1])
  def test_empty_body_retry(self):
   replies=[{'choices':[{'message':{'content':'','reasoning_content':'hidden'},'finish_reason':'stop'}]}, {'choices':[{'message':{'content':[{'type':'text','text':'直接回答。'}]},'finish_reason':'stop'}]}]
   with patch.object(app,'upstream',side_effect=replies) as upstream,contextlib.redirect_stdout(io.StringIO()):self.assertEqual(app.completion([],time.monotonic()+30),'直接回答。');self.assertEqual(upstream.call_count,2)
