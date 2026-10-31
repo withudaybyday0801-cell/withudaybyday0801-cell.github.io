@@ -126,7 +126,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": true
+      "reflective_details": true,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -286,7 +287,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "无独立提手"
     },
     "image_views": {
       "front": {
@@ -446,7 +448,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -602,7 +605,8 @@
       "shape_note": "包身偏柔软，空包时会有自然塌陷，装入随身物品后轮廓更饱满。",
       "zipper_note": "采用普通拉链，顺着轨道轻拉即可，避免夹住里布或强行拉扯。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "无独立提手"
     },
     "image_views": {
       "front": {
@@ -763,7 +767,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -921,7 +926,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -1081,7 +1087,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -1241,7 +1248,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -1404,7 +1412,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -1562,7 +1571,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -1720,7 +1730,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -1878,7 +1889,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": true
+      "reflective_details": true,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -2041,7 +2053,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -2200,7 +2213,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -2353,7 +2367,8 @@
       "shape_note": "包身偏柔软，空包时会有自然塌陷，装入随身物品后轮廓更饱满。",
       "zipper_note": "采用普通拉链，顺着轨道轻拉即可，避免夹住里布或强行拉扯。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -2512,7 +2527,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "采用普通拉链，顺着轨道轻拉即可，避免夹住里布或强行拉扯。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -2671,7 +2687,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -2825,7 +2842,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": true
+      "reflective_details": true,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -2988,7 +3006,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -3143,7 +3162,8 @@
       "shape_note": "包身偏柔软，空包时会有自然塌陷，装入随身物品后轮廓更饱满。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -3304,7 +3324,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -3461,7 +3482,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -3621,7 +3643,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -3779,7 +3802,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -3940,7 +3964,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -4100,7 +4125,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -4258,7 +4284,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -4416,7 +4443,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "双手提环"
     },
     "image_views": {
       "front": {
@@ -4572,7 +4600,8 @@
       "shape_note": "包身偏柔软，空包时会有自然塌陷，装入随身物品后轮廓更饱满。",
       "zipper_note": "采用普通拉链，顺着轨道轻拉即可，避免夹住里布或强行拉扯。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -4732,7 +4761,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "双手提环"
     },
     "image_views": {
       "front": {
@@ -4890,7 +4920,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -5052,7 +5083,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -5214,7 +5246,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -5373,7 +5406,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "采用普通拉链，顺着轨道轻拉即可，避免夹住里布或强行拉扯。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -5531,7 +5565,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -5691,7 +5726,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -5847,7 +5883,8 @@
       "shape_note": "包身偏柔软，空包时会有自然塌陷，装入随身物品后轮廓更饱满。",
       "zipper_note": "采用普通拉链，顺着轨道轻拉即可，避免夹住里布或强行拉扯。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "长提带"
     },
     "image_views": {
       "front": {
@@ -6008,7 +6045,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "长提带"
     },
     "image_views": {
       "front": {
@@ -6162,7 +6200,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": true
+      "reflective_details": true,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -6315,7 +6354,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": true
+      "reflective_details": true,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -6470,7 +6510,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": true
+      "reflective_details": true,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -6630,7 +6671,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": true
+      "reflective_details": true,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -6786,7 +6828,8 @@
       "shape_note": "包身偏柔软，空包时会有自然塌陷，装入随身物品后轮廓更饱满。",
       "zipper_note": "采用普通拉链，顺着轨道轻拉即可，避免夹住里布或强行拉扯。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "无独立提手"
     },
     "image_views": {
       "front": {
@@ -6942,7 +6985,8 @@
       "shape_note": "包身偏柔软，空包时会有自然塌陷，装入随身物品后轮廓更饱满。",
       "zipper_note": "采用普通拉链，顺着轨道轻拉即可，避免夹住里布或强行拉扯。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "无独立提手"
     },
     "image_views": {
       "front": {
@@ -7099,7 +7143,8 @@
       "shape_note": "包身偏柔软，空包时会有自然塌陷，装入随身物品后轮廓更饱满。",
       "zipper_note": "采用普通拉链，顺着轨道轻拉即可，避免夹住里布或强行拉扯。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "无独立提手"
     },
     "image_views": {
       "front": {
@@ -7255,7 +7300,8 @@
       "shape_note": "包身偏柔软，空包时会有自然塌陷，装入随身物品后轮廓更饱满。",
       "zipper_note": "采用普通拉链，顺着轨道轻拉即可，避免夹住里布或强行拉扯。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "无独立提手"
     },
     "image_views": {
       "front": {
@@ -7416,7 +7462,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -7575,7 +7622,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -7737,7 +7785,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -7899,7 +7948,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -8057,7 +8107,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -8217,7 +8268,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -8376,7 +8428,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -8536,7 +8589,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -8689,7 +8743,8 @@
       "shape_note": "包身偏柔软，空包时会有自然塌陷，装入随身物品后轮廓更饱满。",
       "zipper_note": "采用普通拉链，顺着轨道轻拉即可，避免夹住里布或强行拉扯。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "无独立提手"
     },
     "image_views": {
       "front": {
@@ -8851,7 +8906,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -9013,7 +9069,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -9172,7 +9229,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -9330,7 +9388,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -9488,7 +9547,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -9649,7 +9709,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "长提带"
     },
     "image_views": {
       "front": {
@@ -9811,7 +9872,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": false
+      "reflective_details": false,
+      "hand_carry_type": "长提带"
     },
     "image_views": {
       "front": {
@@ -9964,7 +10026,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": true
+      "reflective_details": true,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {
@@ -10118,7 +10181,8 @@
       "shape_note": "背板有一定支撑，正常装物时轮廓较挺；空包时面料仍有自然褶皱。",
       "zipper_note": "使用双向拉链，开合时顺着轨道轻拉；装得太满或夹住里布时仍可能卡顿。",
       "charging_port": false,
-      "reflective_details": true
+      "reflective_details": true,
+      "hand_carry_type": "顶部提手"
     },
     "image_views": {
       "front": {

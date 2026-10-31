@@ -4,11 +4,11 @@
 
 ## 部署
 
-本次已改为完整项目，不能只下载或替换 `bag_local.py`。请保留整个仓库，尤其是 `bag_engine.py`、`data/catalog.json` 和 `bag-assets/catalog-sheet-*.png`。
+本次已改为完整项目，不能只下载或替换 `bag_local.py`。请保留整个仓库，尤其是 `bag_engine.py`、`product_questions.py`、`data/catalog.json` 和整个 `bag-assets/` 目录。
 
 Render Web Service：
 
-- Build Command：`python -m py_compile bag_local.py bag_engine.py start.py`
+- Build Command：`python -m py_compile bag_local.py bag_engine.py product_questions.py start.py`
 - Start Command：`python start.py`
 - Environment：`BAG_AI_KEY` 填自己的DeepSeek密钥；可选 `BAG_AI_BASE_URL=https://api.deepseek.com`、`BAG_AI_MODEL=deepseek-chat`。
 - 更新后选择 Manual Deploy → Deploy latest commit。无需改动已有密钥。
@@ -25,6 +25,11 @@ Render Web Service：
 6. 输入框、购物车、对比、历史保存、相关问题等原有交互保留。旧版本聊天可以阅读，但不继续使用旧商品ID绑定，建议更新后新建对话。
 
 这不是训练或微调DeepSeek模型，也没有新增模型权重。实现方式是模型语义解析、明确条件校验、商品检索及事实约束。
+
+## 产品说明书
+
+- [对外产品说明书 PDF（含目录，3页）](docs/baodongni-product-manual.pdf)
+- [网页版](docs/baodongni-product-manual.html) / [文字源稿](docs/baodongni-product-manual.md)
 
 ## 验收
 

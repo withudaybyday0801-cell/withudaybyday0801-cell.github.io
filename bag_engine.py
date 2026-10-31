@@ -8,11 +8,12 @@ from pathlib import Path
 import product_questions as pq
 
 AESTHETICS=['清新少女','酷感机能','极简','复古','运动感','商务','活力撞色']
+SOFT=['轻便','透气','容量余量','耐脏','耐用','易清洁','拿取方便','背负舒适']
 FEATURES=['宽肩带','电脑隔层','胸扣','行李箱插带','防盗口袋','水杯侧袋','背部透气','少分区']
 CATEGORIES=['通勤电脑双肩包','学生护脊书包','休闲双肩包','户外登山包','托特包','斜挎包','胸包']
-FIELDS=set(('scene','gender','style','budget','laptop','maxweight','capacity','color','water','storage','priority','needs_laptop','aesthetics','features','excluded_colors','category','water_need','material','protection'))
-NUMBERS={'budget','laptop','maxweight','capacity'}
-ARRAYS={'aesthetics','features','excluded_colors'}
+FIELDS=set(('scene','gender','style','budget','laptop','maxweight','capacity','color','water','storage','priority','needs_laptop','aesthetics','features','excluded_colors','category','water_need','material','protection','without_laptop','carrying','capacity_max','soft_preferences','preferred_features','preferred_aesthetics'))
+NUMBERS={'budget','laptop','maxweight','capacity','capacity_max'}
+ARRAYS={'aesthetics','features','excluded_colors','soft_preferences','preferred_features','preferred_aesthetics'}
 COLORS={'蓝色':['雾霾蓝','海军蓝','浅蓝色','深蓝色','藏蓝色','蓝色','蓝的','蓝款','浅蓝','天蓝','深蓝','藏蓝','宝蓝','雾蓝','藏青'],'黑色':['黑色','黑的','纯黑'],'白色':['白色','白的','纯白'],'米色':['米白色','奶油白','米色','米白','奶白'],'粉色':['樱花粉','浅粉色','粉色','粉的','浅粉'],'紫色':['香芋紫','浅紫色','紫色','紫的','浅紫'],'绿色':['橄榄绿','绿色','绿的','军绿','墨绿','浅绿'],'灰色':['灰色','灰的','浅灰','深灰'],'橙色':['橙色','橘色','橙的'],'黄色':['黄色','黄的','姜黄'],'红色':['红色','红的','酒红']}
 NEG=r'(?:不要|不想要|不喜欢|排除|别选|不能是|不要选)'
 
@@ -38,13 +39,13 @@ updates可用：scene(校园/通勤/旅行/休闲/运动)、gender、budget(元)
 风格：清新少女、酷感机能、极简、复古、运动感、商务、活力撞色。女生不等于少女/粉色/小包。普通上课、校园日常、通勤、逛街不推断登山包；酷感或机能风不等于户外活动。用户从徒步改为日常时删除旧户外品类。功能：宽肩带、电脑隔层、胸扣、行李箱插带、防盗口袋、水杯侧袋、背部透气、少分区。外观简单是极简；找东西方便不翻多个隔层是少分区。
 明确数值才设上限：轻便/轻一点只设priority=轻便，不凭空设600g。宽肩带是结构，不保证不累。泛称防水设待确认；短时水滴设防泼水，短时小雨设日常防雨，持续淋雨且普通防泼水不够设有防水证明。
 删除要求必须用remove：预算不限删除budget，颜色随意删除color和excluded_colors，不带电脑了删除laptop、needs_laptop、protection并从features移除电脑隔层。取消防水删除water和water_need；不要求宽肩带了只移除features中的宽肩带，不能把其他功能清空。修改颜色是替换旧颜色，预算提高到300是替换旧预算。
-用户推荐新商品时intent=recommend，不沿用上一轮analysis/compare。消费者问防水、肩带宽度、勒肩、闷汗、收纳、尺寸、拉链、反光等具体功能时是analysis，先回答问题本身，不改选品条件、不重复整段介绍。明确分析商品时，商品名里的颜色、风格不能变成新的筛选要求。只问这款多重、缺点、评价是analysis；这两款/哪个更轻是compare。问候、感谢、知识问题是chat。target_ids仅可来自提供目录，指代不明时保留空数组，不猜另一款。
+通勤、上班、校园不等于带电脑；只有用户明确表示携带电脑、电脑尺寸或电脑仓需求才设置电脑条件。不带电脑设置without_laptop=true并删除旧电脑条件；重新明确带电脑时改为false。用户推荐新商品时intent=recommend，不沿用上一轮analysis/compare。消费者问防水、肩带宽度、勒肩、闷汗、收纳、尺寸、拉链、反光等具体功能时是analysis，先回答问题本身，不改选品条件、不重复整段介绍。明确分析商品时，商品名里的颜色、风格不能变成新的筛选要求。只问这款多重、缺点、评价是analysis；这两款/哪个更轻是compare。问候、感谢、知识问题是chat。target_ids仅可来自提供目录，指代不明时保留空数组，不猜另一款。
 例：当前黑色预算200，用户“改成蓝色其他不变”→updates={"color":"蓝色"}。
 例：当前laptop16、needs_laptop真、scene通勤，用户“周末出门，不带电脑了”→updates={"scene":"休闲"},remove=["laptop","needs_laptop","protection"],remove_features=["电脑隔层"]。
 例：当前少女、粉色，用户“不要少女风了，换酷酷的，不限颜色”→updates={"aesthetics":["酷感机能"]},remove=["color","excluded_colors"],remove_aesthetics=["清新少女"]。
-不要输出完整历史状态，不要给被删条件赋另一个默认值。'''
+先识别底层目标、场景、明确约束与偏好，过滤客套、感叹和与选品无关的描述。容量上限用capacity_max，装载内容用carrying。主观舒服、夏天不闷、耐脏等用soft_preferences，不编造数值阈值；最好/尽量的功能用preferred_features，风格用preferred_aesthetics，仅排序加分。必须/一定要的功能、明确预算尺寸容量才作为硬筛选。不要输出完整历史状态，不要给被删条件赋另一个默认值。'''
 
-WRITER='''你是一个会帮朋友挑背包的中文导购。根据给定的回答蓝图改写得自然、具体、简洁。每个items.focus是这款本轮的介绍重点：必须围绕不同的产品差异组织句子，不把每段都写成重量＋容量＋日常好搭的换数字模板。不得复制其他段的完整句式。事实、商品顺序和商品ID不可改变。用户已在页面底部看到模拟数据说明，不要反复提示演示/截图/候选/已保留条件/不硬凑/不推荐。
+WRITER='''你是一个会帮朋友挑背包的中文导购。根据给定的回答蓝图改写得自然、具体、简洁。如果蓝图mode为answer_question，必须先回答question本身；仅引用facts中能支持该问题的字段，不复述整段商品介绍，缺少相应资料就明确说无法确认。通勤不等于携带电脑，商品有电脑仓不等于用户要带电脑；蓝图没有提到电脑时，不主动补充电脑仓或携带电脑的用途。每个items.focus是这款本轮的介绍重点：必须围绕不同的产品差异组织句子，不把每段都写成重量＋容量＋日常好搭的换数字模板。不得复制其他段的完整句式。事实、商品顺序和商品ID不可改变。用户已在页面底部看到模拟数据说明，不要反复提示演示/截图/候选/已保留条件/不硬凑/不推荐。
 推荐时只介绍选中商品本身及为什么符合需求，不谈其他商品哪里不好、不列淘汰理由、不塞不符合条件的商品。使用“日常带电脑，先看电脑仓的缓冲和空包重量。……这款430g，16英寸电脑有独立隔层，上课通勤都方便。”这样的消费者语言。
 用户问缺点才直接说所选商品的具体取舍；问重量直接报重量；问比较就回答具体差别，不能答非所问。只用蓝图事实；不把宽肩带说成必然不累，不把防泼水说成长时防水，不编造认证、品牌承诺或优惠。不要提问，程序把必要追问放在最后。
 返回JSON：{"opening":"简短开头","items":[{"id":整数,"text":"该商品介绍，1—3句"}],"closing":"可为空"}。items必须和蓝图items逐一对应，不能少、重复或换ID，不添加商品名以外的商品、价格、数字、属性。重要短语可用【】标记，最多3处。不输出Markdown星号或思考过程。'''
@@ -84,9 +85,9 @@ def clean(raw):
   if k in NUMBERS:
    if type(v) in (int,float) and math.isfinite(v) and 0<=v<=100000:out[k]=v
   elif k in ARRAYS:
-   allowed=AESTHETICS if k=='aesthetics' else FEATURES if k=='features' else COLORS
+   allowed=AESTHETICS if k in ('aesthetics','preferred_aesthetics') else FEATURES if k in ('features','preferred_features') else SOFT if k=='soft_preferences' else COLORS
    if isinstance(v,list):out[k]=list(dict.fromkeys(x for x in v if x in allowed))
-  elif k in ('water','storage','needs_laptop'):
+  elif k in ('water','storage','needs_laptop','without_laptop'):
    if type(v)==bool:out[k]=v
   elif isinstance(v,str) and v and len(v)<=40:
    if k=='color':
@@ -125,17 +126,19 @@ def local_patch(text,current=None):
  cancel(r'(?:颜色|配色)(?:不(?:限|限制|挑|重要)|随意|都行|无所谓)|(?:取消|去掉)(?:颜色|配色)(?:要求|条件|限制)?|(?:不用|不必)(?:再)?(?:管|考虑|限制)(?:颜色|配色)', 'color','excluded_colors')
  cancel(r'(?:不(?:需要|要求)|不用|取消|去掉).{0,3}防水|防水(?:不重要|无所谓|算了|不要了|不用了)|不需要防雨','water','water_need')
  cancel(r'(?:不(?:需要|要求)|取消|去掉).{0,3}(?:轻便|重量|轻量)|(?:重量|轻便)(?:不重要|无所谓|不限|不用管|不用考虑)|不用(?:管|考虑)重量','maxweight')
- cancel(r'(?:不(?:需要|要求)|不用|取消|去掉).{0,3}容量|容量(?:不限|不限制|无所谓)','capacity')
+ cancel(r'(?:不(?:需要|要求)|不用|取消|去掉).{0,3}容量(?:要求|限制|条件|了|$)|容量(?:不限|不限制|无所谓)','capacity','capacity_max')
  size_cancel=bool(re.search(r'(?:取消|去掉|不要求).{0,3}电脑尺寸|电脑尺寸(?:不限|不限制)',t))
  if size_cancel:remove.add('laptop');skip.add('laptop')
- if not size_cancel and re.search(r'不带(?:笔记本|电脑)|不用带(?:笔记本|电脑)|不(?:需要|要求)(?:电脑仓|电脑隔层|装电脑)|取消电脑|(?:不需要|不要求|不要)(?:带|装)?(?:笔记本|电脑)(?:了|的要求|要求|这个条件)?',t):
-  remove.update(('laptop','needs_laptop','protection'));rf.add('电脑隔层');skip.add('laptop')
+ if not size_cancel and re.search(r'(?:不|不用|无需|不需要)(?:再|每天|经常)?(?:带|背|装|拿)(?:笔记本|电脑)|(?:笔记本|电脑)(?:就)?(?:不带|不用带|用不上)|不(?:需要|要求)(?:电脑仓|电脑隔层|装电脑)|取消电脑|(?:不需要|不要求|不要)(?:带|装)?(?:笔记本|电脑)(?:了|的要求|要求|这个条件)?',t):
+  remove.update(('laptop','needs_laptop','protection'));rf.add('电脑隔层');skip.add('laptop');updates['without_laptop']=True
   if c.get('priority')=='保护':remove.add('priority')
  if 'maxweight' in remove and c.get('priority')=='轻便':remove.add('priority')
- if re.search(r'(?:风格|款式)(?:不限|不限制|随意|都行)|(?:取消|去掉)风格(?:限制|要求)?',t):remove.update(('aesthetics','style'))
+ if re.search(r'(?:风格|款式)(?:不限|不限制|随意|都行)|(?:取消|去掉)风格(?:限制|要求)?',t):remove.update(('aesthetics','style','preferred_aesthetics'))
  # A new explicit value replaces old state; removals never repopulate from history.
  for a,b,color,negative in colors_in(t):
-  if negative and 'color' not in remove:updates['excluded_colors']=list(dict.fromkeys(updates.get('excluded_colors',c.get('excluded_colors',[]))+[color]))
+  if negative and 'color' not in remove:
+   updates['excluded_colors']=list(dict.fromkeys(updates.get('excluded_colors',c.get('excluded_colors',[]))+[color]))
+   if c.get('color')==color:remove.add('color')
   elif 'color' not in remove:updates['color']=color
  if updates.get('color'):
   updates['excluded_colors']=[v for v in updates.get('excluded_colors',c.get('excluded_colors',[])) if v!=updates['color']]
@@ -150,12 +153,25 @@ def local_patch(text,current=None):
  if weight and 'maxweight' not in remove:
   updates['maxweight']=float(weight.group(1))*(1000 if weight.group(2) in ('公斤','千克','kg','KG') else 1)
  capacity=re.search(r'(\d+(?:\.\d+)?)\s*(?:升|[lL])(?:以上|左右|容量)?',t)
- if capacity and 'capacity' not in remove:updates['capacity']=float(capacity.group(1))
+ capacity_range=re.search(r'(\d+(?:\.\d+)?)\s*(?:L|l|升)?\s*(?:到|至|~|—|－|-)\s*(\d+(?:\.\d+)?)\s*(?:L|l|升)',t)
+ if capacity_range:updates.update(capacity=float(capacity_range.group(1)),capacity_max=float(capacity_range.group(2)))
+ if re.search(r'只保留容量下限',t):remove.add('capacity_max')
+ if re.search(r'只保留容量上限',t):remove.add('capacity')
+ if capacity and not capacity_range and ('capacity' not in remove or 'capacity_max' not in remove):
+  before=t[max(0,capacity.start()-6):capacity.start()];after=t[capacity.end():capacity.end()+3]
+  if re.search(r'不超过|最多|至多|小于|低于|上限',before) or re.match(r'以内|以下',after):updates['capacity_max']=float(capacity.group(1))
+  elif 'capacity' not in remove:updates['capacity']=float(capacity.group(1))
+ for m in re.finditer(r'(?:至少|不低于|最低|不小于)\s*(\d+(?:\.\d+)?)\s*[lL升]',t):updates['capacity']=float(m.group(1))
+ for m in re.finditer(r'(?:不超过|最多|至多|小于|低于)\s*(\d+(?:\.\d+)?)\s*[lL升]',t):updates['capacity_max']=float(m.group(1))
+ if re.search(r'只带.{0,4}(?:随身|手机|钥匙)|随身小物',t):updates['carrying']='随身小物'
+ elif re.search(r'书本|课本|装书',t):updates['carrying']='书本和日常用品'
+ elif re.search(r'换洗|衣物|装备',t):updates['carrying']='衣物或装备'
  laptop=re.search(r'(\d+(?:\.\d+)?)\s*(?:英寸|寸)',t)
  if laptop and 'laptop' not in remove:updates.update(laptop=float(laptop.group(1)),needs_laptop=True)
- if re.search(r'带(?:着)?(?:笔记本|电脑)|装(?:笔记本|电脑)|电脑通勤|电脑和书|电脑贵|怕磕碰|游戏本',t) and 'needs_laptop' not in remove:updates['needs_laptop']=True
+ if re.search(r'(?:带|背|拿|装|携带)(?:着|个|台|一台)?(?:笔记本|电脑)|带.{0,5}电脑|电脑通勤|电脑和书|电脑贵|怕磕碰|游戏本',t) and 'needs_laptop' not in remove:updates['needs_laptop']=True
  if re.search(r'电脑(?:贵|保护)|怕磕碰|防震|缓震|气囊',t) and 'protection' not in remove:updates.update(protection='air',priority='保护',needs_laptop=True)
- scenes=[('校园',r'上课|上学|大学生|校园|学校|装书|书本|学生'),('通勤',r'上班|通勤|工作|办公室'),('旅行',r'出差|旅游|旅行|徒步|登山|爬山|露营'),('运动',r'健身|打球|运动'),('休闲',r'周末|逛街|出门玩|日常出门')]
+ if updates.get('needs_laptop') is True:updates['without_laptop']=False
+ scenes=[('校园',r'上课|上学|大学生|校园|学校|学生'),('通勤',r'上班|通勤|工作|办公室'),('旅行',r'出差|旅游|旅行|徒步|登山|爬山|露营'),('运动',r'健身|打球|运动'),('休闲',r'周末|逛街|出门玩|日常出门')]
  found=[]
  for scene,pattern in scenes:
   for m in re.finditer(pattern,t):
@@ -171,20 +187,23 @@ def local_patch(text,current=None):
    prefix=t[max(0,m.start()-7):m.start()]
    if re.search(NEG+r'.{0,3}$|(?:不用|不需要|不要求|取消).{0,3}$',prefix):ra.add(tag)
    else:positive.append(tag)
- if positive and 'aesthetics' not in remove:updates['aesthetics']=list(dict.fromkeys(positive));remove.add('style')
+ if positive and 'aesthetics' not in remove:
+  if re.search(r'最好|偏好|尽量|更喜欢',t):updates['preferred_aesthetics']=list(dict.fromkeys(positive))
+  else:updates['aesthetics']=list(dict.fromkeys(positive));remove.add('style')
  feature_patterns={'宽肩带':r'宽肩带|肩带宽|宽背带','电脑隔层':r'独立电脑(?:仓|隔层)|电脑分隔','胸扣':r'胸扣|胸带','行李箱插带':r'行李箱插带|拉杆插带|套行李箱|套在行李箱','防盗口袋':r'防盗(?:口袋|袋)','水杯侧袋':r'水杯侧袋|侧面放水杯','背部透气':r'背部透气|背板透气','少分区':r'分区简单|分区少|少分区|不想.{0,12}好几个隔层|不要.{0,5}(?:很多|太多)(?:口袋|隔层|分区)|外观不要.{0,5}(?:很多|太多)口袋'}
  fp=list(c.get('features',[]));changed=False
  for f,pattern in feature_patterns.items():
   for m in re.finditer(pattern,t):
    prefix=t[max(0,m.start()-8):m.start()];ending=t[m.end():m.end()+5]
    if re.search(r'(?:不需要|不要求|不用|取消|去掉|不要).{0,3}$',prefix) or re.match(r'(?:不要了|不用了|不重要|算了)',ending):rf.add(f)
+   elif re.search(r'最好|偏好|尽量|更在意',prefix):updates['preferred_features']=list(dict.fromkeys(updates.get('preferred_features',c.get('preferred_features',[]))+[f]))
    else:
     if f not in fp:fp.append(f)
     changed=True
  if changed:updates['features']=fp
  if re.search(r'分区多|收纳多|分区清晰|收纳分区多',t):updates.update(storage=True,priority='收纳')
- if re.search(r'(?:不需要|不用|不要求).{0,3}(?:分区多|收纳多)|分区多.{0,2}(?:算了|不要了)',t):remove.add('storage')
- if re.search(r'轻便|轻一点|轻一些|轻量|更轻|背着轻|不超过\s*\d+\s*克',t) and 'maxweight' not in remove:updates['priority']='轻便'
+ if re.search(r'(?:不要|不需要|不用|不要求).{0,3}(?:分区多|多分区|收纳多)|分区多.{0,2}(?:算了|不要了)',t):remove.add('storage')
+ if re.search(r'轻便|轻一点|轻一些|轻量|更轻|背着轻|不沉|别太重|不超过\s*\d+\s*克',t) and 'maxweight' not in remove:updates['priority']='轻便'
  if 'water_need' not in remove:
   if re.search(r'长时间淋雨|持续淋雨|大雨|暴雨|防水测试证明|防水证明|完全防水',t):updates['water_need']='有防水证明'
   elif re.search(r'小雨|短时.{0,3}雨|日常防雨',t):updates['water_need']='日常防雨'
@@ -197,6 +216,13 @@ def local_patch(text,current=None):
  if re.search(r'(?:背包|双肩包)就行|不限(?:包型|品类)|取消品类',t):remove.add('category')
  if re.search(r'帆布|尼龙|牛津布',t):updates['material']=re.search(r'帆布|尼龙|牛津布',t).group()
  if re.search(r'面料(?:不限|不限制|无所谓)|取消面料',t):remove.add('material')
+ # Feelings are ranking preferences, never invented weight/capacity thresholds.
+ soft=list(c.get('soft_preferences',[]))
+ for name,pattern in [('透气',r'夏天|别太闷|不想.{0,3}闷|不闷|更在意透气'),('背负舒适',r'背.{0,2}舒服|肩膀.{0,3}(?:酸|疼)|不勒肩|减负'),('容量余量',r'装得多|多装点|大容量|能装一些'),('耐脏',r'耐脏|不容易脏'),('耐用',r'耐用|结实|质量好'),('易清洁',r'好擦|好清洁|好打理|不想总洗'),('拿取方便',r'好拿|拿取方便|好找东西')]:
+  if re.search(pattern,t) and not re.search(r'不用.{0,3}'+name,t) and name not in soft:soft.append(name)
+ for feeling in list(soft):
+  if re.search(r'(?:不用|不需要|不要求|取消|不要).{0,3}'+feeling, t) or re.search(feeling+r'.{0,2}(?:不重要|不用了|不要了)',t):soft.remove(feeling)
+ if soft!=c.get('soft_preferences',[]):updates['soft_preferences']=soft
  # Plain named preferences from a question-option count as a recommendation edit.
  edited=bool(updates or remove or rf or ra)
  recommend=bool(re.search(r'推荐|帮.{0,3}选|想买|想要|找.{0,5}包|换(?:成|个|一款)|预算|其他(?:要求)?不变|不要.{0,8}了',t)) or edited
@@ -226,14 +252,15 @@ def merge_state(current,patch):
  for k in remove:c.pop(k,None)
  for k,v in clean(patch.get('updates',patch.get('changes',{}))).items():
   if k not in remove:c[k]=v
- for key,removed in [('features',patch.get('remove_features',[])),('aesthetics',patch.get('remove_aesthetics',[]))]:
+ for key,removed in [('features',patch.get('remove_features',[])),('preferred_features',patch.get('remove_features',[])),('aesthetics',patch.get('remove_aesthetics',[])),('preferred_aesthetics',patch.get('remove_aesthetics',[]))]:
   if removed:
    c[key]=[v for v in c.get(key,[]) if v not in removed]
    if not c[key]:c.pop(key,None)
  if 'style' in remove:c.pop('style',None)
  for tag,style in [('极简','简约'),('商务','商务'),('运动感','运动')]:
   if tag in patch.get('remove_aesthetics',[]) and c.get('style')==style:c.pop('style',None)
- if ('needs_laptop' in remove or patch.get('updates',{}).get('needs_laptop') is False) and not c.get('needs_laptop'):
+ if c.get('without_laptop') is True or ('needs_laptop' in remove or patch.get('updates',{}).get('needs_laptop') is False) and not c.get('needs_laptop'):
+  c.pop('needs_laptop',None)
   c.pop('laptop',None);c.pop('protection',None)
   if 'features' in c:c['features']=[v for v in c['features'] if v!='电脑隔层']
  if c.get('color') in c.get('excluded_colors',[]):c['excluded_colors']=[v for v in c['excluded_colors'] if v!=c['color']]
@@ -251,10 +278,22 @@ def combine_patches(model,explicit):
  return out
 
 
+def requirement_conflict(text,current,patch):
+ c=merge_state(current,patch)
+ if c.get('capacity') is not None and c.get('capacity_max') is not None and c['capacity']>c['capacity_max']:
+  return dict(message=f"容量至少{number(c['capacity'],'L')}，同时最多{number(c['capacity_max'],'L')}，这两个范围无法同时满足。",question='你想优先保留容量下限，还是上限？',choices=[f"只保留容量下限{number(c['capacity'],'L')}",f"只保留容量上限{number(c['capacity_max'],'L')}"])
+ if c.get('storage') and '少分区' in c.get('features',[]):
+  return dict(message='“分区要多”和“少分区”这两个要求有冲突。',question='你更想分开放物品，还是结构简单？',choices=['取消少分区要求，要分区多','不要多分区，保留少分区'])
+ for color in COLORS:
+  if re.search(r'(?:必须|一定要|只要).{0,2}'+re.escape(color),text) and re.search(r'(?:不要|不能是|排除)'+re.escape(color),text):
+   return dict(message=f'你同时说了必须{color}和不要{color}。',question='这次要保留哪一个要求？',choices=[f'改成{color}',f'不要{color}，其他颜色都行'])
+ return None
+
+
 def match(p,c):
  reasons=[]
  if '户外登山包' in p.get('categories',[]) and not outdoor_category_allowed(c):reasons.append('category_suitability')
- for k,pk,upper in [('budget','price',True),('maxweight','weight',True),('capacity','capacity',False),('laptop','laptop',False)]:
+ for k,pk,upper in [('budget','price',True),('maxweight','weight',True),('capacity','capacity',False),('capacity_max','capacity',True),('laptop','laptop',False)]:
   if c.get(k) is not None:
    v=p.get(pk)
    if v is None or (v>c[k] if upper else v<c[k]):reasons.append(k)
@@ -280,6 +319,15 @@ def match(p,c):
 def rank(p,c):
  reputation=(p.get('rating') or 0)/100*2+math.log1p(p.get('sales') or 0)/10
  score=reputation
+ score+=sum(.7 for f in c.get('preferred_features',[]) if p.get('feature_flags',{}).get(f) is True)
+ score+=.7*len(set(c.get('preferred_aesthetics',[]))&set(p.get('aesthetic_tags',[])))
+ for preference in c.get('soft_preferences',[]):
+  if preference=='透气' and p.get('attributes',{}).get('back_mesh'):score+=.8
+  elif preference=='背负舒适' and p.get('feature_flags',{}).get('宽肩带'):score+=.8
+  elif preference=='容量余量':score+=min(p.get('capacity') or 0,40)/30
+  elif preference=='拿取方便' and p.get('feature_flags',{}).get('少分区'):score+=.5
+  elif preference=='耐脏' and p.get('color') in ('黑色','灰色'):score+=.3
+  elif preference in ('耐用','易清洁') and p.get('attributes',{}).get('durability_note' if preference=='耐用' else 'cleaning_note'):score+=.2
  if c.get('scene') in ('校园','休闲'):
   score+=.45 if '休闲双肩包' in p.get('categories',[]) else 0
   score-=float(p.get('weight') or 1500)/1200
@@ -305,10 +353,16 @@ def search(goods,c):
 
 
 def followup(c,asked,skip):
- checks=[]
- if c.get('water_need')=='待确认':checks.append(('water_need','你希望应付短时水滴，还是经常在雨里走？',['防泼水就可以','需要日常防雨','需要有防水测试证明']))
- checks += [('scene','平时主要背去上课、上班，还是出门玩？',['上课和校园日常','上班通勤','周末出门玩']),('budget','预算大概想控制在多少以内？',['150元以内','300元以内','预算不限'])]
+ checks=[('scene','平时主要背去上课、上班，还是出门玩？',['上课和校园日常','上班通勤','周末出门玩'])]
  if c.get('needs_laptop'):checks.append(('laptop','平时带的是多大尺寸的电脑？',['14英寸','16英寸','17.3英寸']))
+ elif not c.get('carrying') and c.get('capacity') is None and c.get('capacity_max') is None and not c.get('without_laptop'):
+  checks.append(('carrying','平时主要装随身小物、书本，还是需要带电脑？',['只带随身小物','带书本和水杯','需要带电脑']))
+ if '容量余量' in c.get('soft_preferences',[]) and c.get('capacity') is None and c.get('capacity_max') is None:
+  checks.append(('capacity','你希望容量至少多少，还是先不限定容量？',['至少20L','至少30L','容量不限']))
+ checks.append(('budget','预算大概想控制在多少以内？',['150元以内','300元以内','预算不限']))
+ if c.get('water_need')=='待确认':checks.append(('water_need','你希望应付短时水滴，还是经常在雨里走？',['防泼水就可以','需要日常防雨','需要有防水测试证明']))
+ if not c.get('soft_preferences') and not c.get('features'):
+  checks.append(('priority','还更在意轻便、背部透气，还是分区收纳？',['更在意轻便','更在意背部透气','更在意分区收纳']))
  for k,q,choices in checks:
   if (not c.get(k) or k=='water_need' and c.get(k)=='待确认') and k not in asked and k not in skip:return k,q,choices
  return '', '', []
@@ -320,9 +374,11 @@ def number(v,unit=''):
 
 def product_angles(p,c):
  flags=p.get('feature_flags',{});w=number(p.get('weight'),'g');cap=number(p.get('capacity'),'L');size=number(p.get('laptop'),'英寸')
- angles={'design':p.get('design_note','适合日常携带的简洁轮廓')+'。'}
+ design=p.get('design_note','适合日常携带的简洁轮廓')
+ if not c.get('needs_laptop') and not c.get('laptop'):design=design.replace('电脑通勤','日常通勤')
+ angles={'design':design+'。'}
  if p.get('weight') is not None and p['weight']<=450:angles['weight']=f'【空包{w}】，日常只带书本或随身物品时，可以少带一些包体自重。'
- if p.get('computer_padding')=='air':angles['padding']=f'【{size}加厚缓冲电脑仓】，把设备与其他物品分开收好，'+('携带电子设备出行时更有条理。' if '户外登山包' in p.get('categories',[]) else '适合每天带电脑往返。')
+ if (c.get('needs_laptop') or c.get('laptop')) and not c.get('without_laptop') and p.get('computer_padding')=='air':angles['padding']=f'【{size}加厚缓冲电脑仓】，把设备与其他物品分开收好，'+('携带电子设备出行时更有条理。' if '户外登山包' in p.get('categories',[]) else '适合每天带电脑往返。')
  if p.get('capacity') is not None and p['capacity']>=25:angles['space']=f'【{cap}主仓】，'+('徒步或露营还要携带外套和装备时，收纳余地更充足。' if '户外登山包' in p.get('categories',[]) else '上课或上班之外还要带外套、配件时，收纳余地更充足。')
  if flags.get('行李箱插带'):angles['luggage']='需要兼顾出差的话，背部的【行李箱插带】可以把背包固定在拉杆上，转乘时少占一只手。'
  if flags.get('少分区'):angles['simple']='收纳结构偏简单，拿东西不用逐层翻找，适合不想记太多口袋位置的用法。'
@@ -332,7 +388,7 @@ def product_angles(p,c):
  if water=='有防水证明':angles['rain']='闭合包体有【IPX6防喷水测试记录】，更适合雨天户外使用。'
  elif water=='日常防雨':angles['rain']='通勤路上常遇到小雨，可以看看这款的【日常防雨结构】。'
  order=['design','weight','simple','space','straps','luggage','rain','value','padding']
- if c.get('needs_laptop') or c.get('laptop') or c.get('scene')=='通勤':order=['padding','weight','space','luggage','simple','rain','design','straps','value']
+ if c.get('needs_laptop') or c.get('laptop'):order=['padding','weight','space','luggage','simple','rain','design','straps','value']
  if c.get('priority')=='轻便' or c.get('maxweight') is not None:order=['weight','design','simple','space','straps','rain','value','padding','luggage']
  if c.get('water_need') not in (None,'','待确认'):order=['rain','design','space','straps','weight','padding','luggage','simple','value']
  return angles,order
@@ -342,20 +398,20 @@ def recommendation_text(p,c,index=0,focus=None):
  """Lead with a real product distinction; preserve every explicit matching reason."""
  angles,order=product_angles(p,c)
  focus=focus if focus in angles else next(k for k in order if k in angles)
- parts=[angles[focus]];laptop=c.get('needs_laptop') or c.get('laptop') or c.get('scene')=='通勤'
+ parts=[angles[focus]];laptop=(c.get('needs_laptop') or c.get('laptop')) and not c.get('without_laptop')
  size=number(p.get('laptop'),'英寸');pad='加厚缓冲电脑仓' if p.get('computer_padding')=='air' else '独立电脑隔层'
  if laptop and p.get('laptop') is not None and focus!='padding':parts.append(f'标称适配{size}电脑，设有{pad}。')
  if (c.get('priority')=='轻便' or c.get('maxweight') is not None) and focus!='weight':parts.append(f'空包{number(p.get("weight"),"g")}。')
  if c.get('color') and (p.get('color_label') or p.get('color')) not in parts[0]:parts.append(f'这一款是{p.get("color_label") or p.get("color")}配色。')
- if c.get('aesthetics') and focus!='design':parts.append(p.get('design_note','')+'。')
+ if c.get('aesthetics') and focus!='design':parts.append(angles['design'])
  if '宽肩带' in c.get('features',[]) and focus!='straps':parts.append(f'{number(p.get("shoulder_width_cm"),"cm")}宽肩带，接触面积更大。')
  if '少分区' in c.get('features',[]) and focus!='simple':parts.append('分区数量少，物品拿取路径直接。')
- if c.get('storage') and focus not in ('space','padding'):parts.append('电脑、配件和小物品可以分区收好。')
+ if c.get('storage') and focus not in ('space','padding'):parts.append('常用物品和小配件可以分区收好。')
  if c.get('water_need') not in (None,'','待确认') and focus!='rain':
   water=p.get('water_protection');parts.append('闭合包体有IPX6防喷水测试记录。' if water=='有防水证明' else '结构适合短时小雨。' if water=='日常防雨' else '面料可以应付日常水滴。')
  if len(parts)==1:
-  if focus!='design':parts.append(p.get('design_note','')+'。')
-  elif p.get('laptop') is not None:parts.append(f'{number(p.get("capacity"),"L")}容量，{size}电脑有单独收纳位置。')
+  if focus!='design':parts.append(angles['design'])
+  elif laptop and p.get('laptop') is not None:parts.append(f'{number(p.get("capacity"),"L")}容量，{size}电脑有单独收纳位置。')
   else:parts.append(f'包身{number(p.get("weight"),"g")}、容量{number(p.get("capacity"),"L")}，适合轻装随行。')
  return ''.join(part for part in parts if part and part!='。')
 
@@ -404,14 +460,15 @@ def blueprint(intent,products,primary,backup,c,text,kind='general'):
  if intent=='recommend':
   if not primary:return dict(opening='这些要求放在一起，目前没有对应的款式。',items=[],closing='')
   if colors_in(text) or re.search(r'简约|少女|酷|风格|好看|撞色',text):opening='按你这次说的颜色和风格，挑了下面几款；各自的包型和收纳特点可以直接看。'
-  elif c.get('needs_laptop') or c.get('laptop') or c.get('scene')=='通勤':opening='每天带电脑，主要看【电脑仓的缓冲和空包重量】。这几款各有侧重，可以从你平时带的东西来选。'
+  elif (c.get('needs_laptop') or c.get('laptop')) and not c.get('without_laptop'):opening='每天带电脑，主要看【电脑仓的缓冲和空包重量】。这几款各有侧重，可以从你平时带的东西来选。'
+  elif c.get('scene')=='通勤':opening='上班通勤，先看【随身物品好拿、包身轻便】。'+('不带电脑的话，重点放在水杯、雨伞和日常小物的收纳。' if c.get('without_laptop') else '可以从包身大小、物品拿取和日常搭配来选。')
   elif c.get('scene')=='校园':opening='上课和校园日常，先看【书本收纳和空包重量】。这几款适合把书本和随身物品一起带走。'
   elif c.get('scene')=='休闲':opening='平时出门，主要看【物品好拿、携带方便】。下面这几款各有自己的日常用法。'
   elif c.get('color'):opening=f"这几款{c['color']}背包可以先看看，包型和收纳各有特点。"
   elif c.get('aesthetics'):opening='这几款的外观比较贴近你想要的感觉，下面把各自适合的日常用法说清楚。'
   else:opening='先看这几款，日常携带、收纳和外观各有侧重。'
   return dict(opening=opening,items=recommendation_items(products,c),closing='')
- if intent=='analysis':return dict(opening='',items=[dict(id=p['id'],text=item_answer(p,kind,text,c)) for p in products],closing='')
+ if intent=='analysis':return dict(opening='',items=[dict(id=p['id'],text=('当前资料没有明确记录这一点，暂时不能直接确认。' if kind=='open_question' else item_answer(p,kind,text,c))) for p in products],closing='',question=text if kind=='open_question' else '',mode='answer_question' if kind=='open_question' else 'overview')
  if intent=='compare':
   opening='';ps=products
   if kind=='weight' and all(p.get('weight') is not None for p in ps):
@@ -435,7 +492,7 @@ def safe_json(raw):
 
 
 def suggestion_bank(intent,text,history):
- choices=['这款的主要优点是什么','这款的评价里有哪些常见反馈','我想换成更轻的款式'] if intent=='analysis' else ['哪款空包更轻','哪款适合每天带电脑','换一组符合要求的看看'] if intent=='recommend' else ['这几款的重量分别是多少','哪款分区更简单','我想重新选一款背包']
+ choices=['这款的主要优点是什么','这款的评价里有哪些常见反馈','我想换成更轻的款式'] if intent=='analysis' else ['哪款空包更轻','哪款拿取随身物品更方便','换一组符合要求的看看'] if intent=='recommend' else ['这几款的重量分别是多少','哪款分区更简单','我想重新选一款背包']
  def key(t):return re.sub(r'[\s\W]|请|帮我|一下|的|呢|吗','',t)
  seen=[key(text)]+[key(x.get('content','')) for x in history if x.get('role')=='user']
  return [s for s in choices if all(key(s)!=x and not (len(x)>4 and (x in key(s) or key(s) in x)) for x in seen)][:3]
@@ -471,8 +528,24 @@ class Engine:
   if local['explicit'] and (re.search(r'(?:其他|其余).{0,4}不变',text) or re.fullmatch(r'[预算价格价位可以希望提高到降成控制为是在元块钱以内左右更不限制多少0123456789.，。\s]+',text)):
    return local,'explicit-preserve-other-conditions'
   combined=combine_patches(model,local)
+  for field in NUMBERS:
+   if field not in local['updates']:combined['updates'].pop(field,None)
+  for preferred,hard in [('preferred_features','features'),('preferred_aesthetics','aesthetics')]:
+   soft_tags=local['updates'].get(preferred,[])
+   if soft_tags and hard in combined['updates']:
+    combined['updates'][hard]=[v for v in combined['updates'][hard] if v not in soft_tags or v in c.get(hard,[])]
+    if hard=='aesthetics' and '极简' in soft_tags and 'style' not in c:combined['updates'].pop('style',None)
   if local.get('updates',{}).get('scene') in DAILY_SCENES and not wants_outdoor_activity(text) and combined['updates'].get('category')=='户外登山包':combined['updates'].pop('category',None)
+  for feeling,feature in [('透气','背部透气'),('背负舒适','宽肩带')]:
+   if feeling in local['updates'].get('soft_preferences',[]) and feature not in local['updates'].get('features',[]) and feature not in c.get('features',[]) and 'features' in combined['updates']:
+    combined['updates']['features']=[f for f in combined['updates']['features'] if f!=feature]
   if local.get('updates',{}).get('priority')=='轻便' and 'maxweight' not in local['updates']:combined['updates'].pop('maxweight',None)
+  # A scene alone is not evidence of carrying a laptop. Explicit cancellation persists.
+  if not local['updates'].get('needs_laptop') and not local['updates'].get('laptop') and (c.get('without_laptop') or not c.get('needs_laptop') and c.get('laptop') is None):
+   for field in ('needs_laptop','laptop','protection'):combined['updates'].pop(field,None)
+   if 'features' in combined['updates'] and '电脑隔层' not in local['updates'].get('features',[]):combined['updates']['features']=[f for f in combined['updates']['features'] if f!='电脑隔层']
+  if c.get('without_laptop') and not local['updates'].get('needs_laptop') and 'without_laptop' not in local['updates']:
+   combined['updates']['without_laptop']=True;combined['remove']=[f for f in combined['remove'] if f!='without_laptop']
   return combined,'model+explicit'
  def validated_wording(self,plan,context,deadline):
   if not plan['items']:return plan,False
@@ -497,6 +570,7 @@ class Engine:
     if any(n not in allowed for n in re.findall(r'\d+(?:\.\d+)?',text)):raise ValueError('new numbers')
     for pattern,field in [(r'(\d+(?:\.\d+)?)\s*元','price'),(r'(\d+(?:\.\d+)?)\s*(?:g|克)', 'weight'),(r'(\d+(?:\.\d+)?)\s*(?:L|升)','capacity'),(r'(\d+(?:\.\d+)?)\s*(?:英寸|寸)','laptop'),(r'(\d+(?:\.\d+)?)\s*%','rating')]:
      if any(p.get(field) is None or float(v)!=float(p[field]) for v in re.findall(pattern,text)):raise ValueError('wrong unit value')
+    if item.get('id') is not None and not any('电脑' in i.get('text','') for i in plan['items']) and re.search(r'每天带电脑|日常带电脑|适合.{0,5}带电脑|电脑仓|电脑隔层',text):raise ValueError('invented laptop use')
     if re.search(r'不推荐|其他.{0,8}(?:不适合|不好)|截图|候选|硬凑|已保留|无脑|闭眼入|不累|不勒|绝对防水',text):raise ValueError('sales script')
     for other in self.goods:
      if other['id']!=p['id'] and other['name'] in text:raise ValueError('wrong SKU')
@@ -536,17 +610,28 @@ class Engine:
   if d.get('start_selection') or generic_entry or restart:
    k,q,choices=followup({},[],[])
    return dict(reply='好呀，先说说平时怎么用，我再帮你挑。',intent='recommend',conditions={},primary_ids=[],backup_ids=[],pending_ids=[],ids=[],product_texts={},question=q,choices=choices,suggestions=[],asked=[k],skip=[],understanding_source='entry',wording_source='catalog')
+  reference=False
+  if not targets and not re.search(r'推荐|换一款|重新选',text):
+   ordinal=re.search(r'第([一二三四五六七八九十]|[1-9]\d?)(?:款|个)',text)
+   if ordinal:
+    value=ordinal.group(1);index=int(value)-1 if value.isdigit() else '一二三四五六七八九十'.index(value)
+    if index<len(visible):targets=[visible[index]];reference=True
+   elif text.startswith(('前者','后者')) and len(visible)==2:targets=[visible[0 if text.startswith('前者') else 1]];reference=True
   if not targets:
    named=[p['id'] for p in self.goods if p['name'] in text]
    if len(named)==1:targets=named
   local=local_patch(text,c)
   action=d.get('action','auto')
-  if targets and action in ('analysis','compare'):
-   patch=local;patch['intent']=action;source='selected-product'
+  if targets and (action in ('analysis','compare') or reference):
+   patch=local;patch['intent']=action if action in ('analysis','compare') else 'analysis';source='selected-product'
   elif pq.asks_product_question(text) or pq.is_overview(text):patch=local;source='question-first'
   else:patch,source=self.interpret(text,c,history,targets,visible,deadline)
   intent=patch.get('intent','chat')
-  if intent=='recommend':c=merge_state(c,patch)
+  if intent=='recommend':
+   conflict=requirement_conflict(text,c,patch)
+   if conflict:
+    return dict(reply=conflict['message'],intent='recommend',conditions=c,primary_ids=[],backup_ids=[],pending_ids=[],ids=[],product_texts={},question=conflict['question'],choices=conflict['choices'],suggestions=[],asked=asked,skip=skip,understanding_source='conflict-check',wording_source='catalog-grounded')
+   c=merge_state(c,patch)
   analysis_conditions=merge_state(c,local) if intent in ('analysis','compare') else c
   if intent=='recommend':skip=list(dict.fromkeys(skip+patch.get('skip',[])+patch.get('remove',[])))
   found=self.ids(patch.get('target_ids',[]))
@@ -558,6 +643,7 @@ class Engine:
   if intent=='analysis' and not targets:raise ValueError('请先选择想问的商品，或在购物车中点“就这款提问”。')
   primary=[];backup=[];focused=[];q='';choices=[];kind=patch.get('question_kind') or kind_from_text(text)
   if kind=='general':kind=kind_from_text(text)
+  if intent=='analysis' and kind=='general' and not pq.is_overview(text) and re.search(r'吗|么|？|\?|能否|是否|怎样|怎么|怎么样|好不好|能不能|会不会|有没有',text):kind='open_question'
   if intent=='recommend':kind='general'
   if intent=='recommend':
    matches=search(self.goods,c)
