@@ -1,0 +1,40 @@
+[
+  {
+    "name": "替换为真实商品标题",
+    "sku": "替换为来源SKU",
+    "brand": "替换为品牌",
+    "family": "替换为系列标识",
+    "url": "https://example.com/replace-with-real-product-url",
+    "image_url": "",
+    "price": null,
+    "sales": null,
+    "rating": null,
+    "review_count": null,
+    "weight": null,
+    "capacity": null,
+    "laptop": null,
+    "dimensions": "",
+    "material": "",
+    "color": "",
+    "scene": [],
+    "style_tags": [],
+    "aesthetic_tags": [],
+    "categories": [],
+    "feature_flags": {
+      "宽肩带": null,
+      "电脑隔层": null,
+      "胸扣": null,
+      "行李箱插带": null,
+      "防盗口袋": null,
+      "水杯侧袋": null,
+      "背部透气": null,
+      "少分区": null
+    },
+    "water_protection": null,
+    "advantages": [],
+    "limits": [],
+    "reviews": [],
+    "source": "替换为平台、店铺、采集时间和统计口径",
+    "updated_at": ""
+  }
+]
