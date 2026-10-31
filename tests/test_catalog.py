@@ -70,6 +70,17 @@ class CatalogTests(unittest.TestCase):
   self.assertEqual(result['choices'],['预算提高到350元'])
   new=be.merge_state(result['conditions'],be.local_patch(result['choices'][0],result['conditions']))
   self.assertTrue(be.search(app.GOODS,new))
+ def test_product_crop_metadata_and_long_titles(self):
+  for p in app.GOODS:
+   x,y,w,h=p['image_crop'];self.assertTrue(0<=x<x+w<=1024);self.assertTrue(0<=y<y+h<=1536)
+   self.assertGreaterEqual(len(p['display_title']),22)
+   self.assertTrue(p['display_title'].startswith(p['brand']))
+  self.assertNotEqual(app.GOODS[31]['image_crop'][1],512)
+ def test_recommendation_angles_differ(self):
+  c={'needs_laptop':True,'laptop':16,'scene':'通勤'};products=be.search(app.GOODS,c)[:5]
+  items=be.recommendation_items(products,c)
+  self.assertEqual(len({i['focus'] for i in items}),5)
+  self.assertEqual(len({i['text'].split('。')[0] for i in items}),5)
  def test_avoid_invented_hard_weight(self):
   self.assertNotIn('maxweight',be.local_patch('我想轻便一点')['updates'])
   self.assertNotIn('budget',be.local_patch('不超过450克')['updates'])
@@ -99,6 +110,17 @@ class ModelBoundaryTests(unittest.TestCase):
  def test_invalid_key_not_disguised_as_model_success(self):
   def unauthorized(*args,**kwargs):raise app.ProviderError('test unauthorized',401)
   with self.assertRaises(app.ProviderError):be.Engine(app.GOODS,unauthorized).handle({'text':'推荐蓝色背包'},time.monotonic()+5)
+ def test_repetitive_model_text_rejected(self):
+  products=[app.GOODS[22],app.GOODS[46]];plan=be.blueprint('recommend',products,products,[],{},'推荐')
+  texts=[f'这款空包{p["weight"]}g，容量{p["capacity"]}L，日常上课通勤都很方便。' for p in products]
+  draft={'opening':'','items':[{'id':p['id'],'text':text} for p,text in zip(products,texts)],'closing':''}
+  engine=be.Engine(app.GOODS,lambda *a,**kw:json.dumps(draft,ensure_ascii=False))
+  self.assertFalse(engine.validated_wording(plan,products,time.monotonic()+20)[1])
+ def test_upstream_preserves_auth_status(self):
+  error=urllib.error.HTTPError('https://api.deepseek.com/chat/completions',401,'unauthorized',{},None)
+  with patch.object(app.urllib.request,'urlopen',side_effect=error):
+   with self.assertRaises(app.ProviderError) as failure:app.upstream('https://api.deepseek.com/chat/completions','test-only',b'{}')
+   self.assertEqual(failure.exception.status,401)
  def test_empty_body_retry(self):
   replies=[{'choices':[{'message':{'content':'','reasoning_content':'hidden'},'finish_reason':'stop'}]}, {'choices':[{'message':{'content':[{'type':'text','text':'直接回答。'}]},'finish_reason':'stop'}]}]
   with patch.object(app,'upstream',side_effect=replies) as upstream,contextlib.redirect_stdout(io.StringIO()):self.assertEqual(app.completion([],time.monotonic()+30),'直接回答。');self.assertEqual(upstream.call_count,2)
@@ -139,6 +161,15 @@ class HttpTests(unittest.TestCase):
     for k in case['absent_conditions']:self.assertNotIn(k,x['conditions'])
     if case['expected_primary_count'] is not None:self.assertEqual(len(x['primary_ids']),case['expected_primary_count'],case['text'])
     state=x['conditions'];asked=x['asked'];skip=x['skip']
+ def test_more_matches_uses_exact_same_filter_without_model(self):
+  cases=[{'color':'蓝色','budget':200,'laptop':16,'aesthetics':['极简']},{'color':'黑色','budget':200,'maxweight':450},{'features':['宽肩带'],'water_need':'日常防雨'},{'color':'蓝色','excluded_colors':['粉色'],'scene':'校园'}]
+  with patch.object(app,'KEY',''),patch.object(app,'completion') as model:
+   for c in cases:
+    req=urllib.request.Request(self.base+'/api/matches',data=json.dumps({'conditions':c}).encode(),headers={'Content-Type':'application/json'})
+    with urllib.request.urlopen(req) as response:x=json.load(response)
+    self.assertEqual(x['ids'],[p['id'] for p in be.search(app.GOODS,c)])
+    self.assertTrue(all(be.match(app.GOODS[i],c)[0] for i in x['ids']))
+   model.assert_not_called()
  def test_auth_and_validation(self):
   with patch.object(app,'KEY',''):
    with self.assertRaises(urllib.error.HTTPError):self.post({'text':'你好'})

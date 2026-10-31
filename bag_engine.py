@@ -3,7 +3,7 @@
 The rule layer covers explicit constraints; a model supplies open-ended semantics and
 optional wording. Model output cannot change the selected SKU set or catalog facts.
 """
-import json,re,time,math,hashlib
+import json,re,time,math,hashlib,difflib
 from pathlib import Path
 
 AESTHETICS=['清新少女','酷感机能','极简','复古','运动感','商务','活力撞色']
@@ -27,7 +27,7 @@ updates可用：scene(校园/通勤/旅行/休闲/运动)、gender、budget(元)
 例：当前少女、粉色，用户“不要少女风了，换酷酷的，不限颜色”→updates={"aesthetics":["酷感机能"]},remove=["color","excluded_colors"],remove_aesthetics=["清新少女"]。
 不要输出完整历史状态，不要给被删条件赋另一个默认值。'''
 
-WRITER='''你是一个会帮朋友挑背包的中文导购。根据给定的回答蓝图改写得自然、具体、简洁。事实、商品顺序和商品ID不可改变。用户已在页面底部看到模拟数据说明，不要反复提示演示/截图/候选/已保留条件/不硬凑/不推荐。
+WRITER='''你是一个会帮朋友挑背包的中文导购。根据给定的回答蓝图改写得自然、具体、简洁。每个items.focus是这款本轮的介绍重点：必须围绕不同的产品差异组织句子，不把每段都写成重量＋容量＋日常好搭的换数字模板。不得复制其他段的完整句式。事实、商品顺序和商品ID不可改变。用户已在页面底部看到模拟数据说明，不要反复提示演示/截图/候选/已保留条件/不硬凑/不推荐。
 推荐时只介绍选中商品本身及为什么符合需求，不谈其他商品哪里不好、不列淘汰理由、不塞不符合条件的商品。使用“日常带电脑，先看电脑仓的缓冲和空包重量。……这款430g，16英寸电脑有独立隔层，上课通勤都方便。”这样的消费者语言。
 用户问缺点才直接说所选商品的具体取舍；问重量直接报重量；问比较就回答具体差别，不能答非所问。只用蓝图事实；不把宽肩带说成必然不累，不把防泼水说成长时防水，不编造认证、品牌承诺或优惠。不要提问，程序把必要追问放在最后。
 返回JSON：{"opening":"简短开头","items":[{"id":整数,"text":"该商品介绍，1—3句"}],"closing":"可为空"}。items必须和蓝图items逐一对应，不能少、重复或换ID，不添加商品名以外的商品、价格、数字、属性。重要短语可用【】标记，最多3处。不输出Markdown星号或思考过程。'''
@@ -288,29 +288,56 @@ def number(v,unit=''):
  return f'{v:g}{unit}' if type(v) in (int,float) else '资料未提供'
 
 
-def recommendation_text(p,c,index=0):
- """Different evidence-led angles, with every sentence sourced to this SKU."""
- flags=p.get('feature_flags',{});parts=[];weight=number(p.get('weight'),'g');capacity=number(p.get('capacity'),'L')
+def product_angles(p,c):
+ flags=p.get('feature_flags',{});w=number(p.get('weight'),'g');cap=number(p.get('capacity'),'L');size=number(p.get('laptop'),'英寸')
+ angles={'design':p.get('design_note','适合日常携带的简洁轮廓')+'。'}
+ if p.get('weight') is not None and p['weight']<=450:angles['weight']=f'【空包{w}】，日常只带书本或随身物品时，可以少带一些包体自重。'
+ if p.get('computer_padding')=='air':angles['padding']=f'【{size}加厚缓冲电脑仓】，把设备与其他物品分开收好，适合每天带电脑往返。'
+ if p.get('capacity') is not None and p['capacity']>=25:angles['space']=f'【{cap}主仓】，上课或上班之外还要带外套、配件时，收纳余地更充足。'
+ if flags.get('行李箱插带'):angles['luggage']='需要兼顾出差的话，背部的【行李箱插带】可以把背包固定在拉杆上，转乘时少占一只手。'
+ if flags.get('少分区'):angles['simple']='收纳结构偏简单，拿东西不用逐层翻找，适合不想记太多口袋位置的用法。'
+ if flags.get('宽肩带'):angles['straps']=f'{number(p.get("shoulder_width_cm"),"cm")}宽肩带，肩部接触面积更大，适合会装书本或设备的日常。'
+ if c.get('budget') is not None and p.get('price') is not None:angles['value']=f'{number(p["price"],"元")}价位，先把预算放在每天会用到的收纳和携带功能上。'
+ water=p.get('water_protection')
+ if water=='有防水证明':angles['rain']='闭合包体有【IPX6防喷水测试记录】，更适合雨天户外使用。'
+ elif water=='日常防雨':angles['rain']='通勤路上常遇到小雨，可以看看这款的【日常防雨结构】。'
+ order=['design','weight','simple','space','straps','luggage','rain','value','padding']
+ if c.get('needs_laptop') or c.get('laptop') or c.get('scene')=='通勤':order=['padding','weight','space','luggage','simple','rain','design','straps','value']
+ if c.get('priority')=='轻便' or c.get('maxweight') is not None:order=['weight','design','simple','space','straps','rain','value','padding','luggage']
+ if c.get('water_need') not in (None,'','待确认'):order=['rain','design','space','straps','weight','padding','luggage','simple','value']
+ return angles,order
+
+
+def recommendation_text(p,c,index=0,focus=None):
+ """Lead with a real product distinction; preserve every explicit matching reason."""
+ angles,order=product_angles(p,c)
+ focus=focus if focus in angles else next(k for k in order if k in angles)
+ parts=[angles[focus]];laptop=c.get('needs_laptop') or c.get('laptop') or c.get('scene')=='通勤'
  size=number(p.get('laptop'),'英寸');pad='加厚缓冲电脑仓' if p.get('computer_padding')=='air' else '独立电脑隔层'
- color=p.get('color_label') or p.get('color') or '';laptop=c.get('needs_laptop') or c.get('laptop') or c.get('scene')=='通勤'
- if laptop and p.get('laptop') is not None:
-  if index%5==0:parts=[f'【{weight}包身＋{size}{pad}】，电脑和书本分开放，适合每天通勤',f'{capacity}容量，随身带电源和薄外套也有空间']
-  elif index%5==1 and p.get('water_protection') in ('日常防雨','有防水证明'):parts=[f'通勤途中经常遇雨，可以看这款的【{p["water_protection"]}结构】',f'{size}{pad}，{weight}包身，主仓{capacity}']
-  elif index%5==2 and flags.get('行李箱插带'):parts=[f'上班之外还要出差，这款背部的【行李箱插带】可以固定在拉杆上',f'{size}{pad}，{capacity}容量，空包{weight}']
-  elif index%5==3:parts=[f'{size}电脑有单独位置，{capacity}主仓适合把文件、书本和日常用品一起带走',p.get('design_note',''),f'空包{weight}，外观是{color}配色']
-  else:parts=[f'{color}配色搭配日常衣服方便，标称适配{size}电脑',f'空包{weight}、{capacity}容量，'+('电脑仓有加厚缓冲' if p.get('computer_padding')=='air' else '电脑与其他物品分层收纳')]
- else:
-  if c.get('color') or c.get('aesthetics'):parts.append(f'【{color}配色】，'+p.get('design_note','日常搭配方便'))
-  else:parts.append(p.get('design_note','适合日常随行'))
-  if index%3==0:parts.append(f'空包{weight}，{capacity}容量，'+('装书、水杯和薄外套很顺手' if (p.get('capacity') or 0)>=18 else '适合随身小物轻装出门'))
-  elif index%3==1:parts.append(f'{capacity}主仓，拿取物品路径清楚，包身重量{weight}')
-  else:parts.append(f'包身{weight}，'+('有独立电脑收纳位置' if p.get('laptop') is not None else '适合周末轻装出门'))
- if '宽肩带' in c.get('features',[]):parts.append(f'{number(p.get("shoulder_width_cm"),"cm")}宽肩带，肩部接触面积更大')
- if c.get('water_need') not in (None,'','待确认'):
-  water=p.get('water_protection');parts.append('闭合包体有IPX6防喷水测试记录，适合雨天户外使用' if water=='有防水证明' else '面料和闭合结构适合短时小雨' if water=='日常防雨' else '防泼水面料可以应付日常水滴')
- if c.get('storage'):parts.append('电脑、电源和随身小物可以分区收好')
- if '少分区' in c.get('features',[]):parts.append('分区数量少，拿东西不用逐层翻找')
- return '。'.join(part for part in parts if part)+'。'
+ if laptop and p.get('laptop') is not None and focus!='padding':parts.append(f'标称适配{size}电脑，设有{pad}。')
+ if (c.get('priority')=='轻便' or c.get('maxweight') is not None) and focus!='weight':parts.append(f'空包{number(p.get("weight"),"g")}。')
+ if c.get('color') and (p.get('color_label') or p.get('color')) not in parts[0]:parts.append(f'这一款是{p.get("color_label") or p.get("color")}配色。')
+ if c.get('aesthetics') and focus!='design':parts.append(p.get('design_note','')+'。')
+ if '宽肩带' in c.get('features',[]) and focus!='straps':parts.append(f'{number(p.get("shoulder_width_cm"),"cm")}宽肩带，接触面积更大。')
+ if '少分区' in c.get('features',[]) and focus!='simple':parts.append('分区数量少，物品拿取路径直接。')
+ if c.get('storage') and focus not in ('space','padding'):parts.append('电脑、配件和小物品可以分区收好。')
+ if c.get('water_need') not in (None,'','待确认') and focus!='rain':
+  water=p.get('water_protection');parts.append('闭合包体有IPX6防喷水测试记录。' if water=='有防水证明' else '结构适合短时小雨。' if water=='日常防雨' else '面料可以应付日常水滴。')
+ if len(parts)==1:
+  if focus!='design':parts.append(p.get('design_note','')+'。')
+  elif p.get('laptop') is not None:parts.append(f'{number(p.get("capacity"),"L")}容量，{size}电脑有单独收纳位置。')
+  else:parts.append(f'包身{number(p.get("weight"),"g")}、容量{number(p.get("capacity"),"L")}，适合轻装随行。')
+ return ''.join(part for part in parts if part and part!='。')
+
+
+def recommendation_items(products,c):
+ usage={};items=[]
+ for index,p in enumerate(products):
+  angles,order=product_angles(p,c)
+  focus=min((k for k in order if k in angles),key=lambda k:(usage.get(k,0),order.index(k)))
+  usage[focus]=usage.get(focus,0)+1
+  items.append(dict(id=p['id'],text=recommendation_text(p,c,index,focus),focus=focus))
+ return items
 
 
 def kind_from_text(text):
@@ -349,7 +376,7 @@ def blueprint(intent,products,primary,backup,c,text,kind='general'):
   elif c.get('color'):opening=f"这几款{c['color']}背包可以先看看，包型和收纳各有特点。"
   elif c.get('aesthetics'):opening='这几款的外观比较贴近你想要的感觉，下面把各自适合的日常用法说清楚。'
   else:opening='先看这几款，日常携带、收纳和外观各有侧重。'
-  return dict(opening=opening,items=[dict(id=p['id'],text=recommendation_text(p,c,i)) for i,p in enumerate(products)],closing='')
+  return dict(opening=opening,items=recommendation_items(products,c),closing='')
  if intent=='analysis':return dict(opening='',items=[dict(id=p['id'],text=item_answer(p,kind,text,c)) for p in products],closing='')
  if intent=='compare':
   opening='';ps=products
@@ -414,7 +441,7 @@ class Engine:
   return combined,'model+explicit'
  def validated_wording(self,plan,context,deadline):
   if not plan['items']:return plan,False
-  fact_keys=('id','name','price','weight','capacity','laptop','color','color_label','material','computer_padding','feature_flags','shoulder_width_cm','water_protection','water_test','rating','sales','advantages','design_note')
+  fact_keys=('id','name','price','weight','capacity','laptop','color','color_label','material','computer_padding','feature_flags','shoulder_width_cm','water_protection','water_test','rating','sales','advantages','design_note','display_title')
   writer_facts=[{k:p.get(k) for k in fact_keys} for p in context]
   try:raw=self.completion([{'role':'system','content':WRITER},{'role':'user','content':json.dumps({'blueprint':plan,'facts':writer_facts},ensure_ascii=False)}],deadline,True,2800)
   except Exception as error:
@@ -447,6 +474,14 @@ class Engine:
     if any(p.get('price') is None or float(v)!=float(p['price']) for v in re.findall(r'[¥￥]\s*(\d+(?:\.\d+)?)',text)):raise ValueError('price claim')
     if re.search(r'长时间淋雨|完全防水|IPX',text) and p.get('water_protection')!='有防水证明':raise ValueError('water claim')
     if re.search(r'加厚缓冲|气囊',text) and p.get('computer_padding')!='air':raise ValueError('padding claim')
+   normalized=[]
+   color_words=sorted({word for values in COLORS.values() for word in values},key=len,reverse=True)
+   for item in items:
+    plain=re.sub(r'\d+(?:\.\d+)?','#',item['text'])
+    plain=re.sub('|'.join(map(re.escape,color_words)),'颜色',plain)
+    plain=re.sub(r'[\s【】。，、；：]','',plain)
+    if len(plain)>=20 and any(difflib.SequenceMatcher(None,plain,other).ratio()>.84 for other in normalized):raise ValueError('repetitive item wording')
+    normalized.append(plain)
    for key in ('opening','closing'):
     if re.search(r'不推荐|候选|硬凑|已保留|不符合|其他.{0,8}(?:不好|不适合)',draft.get(key,'')):raise ValueError('negative intro')
     if any(n not in set(re.findall(r'\d+(?:\.\d+)?',all_facts)) for n in re.findall(r'\d+(?:\.\d+)?',draft.get(key,''))):raise ValueError('new intro numbers')

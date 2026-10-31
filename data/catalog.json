@@ -98,7 +98,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "多点扣带结构，适合把户外装备分区固定"
+    "design_note": "翻盖与双扣前片，橙色包身有多条装备固定带",
+    "image_crop": [
+      0,
+      1,
+      256,
+      254
+    ],
+    "display_title": "Mr.ace Homme 户外徒步登山双肩背包 男女运动旅行装备收纳包"
   },
   {
     "id": 1,
@@ -197,7 +204,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "外袋与主仓分开放置，小物品随手可取"
+    "design_note": "束口开口配前部抽绳，紫色包身偏轻快休闲",
+    "image_crop": [
+      256,
+      1,
+      256,
+      250
+    ],
+    "display_title": "骆驼 轻量休闲双肩背包 学生日常上课运动出行包"
   },
   {
     "id": 2,
@@ -296,7 +310,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "包面装饰克制，轮廓简洁，适合日常穿搭"
+    "design_note": "米色弧顶包型配整片前袋，外观干净",
+    "image_crop": [
+      512,
+      1,
+      256,
+      254
+    ],
+    "display_title": "波斯丹顿 清新校园双肩背包 学生上课日常休闲出行包"
   },
   {
     "id": 3,
@@ -395,7 +416,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "外袋与主仓分开放置，小物品随手可取"
+    "design_note": "抽绳开口的运动束口包，装取运动用品直接",
+    "image_crop": [
+      768,
+      1,
+      256,
+      253
+    ],
+    "display_title": "物兮物 休闲运动双肩背包 男女日常上课通勤出行包"
   },
   {
     "id": 4,
@@ -495,7 +523,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "背部可固定行李箱拉杆，出差转乘更方便"
+    "design_note": "浅蓝弧顶包身配多层前袋，偏校园日常",
+    "image_crop": [
+      0,
+      257,
+      256,
+      246
+    ],
+    "display_title": "361° 清新校园双肩背包 学生上课日常休闲出行包"
   },
   {
     "id": 5,
@@ -592,7 +627,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "翻盖与扣带细节，偏向复古休闲搭配"
+    "design_note": "深浅拼色与扣带外袋组合，复古细节明显",
+    "image_crop": [
+      256,
+      253,
+      256,
+      249
+    ],
+    "display_title": "CULTIVATOR 复古帆布双肩背包 日常上课通勤旅行书包"
   },
   {
     "id": 6,
@@ -691,7 +733,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "包面装饰克制，轮廓简洁，适合日常穿搭"
+    "design_note": "白色包面配直线前袋，视觉简洁",
+    "image_crop": [
+      512,
+      257,
+      256,
+      246
+    ],
+    "display_title": "留白轻行 清新校园双肩背包 学生上课日常休闲出行包"
   },
   {
     "id": 7,
@@ -790,7 +839,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "包面装饰克制，轮廓简洁，适合日常穿搭"
+    "design_note": "灰色立式前袋，适合清爽低调的日常搭配",
+    "image_crop": [
+      0,
+      759,
+      256,
+      246
+    ],
+    "display_title": "晴空日常 清新校园双肩背包 学生上课日常休闲出行包"
   },
   {
     "id": 8,
@@ -892,7 +948,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "背部可固定行李箱拉杆，出差转乘更方便"
+    "design_note": "藏蓝方正包身，前部多个拉链分区",
+    "image_crop": [
+      768,
+      256,
+      256,
+      250
+    ],
+    "display_title": "城市有序 简约商务通勤双肩电脑包 男女上班出差日常背包"
   },
   {
     "id": 9,
@@ -989,7 +1052,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "翻盖与扣带细节，偏向复古休闲搭配"
+    "design_note": "绿色翻盖配棕色扣带，休闲复古感明显",
+    "image_crop": [
+      0,
+      505,
+      256,
+      252
+    ],
+    "display_title": "山野翻盖 复古双肩背包 日常上课通勤旅行书包"
   },
   {
     "id": 10,
@@ -1086,7 +1156,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "外袋与主仓分开放置，小物品随手可取"
+    "design_note": "粉色与奶油色拼接，圆弧轮廓柔和",
+    "image_crop": [
+      768,
+      508,
+      256,
+      249
+    ],
+    "display_title": "海岸拼色 清新校园双肩背包 学生上课日常休闲出行包"
   },
   {
     "id": 11,
@@ -1186,7 +1263,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "多点扣带结构，适合把户外装备分区固定"
+    "design_note": "宝蓝包身配分层前袋，运动感鲜明",
+    "image_crop": [
+      768,
+      1256,
+      256,
+      279
+    ],
+    "display_title": "周末远行 户外徒步登山双肩背包 男女运动旅行装备收纳包"
   },
   {
     "id": 12,
@@ -1288,7 +1372,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "背部可固定行李箱拉杆，出差转乘更方便"
+    "design_note": "黑色方正包身，前部纵向与横向拉链便于分区",
+    "image_crop": [
+      256,
+      504,
+      256,
+      253
+    ],
+    "display_title": "雨巷卷口 简约商务通勤双肩电脑包 男女上班出差日常背包"
   },
   {
     "id": 13,
@@ -1386,7 +1477,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "包面装饰克制，轮廓简洁，适合日常穿搭"
+    "design_note": "灰色前片有分层线条，收纳位置一眼可见",
+    "image_crop": [
+      512,
+      1007,
+      256,
+      254
+    ],
+    "display_title": "布谷收纳 简约日常双肩背包 男女学生上课通勤休闲书包"
   },
   {
     "id": 14,
@@ -1482,7 +1580,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "翻盖与扣带细节，偏向复古休闲搭配"
+    "design_note": "酒红色小巧弧顶包型，适合轻装出门",
+    "image_crop": [
+      512,
+      1263,
+      256,
+      272
+    ],
+    "display_title": "轻羽两用 复古双肩背包 日常上课通勤旅行书包"
   },
   {
     "id": 15,
@@ -1580,7 +1685,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "外袋与主仓分开放置，小物品随手可取"
+    "design_note": "青绿色包身配交叉抽绳，外观偏运动休闲",
+    "image_crop": [
+      768,
+      759,
+      256,
+      247
+    ],
+    "display_title": "极简小方 休闲运动双肩背包 男女日常上课通勤出行包"
   },
   {
     "id": 16,
@@ -1678,7 +1790,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "卷口闭合结构，主仓开口利落"
+    "design_note": "绿色卷口配中央扣带，闭合后轮廓整洁",
+    "image_crop": [
+      256,
+      1254,
+      256,
+      281
+    ],
+    "display_title": "林间束口 复古双肩背包 日常上课通勤旅行书包"
   },
   {
     "id": 17,
@@ -1777,7 +1896,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "多点扣带结构，适合把户外装备分区固定"
+    "design_note": "绿色徒步包配侧部压缩带和腰部连接结构",
+    "image_crop": [
+      256,
+      1000,
+      256,
+      252
+    ],
+    "display_title": "橘野徒步 户外徒步登山双肩背包 男女运动旅行装备收纳包"
   },
   {
     "id": 18,
@@ -1879,7 +2005,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "背部可固定行李箱拉杆，出差转乘更方便"
+    "design_note": "藏蓝长方包型配侧提手，出差携带方式灵活",
+    "image_crop": [
+      512,
+      754,
+      256,
+      251
+    ],
+    "display_title": "墨线职场 简约商务通勤双肩电脑包 男女上班出差日常背包"
   },
   {
     "id": 19,
@@ -1977,7 +2110,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "外袋与主仓分开放置，小物品随手可取"
+    "design_note": "橙色小型圆弧包身，前袋与主仓分开",
+    "image_crop": [
+      256,
+      759,
+      256,
+      239
+    ],
+    "display_title": "轻橙出游 休闲运动双肩背包 男女日常上课通勤出行包"
   },
   {
     "id": 20,
@@ -2077,7 +2217,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "背部可固定行李箱拉杆，出差转乘更方便"
+    "design_note": "米白与浅蓝拼色，校园穿搭有清爽层次",
+    "image_crop": [
+      0,
+      1007,
+      256,
+      245
+    ],
+    "display_title": "云白校园 清新校园双肩背包 学生上课日常休闲出行包"
   },
   {
     "id": 21,
@@ -2173,7 +2320,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "翻盖与扣带细节，偏向复古休闲搭配"
+    "design_note": "米色翻盖配双扣带，帆布外观偏复古",
+    "image_crop": [
+      0,
+      1254,
+      256,
+      281
+    ],
+    "display_title": "青岚帆布 复古双肩背包 日常上课通勤旅行书包"
   },
   {
     "id": 22,
@@ -2272,7 +2426,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "包面装饰克制，轮廓简洁，适合日常穿搭"
+    "design_note": "浅蓝包身配整片前袋，线条简洁清爽",
+    "image_crop": [
+      0,
+      1,
+      256,
+      255
+    ],
+    "display_title": "晴海 轻量双肩电脑背包 清新简约学生上课日常通勤包"
   },
   {
     "id": 23,
@@ -2369,7 +2530,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "弧形袋盖和波浪前袋，细节偏柔和可爱"
+    "design_note": "弧形袋盖与波浪边前袋，细节柔和可爱",
+    "image_crop": [
+      256,
+      1,
+      256,
+      249
+    ],
+    "display_title": "泡泡弧 清新校园双肩背包 学生上课日常休闲出行包"
   },
   {
     "id": 24,
@@ -2469,7 +2637,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "背部可固定行李箱拉杆，出差转乘更方便"
+    "design_note": "藏蓝窄长包型配纵向前拉链，外观利落",
+    "image_crop": [
+      512,
+      1,
+      256,
+      252
+    ],
+    "display_title": "深潮 简约商务通勤双肩电脑包 男女上班出差日常背包"
   },
   {
     "id": 25,
@@ -2568,7 +2743,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "卷口闭合结构，主仓开口利落"
+    "design_note": "宝蓝卷口配前部扣带，视觉有机能感",
+    "image_crop": [
+      768,
+      1,
+      256,
+      249
+    ],
+    "display_title": "雨际 机能通勤双肩电脑包 男女日常上班旅行背包"
   },
   {
     "id": 26,
@@ -2665,7 +2847,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "外袋与主仓分开放置，小物品随手可取"
+    "design_note": "粉色圆弧包型配扁平前袋，日常搭配柔和",
+    "image_crop": [
+      0,
+      258,
+      256,
+      236
+    ],
+    "display_title": "桃雾 清新校园双肩背包 学生上课日常休闲出行包"
   },
   {
     "id": 27,
@@ -2762,7 +2951,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "外袋与主仓分开放置，小物品随手可取"
+    "design_note": "奶油色与粉色拼接，方形包身配手提环",
+    "image_crop": [
+      256,
+      252,
+      256,
+      241
+    ],
+    "display_title": "奶桃 清新校园双肩背包 学生上课日常休闲出行包"
   },
   {
     "id": 28,
@@ -2861,7 +3057,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "背部可固定行李箱拉杆，出差转乘更方便"
+    "design_note": "淡紫色圆弧小包型，装饰克制",
+    "image_crop": [
+      512,
+      255,
+      256,
+      241
+    ],
+    "display_title": "芋圆 清新校园双肩背包 学生上课日常休闲出行包"
   },
   {
     "id": 29,
@@ -2960,7 +3163,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "包面装饰克制，轮廓简洁，适合日常穿搭"
+    "design_note": "米色方形包身配双手提环，手提和双肩背切换方便",
+    "image_crop": [
+      768,
+      252,
+      256,
+      245
+    ],
+    "display_title": "奶油 清新校园双肩背包 学生上课日常休闲出行包"
   },
   {
     "id": 30,
@@ -3057,7 +3267,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "外袋与主仓分开放置，小物品随手可取"
+    "design_note": "黑色多扣带与立体外袋，机能细节集中",
+    "image_crop": [
+      0,
+      496,
+      256,
+      255
+    ],
+    "display_title": "夜巡 机能通勤双肩电脑包 男女日常上班旅行背包"
   },
   {
     "id": 31,
@@ -3158,7 +3375,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "背部可固定行李箱拉杆，出差转乘更方便"
+    "design_note": "深灰黑色方形包身，前袋线条整齐",
+    "image_crop": [
+      256,
+      495,
+      256,
+      255
+    ],
+    "display_title": "墨页 简约商务通勤双肩电脑包 男女上班出差日常背包"
   },
   {
     "id": 32,
@@ -3259,7 +3483,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "卷口闭合结构，主仓开口利落"
+    "design_note": "黑色卷口与外部扣带，造型利落",
+    "image_crop": [
+      512,
+      498,
+      256,
+      249
+    ],
+    "display_title": "暗流 机能通勤双肩电脑包 男女日常上班旅行背包"
   },
   {
     "id": 33,
@@ -3357,7 +3588,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "包面装饰克制，轮廓简洁，适合日常穿搭"
+    "design_note": "黑色弧顶包型配单个前袋，外观简单",
+    "image_crop": [
+      768,
+      499,
+      256,
+      248
+    ],
+    "display_title": "黑羽 简约日常双肩背包 男女学生上课通勤休闲书包"
   },
   {
     "id": 34,
@@ -3454,7 +3692,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "翻盖与扣带细节，偏向复古休闲搭配"
+    "design_note": "绿色帆布翻盖配棕色扣带，偏复古休闲",
+    "image_crop": [
+      0,
+      753,
+      256,
+      248
+    ],
+    "display_title": "苔原 复古帆布双肩背包 日常上课通勤旅行书包"
   },
   {
     "id": 35,
@@ -3553,7 +3798,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "包面装饰克制，轮廓简洁，适合日常穿搭"
+    "design_note": "米色圆弧帆布包型，前袋拿取随手小物方便",
+    "image_crop": [
+      256,
+      752,
+      256,
+      247
+    ],
+    "display_title": "砂砾 复古帆布双肩背包 日常上课通勤旅行书包"
   },
   {
     "id": 36,
@@ -3652,7 +3904,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "手提与肩背结构，开口较大，取放书本方便"
+    "design_note": "米白敞口托特，长提带配前部插袋",
+    "image_crop": [
+      512,
+      749,
+      256,
+      252
+    ],
+    "display_title": "纸云 轻便休闲托特包 日常通勤手提单肩随身包"
   },
   {
     "id": 37,
@@ -3752,7 +4011,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "手提与肩背结构，开口较大，取放书本方便"
+    "design_note": "灰褐色拉链托特，方正轮廓适合通勤",
+    "image_crop": [
+      768,
+      749,
+      256,
+      254
+    ],
+    "display_title": "格序 通勤电脑托特包 日常上班手提单肩两用收纳包"
   },
   {
     "id": 38,
@@ -3851,7 +4117,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "多点扣带结构，适合把户外装备分区固定"
+    "design_note": "绿色徒步包配多点扣带，户外装备可以分区固定",
+    "image_crop": [
+      0,
+      1003,
+      256,
+      263
+    ],
+    "display_title": "山径 户外徒步登山双肩背包 男女运动旅行装备收纳包"
   },
   {
     "id": 39,
@@ -3949,7 +4222,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "多点扣带结构，适合把户外装备分区固定"
+    "design_note": "宝蓝徒步包配腰带和侧部压缩结构",
+    "image_crop": [
+      256,
+      1001,
+      256,
+      285
+    ],
+    "display_title": "远峰 户外徒步登山双肩背包 男女运动旅行装备收纳包"
   },
   {
     "id": 40,
@@ -4049,7 +4329,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "多点扣带结构，适合把户外装备分区固定"
+    "design_note": "橙色登山包配多点外部固定结构",
+    "image_crop": [
+      512,
+      1003,
+      256,
+      254
+    ],
+    "display_title": "赤岩 户外徒步登山双肩背包 男女运动旅行装备收纳包"
   },
   {
     "id": 41,
@@ -4151,7 +4438,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "卷口闭合结构，主仓开口利落"
+    "design_note": "灰色卷口包配交叉抽绳，闭合结构偏户外",
+    "image_crop": [
+      768,
+      1005,
+      256,
+      252
+    ],
+    "display_title": "雨盾 户外徒步登山双肩背包 男女运动旅行装备收纳包"
   },
   {
     "id": 42,
@@ -4250,7 +4544,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "小巧斜挎轮廓，适合手机、钥匙和钱包随行"
+    "design_note": "黑色月牙斜挎轮廓，轻装出街贴身携带",
+    "image_crop": [
+      0,
+      1268,
+      256,
+      267
+    ],
+    "display_title": "月弧 简约休闲斜挎小包 日常出街旅行随身单肩包"
   },
   {
     "id": 43,
@@ -4349,7 +4650,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "小巧斜挎轮廓，适合手机、钥匙和钱包随行"
+    "design_note": "米白方形斜挎小包，手机与钱包随身收好",
+    "image_crop": [
+      256,
+      1288,
+      256,
+      247
+    ],
+    "display_title": "方糖 简约休闲斜挎小包 日常出街旅行随身单肩包"
   },
   {
     "id": 44,
@@ -4449,7 +4757,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "斜向单肩结构，随身物品放在身前容易拿取"
+    "design_note": "灰色斜向胸包，主袋与前袋分开放置",
+    "image_crop": [
+      512,
+      1259,
+      256,
+      276
+    ],
+    "display_title": "灰隼 休闲运动胸包 日常出街随身单肩斜挎收纳包"
   },
   {
     "id": 45,
@@ -4548,7 +4863,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "斜向单肩结构，随身物品放在身前容易拿取"
+    "design_note": "紫色三角轮廓胸包，随身携带有运动感",
+    "image_crop": [
+      768,
+      1259,
+      256,
+      276
+    ],
+    "display_title": "紫电 休闲运动胸包 日常出街随身单肩斜挎收纳包"
   },
   {
     "id": 46,
@@ -4648,7 +4970,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "包面装饰克制，轮廓简洁，适合日常穿搭"
+    "design_note": "冰蓝弧形包面配简洁拉链，配色清爽",
+    "image_crop": [
+      0,
+      1,
+      256,
+      257
+    ],
+    "display_title": "冰川 清新简约双肩电脑背包 学生上课日常通勤包"
   },
   {
     "id": 47,
@@ -4746,7 +5075,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "包面装饰克制，轮廓简洁，适合日常穿搭"
+    "design_note": "藏蓝双层前袋与圆弧包顶，偏经典校园外观",
+    "image_crop": [
+      256,
+      1,
+      256,
+      252
+    ],
+    "display_title": "蓝鲸 简约日常双肩背包 男女学生上课通勤休闲书包"
   },
   {
     "id": 48,
@@ -4847,7 +5183,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "背部可固定行李箱拉杆，出差转乘更方便"
+    "design_note": "薄荷绿翻盖配中央扣带，清新且有层次",
+    "image_crop": [
+      512,
+      1,
+      256,
+      252
+    ],
+    "display_title": "海盐 清新简约双肩电脑背包 学生上课日常通勤包"
   },
   {
     "id": 49,
@@ -4948,7 +5291,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "背部可固定行李箱拉杆，出差转乘更方便"
+    "design_note": "雾蓝方正包身配侧扣带，电脑通勤轮廓利落",
+    "image_crop": [
+      768,
+      1,
+      256,
+      253
+    ],
+    "display_title": "雾港 简约商务通勤双肩电脑包 男女上班出差日常背包"
   },
   {
     "id": 50,
@@ -5045,7 +5395,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "外袋与主仓分开放置，小物品随手可取"
+    "design_note": "粉色圆形前袋，小巧轮廓有柔和细节",
+    "image_crop": [
+      0,
+      260,
+      256,
+      237
+    ],
+    "display_title": "桃心 清新校园双肩背包 学生上课日常休闲出行包"
   },
   {
     "id": 51,
@@ -5144,7 +5501,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "包面装饰克制，轮廓简洁，适合日常穿搭"
+    "design_note": "淡紫包身配斜向前袋，线条简单但有变化",
+    "image_crop": [
+      256,
+      255,
+      256,
+      240
+    ],
+    "display_title": "紫岚 清新校园双肩背包 学生上课日常休闲出行包"
   },
   {
     "id": 52,
@@ -5242,7 +5606,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "背部可固定行李箱拉杆，出差转乘更方便"
+    "design_note": "奶油白与浅黄拼接，前袋和主仓颜色分明",
+    "image_crop": [
+      512,
+      255,
+      256,
+      247
+    ],
+    "display_title": "柠云 清新校园双肩背包 学生上课日常休闲出行包"
   },
   {
     "id": 53,
@@ -5341,7 +5712,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "包面装饰克制，轮廓简洁，适合日常穿搭"
+    "design_note": "白色窄身包型配弧形拉链，外观轻巧",
+    "image_crop": [
+      768,
+      256,
+      256,
+      245
+    ],
+    "display_title": "白屿 清新简约双肩电脑背包 学生上课日常通勤包"
   },
   {
     "id": 54,
@@ -5437,7 +5815,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "斜向单肩结构，随身物品放在身前容易拿取"
+    "design_note": "黑色单肩斜向结构，前部纵向拉链好辨认",
+    "image_crop": [
+      0,
+      499,
+      256,
+      257
+    ],
+    "display_title": "夜翼 休闲运动胸包 日常出街随身单肩斜挎收纳包"
   },
   {
     "id": 55,
@@ -5538,7 +5923,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "背部可固定行李箱拉杆，出差转乘更方便"
+    "design_note": "黑色方形包身配侧面压缩带，偏差旅用途",
+    "image_crop": [
+      256,
+      497,
+      256,
+      261
+    ],
+    "display_title": "行程 简约商务通勤双肩电脑包 男女上班出差日常背包"
   },
   {
     "id": 56,
@@ -5639,7 +6031,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "卷口闭合结构，主仓开口利落"
+    "design_note": "灰色卷口配中央扣带，包面装饰克制",
+    "image_crop": [
+      512,
+      504,
+      256,
+      248
+    ],
+    "display_title": "层云 机能通勤双肩电脑包 男女日常上班旅行背包"
   },
   {
     "id": 57,
@@ -5737,7 +6136,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "包面装饰克制，轮廓简洁，适合日常穿搭"
+    "design_note": "深绿色圆弧包型配单个前袋，适合低调日常",
+    "image_crop": [
+      768,
+      503,
+      256,
+      248
+    ],
+    "display_title": "青墨 简约日常双肩背包 男女学生上课通勤休闲书包"
   },
   {
     "id": 58,
@@ -5834,7 +6240,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "卷口闭合结构，主仓开口利落"
+    "design_note": "绿色卷口配棕色带饰，复古休闲感明显",
+    "image_crop": [
+      0,
+      758,
+      256,
+      234
+    ],
+    "display_title": "松野 复古帆布双肩背包 日常上课通勤旅行书包"
   },
   {
     "id": 59,
@@ -5931,7 +6344,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "翻盖与扣带细节，偏向复古休闲搭配"
+    "design_note": "米色翻盖配棕色双扣，外观有层次",
+    "image_crop": [
+      256,
+      760,
+      256,
+      231
+    ],
+    "display_title": "旧巷 复古帆布双肩背包 日常上课通勤旅行书包"
   },
   {
     "id": 60,
@@ -6031,7 +6451,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "手提与肩背结构，开口较大，取放书本方便"
+    "design_note": "棕米色长提带托特，书本取放直接",
+    "image_crop": [
+      512,
+      754,
+      256,
+      248
+    ],
+    "display_title": "麦田 通勤电脑托特包 日常上班手提单肩两用收纳包"
   },
   {
     "id": 61,
@@ -6132,7 +6559,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "手提与肩背结构，开口较大，取放书本方便"
+    "design_note": "黑色拉链电脑托特，手提肩背兼顾通勤",
+    "image_crop": [
+      768,
+      753,
+      256,
+      244
+    ],
+    "display_title": "墨格 通勤电脑托特包 日常上班手提单肩两用收纳包"
   },
   {
     "id": 62,
@@ -6230,7 +6664,14 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "多点扣带结构，适合把户外装备分区固定"
+    "design_note": "姜黄色徒步包配腰带与侧扣，户外识别度高",
+    "image_crop": [
+      0,
+      994,
+      256,
+      270
+    ],
+    "display_title": "金岚 户外徒步登山双肩背包 男女运动旅行装备收纳包"
   },
   {
     "id": 63,
@@ -6329,6 +6770,13 @@
     "attribute_note": "",
     "parameter_note": "",
     "demo_parameters": [],
-    "design_note": "多点扣带结构，适合把户外装备分区固定"
+    "design_note": "青绿色徒步包配交叉抽绳和侧部收纳",
+    "image_crop": [
+      256,
+      993,
+      256,
+      272
+    ],
+    "display_title": "碧岭 户外徒步登山双肩背包 男女运动旅行装备收纳包"
   }
 ]
