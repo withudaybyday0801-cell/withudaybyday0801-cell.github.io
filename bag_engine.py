@@ -5,6 +5,7 @@ optional wording. Model output cannot change the selected SKU set or catalog fac
 """
 import json,re,time,math,hashlib,difflib
 from pathlib import Path
+import product_questions as pq
 
 AESTHETICS=['清新少女','酷感机能','极简','复古','运动感','商务','活力撞色']
 FEATURES=['宽肩带','电脑隔层','胸扣','行李箱插带','防盗口袋','水杯侧袋','背部透气','少分区']
@@ -37,7 +38,7 @@ updates可用：scene(校园/通勤/旅行/休闲/运动)、gender、budget(元)
 风格：清新少女、酷感机能、极简、复古、运动感、商务、活力撞色。女生不等于少女/粉色/小包。普通上课、校园日常、通勤、逛街不推断登山包；酷感或机能风不等于户外活动。用户从徒步改为日常时删除旧户外品类。功能：宽肩带、电脑隔层、胸扣、行李箱插带、防盗口袋、水杯侧袋、背部透气、少分区。外观简单是极简；找东西方便不翻多个隔层是少分区。
 明确数值才设上限：轻便/轻一点只设priority=轻便，不凭空设600g。宽肩带是结构，不保证不累。泛称防水设待确认；短时水滴设防泼水，短时小雨设日常防雨，持续淋雨且普通防泼水不够设有防水证明。
 删除要求必须用remove：预算不限删除budget，颜色随意删除color和excluded_colors，不带电脑了删除laptop、needs_laptop、protection并从features移除电脑隔层。取消防水删除water和water_need；不要求宽肩带了只移除features中的宽肩带，不能把其他功能清空。修改颜色是替换旧颜色，预算提高到300是替换旧预算。
-用户推荐新商品时intent=recommend，不沿用上一轮analysis/compare。只问这款多重、缺点、评价是analysis；这两款/哪个更轻是compare。问候、感谢、知识问题是chat。target_ids仅可来自提供目录，指代不明时保留空数组，不猜另一款。
+用户推荐新商品时intent=recommend，不沿用上一轮analysis/compare。消费者问防水、肩带宽度、勒肩、闷汗、收纳、尺寸、拉链、反光等具体功能时是analysis，先回答问题本身，不改选品条件、不重复整段介绍。明确分析商品时，商品名里的颜色、风格不能变成新的筛选要求。只问这款多重、缺点、评价是analysis；这两款/哪个更轻是compare。问候、感谢、知识问题是chat。target_ids仅可来自提供目录，指代不明时保留空数组，不猜另一款。
 例：当前黑色预算200，用户“改成蓝色其他不变”→updates={"color":"蓝色"}。
 例：当前laptop16、needs_laptop真、scene通勤，用户“周末出门，不带电脑了”→updates={"scene":"休闲"},remove=["laptop","needs_laptop","protection"],remove_features=["电脑隔层"]。
 例：当前少女、粉色，用户“不要少女风了，换酷酷的，不限颜色”→updates={"aesthetics":["酷感机能"]},remove=["color","excluded_colors"],remove_aesthetics=["清新少女"]。
@@ -61,7 +62,7 @@ def load_catalog(root):
    key=r.get('sku') or r['url']
    if key in seen:continue
    seen.add(key)
-   p=dict(name=r['name'][:150],brand=r.get('brand','商品资料'),family=r.get('family',key),sku=r.get('sku',key),kind='provided',simulated=False,photo=None,photo_sheet=None,image_url='',url=r['url'],price=None,weight=None,capacity=None,laptop=None,dimensions='',material='',color='',color_label='',style='',style_tags=[],aesthetic_tags=[],categories=[],scene=[],feature_flags={},water_protection=None,water=None,storage=None,computer_padding=None,rating=None,sales=None,review_count=None,reviews=[],advantages=[],limits=[],source=r.get('source','录入商品资料'),service_tags=[],shop_name=r.get('shop_name',r.get('brand','商品店铺')),shipping='',stock=None,variants=[])
+   p=dict(name=r['name'][:150],brand=r.get('brand','商品资料'),family=r.get('family',key),sku=r.get('sku',key),kind='provided',simulated=False,photo=None,photo_sheet=None,image_url='',url=r['url'],price=None,weight=None,capacity=None,laptop=None,dimensions='',material='',color='',color_label='',style='',style_tags=[],aesthetic_tags=[],categories=[],scene=[],feature_flags={},water_protection=None,water=None,storage=None,computer_padding=None,rating=None,sales=None,review_count=None,reviews=[],advantages=[],limits=[],source=r.get('source','录入商品资料'),service_tags=[],shop_name=r.get('shop_name',r.get('brand','商品店铺')),shipping='',stock=None,variants=[],attributes={},image_views={})
    for k,v in r.items():
     if k in p and k not in ('id','simulated','kind'):p[k]=v
    p['image_url']=p['image_url'] if str(p['image_url']).startswith('https://') else ''
@@ -212,6 +213,10 @@ def local_patch(text,current=None):
  # Direct follow-up answers like "蓝色" are edits, not an analysis of the old SKU.
  if edited and not compare and not re.search(r'这款|这两|这个商品|评价|缺点|不足|多少|多重|好看吗',t):intent='recommend'
  if re.search(r'评价|评论',t):kind='reviews'
+ if pq.is_overview(t):
+  intent='analysis';updates={};remove=set();rf=set();ra=set();kind='general';edited=False
+ elif pq.asks_product_question(t) and not compare:
+  intent='analysis';kind='specific';updates={};remove=set();rf=set();ra=set();edited=False
  return dict(intent=intent,updates=clean(updates),remove=list(remove),remove_features=list(rf),remove_aesthetics=list(ra),target_ids=[],question_kind=kind,skip=list(skip),explicit=edited)
 
 
@@ -377,6 +382,7 @@ def kind_from_text(text):
 
 
 def item_answer(p,kind,text,c):
+ if kind=='specific':return pq.answer(p,text)
  if kind=='weight':return f"【空包{number(p.get('weight'),'g')}】。"+(f"容量{number(p.get('capacity'),'L')}，适合日常轻装携带。" if p.get('capacity') is not None else '')
  if kind=='capacity':return f"容量是【{number(p.get('capacity'),'L')}】，外形尺寸{p.get('dimensions') or '资料未提供'}。"
  if kind=='cons':return '主要需要留意的是：'+ '；'.join(p.get('limits',[])[:2])+'。'
@@ -391,13 +397,14 @@ def item_answer(p,kind,text,c):
    return f"【可以用于日常带电脑】。标称{number(p['laptop'],'英寸')}{pad}，空包{number(p.get('weight'),'g')}，{number(p.get('capacity'),'L')}容量。电脑外壳尺寸仍需和内仓核对。"
   return '这款没有独立缓冲电脑隔层，平时装随身物品更合适；带电脑时需要额外内胆保护。'
  if kind=='pros':return '主要优点是：'+'；'.join(p.get('advantages',[])[:3])+'。'
- return recommendation_text(p,c)+'需要留意：'+'；'.join(p.get('limits',[])[:1])+'。'
+ return '【包型与用途】'+p.get('design_note','')+'。\n【容量与携带】'+str(p.get('capacity','未提供'))+'L，空包'+str(p.get('weight','未提供'))+'g。\n【主要特点】'+'；'.join(p.get('advantages',[])[:3])+'。\n【使用时留意】'+'；'.join(p.get('limits',[])[:2])+'。'
 
 
 def blueprint(intent,products,primary,backup,c,text,kind='general'):
  if intent=='recommend':
   if not primary:return dict(opening='这些要求放在一起，目前没有对应的款式。',items=[],closing='')
-  if c.get('needs_laptop') or c.get('laptop') or c.get('scene')=='通勤':opening='每天带电脑，主要看【电脑仓的缓冲和空包重量】。这几款各有侧重，可以从你平时带的东西来选。'
+  if colors_in(text) or re.search(r'简约|少女|酷|风格|好看|撞色',text):opening='按你这次说的颜色和风格，挑了下面几款；各自的包型和收纳特点可以直接看。'
+  elif c.get('needs_laptop') or c.get('laptop') or c.get('scene')=='通勤':opening='每天带电脑，主要看【电脑仓的缓冲和空包重量】。这几款各有侧重，可以从你平时带的东西来选。'
   elif c.get('scene')=='校园':opening='上课和校园日常，先看【书本收纳和空包重量】。这几款适合把书本和随身物品一起带走。'
   elif c.get('scene')=='休闲':opening='平时出门，主要看【物品好拿、携带方便】。下面这几款各有自己的日常用法。'
   elif c.get('color'):opening=f"这几款{c['color']}背包可以先看看，包型和收纳各有特点。"
@@ -469,7 +476,7 @@ class Engine:
   return combined,'model+explicit'
  def validated_wording(self,plan,context,deadline):
   if not plan['items']:return plan,False
-  fact_keys=('id','name','price','weight','capacity','laptop','color','color_label','material','computer_padding','feature_flags','shoulder_width_cm','water_protection','water_test','rating','sales','advantages','design_note','display_title','scene','categories')
+  fact_keys=('id','name','price','weight','capacity','laptop','color','color_label','material','computer_padding','feature_flags','shoulder_width_cm','water_protection','water_test','rating','sales','advantages','design_note','display_title','scene','categories','attributes')
   writer_facts=[{k:p.get(k) for k in fact_keys} for p in context]
   try:raw=self.completion([{'role':'system','content':WRITER},{'role':'user','content':json.dumps({'blueprint':plan,'facts':writer_facts},ensure_ascii=False)}],deadline,True,2800)
   except Exception as error:
@@ -529,10 +536,14 @@ class Engine:
   if d.get('start_selection') or generic_entry or restart:
    k,q,choices=followup({},[],[])
    return dict(reply='好呀，先说说平时怎么用，我再帮你挑。',intent='recommend',conditions={},primary_ids=[],backup_ids=[],pending_ids=[],ids=[],product_texts={},question=q,choices=choices,suggestions=[],asked=[k],skip=[],understanding_source='entry',wording_source='catalog')
+  if not targets:
+   named=[p['id'] for p in self.goods if p['name'] in text]
+   if len(named)==1:targets=named
   local=local_patch(text,c)
   action=d.get('action','auto')
-  if targets and action in ('analysis','compare') and local['intent']!='recommend':
+  if targets and action in ('analysis','compare'):
    patch=local;patch['intent']=action;source='selected-product'
+  elif pq.asks_product_question(text) or pq.is_overview(text):patch=local;source='question-first'
   else:patch,source=self.interpret(text,c,history,targets,visible,deadline)
   intent=patch.get('intent','chat')
   if intent=='recommend':c=merge_state(c,patch)
@@ -540,6 +551,8 @@ class Engine:
   if intent=='recommend':skip=list(dict.fromkeys(skip+patch.get('skip',[])+patch.get('remove',[])))
   found=self.ids(patch.get('target_ids',[]))
   if found and not targets:targets=found
+  if intent=='analysis' and not targets and len(visible)>1:
+   return dict(reply='你想问的是哪一款？点商品卡上的“分析”，或在购物车里选“就这款提问”，我就针对那款回答。',intent='analysis',conditions=c,primary_ids=[],backup_ids=[],pending_ids=[],ids=[],product_texts={},question='',choices=[],suggestions=[],asked=asked,skip=skip,understanding_source='ambiguous-product',wording_source='catalog-grounded')
   if intent in ('analysis','compare') and not targets:targets=visible[:3]
   if intent=='compare' and len(targets)<2:raise ValueError('请先选择两款商品，或把想比较的商品带进聊天框。')
   if intent=='analysis' and not targets:raise ValueError('请先选择想问的商品，或在购物车中点“就这款提问”。')
@@ -571,7 +584,7 @@ class Engine:
    return dict(reply=answer.replace('**',''),intent=intent,conditions=c,ids=[],primary_ids=[],backup_ids=[],pending_ids=[],product_texts={},question='',choices=[],suggestions=[],asked=asked,skip=skip,understanding_source=source,wording_source='model')
   plan=blueprint(intent,focused,primary,backup,analysis_conditions,text,kind)
   # Read-only factual questions use exact facts instead of asking a model to recalculate.
-  if source=='explicit-model-unavailable' or kind in ('weight','capacity','reviews','cons') and intent in ('analysis','compare'):draft,rewritten=plan,False
+  if pq.is_overview(text) or source=='explicit-model-unavailable' or kind in ('specific','weight','capacity','reviews','cons') and intent in ('analysis','compare'):draft,rewritten=plan,False
   else:
    if intent=='recommend' and backup:
     main_plan={**plan,'items':plan['items'][:len(primary)]}
