@@ -28,7 +28,7 @@ Render Web Service：
 
 ## 产品说明书
 
-- [对外产品说明书 PDF（含目录，3页）](docs/baodongni-product-manual.pdf)
+- [对外产品说明书 PDF（3页）](docs/baodongni-product-manual.pdf)
 - [网页版](docs/baodongni-product-manual.html) / [文字源稿](docs/baodongni-product-manual.md)
 
 ## 验收
