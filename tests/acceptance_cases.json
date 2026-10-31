@@ -1,0 +1,309 @@
+[
+  {
+    "id": 1,
+    "text": "请帮我推荐一款背包。",
+    "group": "1",
+    "expected_conditions": {},
+    "absent_conditions": [],
+    "expected_primary_count": null
+  },
+  {
+    "id": 2,
+    "text": "给我推荐几款蓝色的背包。",
+    "group": "2",
+    "expected_conditions": {
+      "color": "蓝色"
+    },
+    "absent_conditions": [],
+    "expected_primary_count": 5
+  },
+  {
+    "id": 3,
+    "text": "我喜欢少女感一点的背包，但不要粉色。",
+    "group": "3",
+    "expected_conditions": {
+      "aesthetics": [
+        "清新少女"
+      ],
+      "excluded_colors": [
+        "粉色"
+      ]
+    },
+    "absent_conditions": [],
+    "expected_primary_count": 5
+  },
+  {
+    "id": 4,
+    "text": "想要酷酷的机能风背包，不要太商务。",
+    "group": "4",
+    "expected_conditions": {
+      "aesthetics": [
+        "酷感机能"
+      ]
+    },
+    "absent_conditions": [],
+    "expected_primary_count": 5
+  },
+  {
+    "id": 5,
+    "text": "推荐一款简约的背包，外观不要有很多口袋和扣带。",
+    "group": "5",
+    "expected_conditions": {
+      "aesthetics": [
+        "极简"
+      ],
+      "features": [
+        "少分区"
+      ]
+    },
+    "absent_conditions": [],
+    "expected_primary_count": 5
+  },
+  {
+    "id": 6,
+    "text": "预算150元以内，平时上课装书用。",
+    "group": "6",
+    "expected_conditions": {
+      "budget": 150,
+      "scene": "校园"
+    },
+    "absent_conditions": [],
+    "expected_primary_count": 5
+  },
+  {
+    "id": 7,
+    "text": "每天通勤要带16英寸电脑，推荐几款合适的。",
+    "group": "7",
+    "expected_conditions": {
+      "laptop": 16,
+      "needs_laptop": true,
+      "scene": "通勤"
+    },
+    "absent_conditions": [],
+    "expected_primary_count": 5
+  },
+  {
+    "id": 8,
+    "text": "想要轻一点的，空包最好不超过450克。",
+    "group": "8",
+    "expected_conditions": {
+      "maxweight": 450,
+      "priority": "轻便"
+    },
+    "absent_conditions": [
+      "budget"
+    ],
+    "expected_primary_count": 5
+  },
+  {
+    "id": 9,
+    "text": "我要宽肩带的背包，每天装电脑和书。",
+    "group": "9",
+    "expected_conditions": {
+      "features": [
+        "宽肩带"
+      ],
+      "needs_laptop": true
+    },
+    "absent_conditions": [],
+    "expected_primary_count": 5
+  },
+  {
+    "id": 10,
+    "text": "我希望分区简单一点，不想每次找东西都翻好几个隔层。",
+    "group": "10",
+    "expected_conditions": {
+      "features": [
+        "少分区"
+      ]
+    },
+    "absent_conditions": [],
+    "expected_primary_count": 5
+  },
+  {
+    "id": 11,
+    "text": "我经常遇到小雨，想找能应付短时间小雨的背包。",
+    "group": "11",
+    "expected_conditions": {
+      "water_need": "日常防雨"
+    },
+    "absent_conditions": [],
+    "expected_primary_count": 5
+  },
+  {
+    "id": 12,
+    "text": "要能长时间淋雨的，普通防泼水不够。",
+    "group": "12",
+    "expected_conditions": {
+      "water_need": "有防水证明"
+    },
+    "absent_conditions": [],
+    "expected_primary_count": 5
+  },
+  {
+    "id": 13,
+    "text": "女生用，但不需要可爱风，想要黑色简约款。",
+    "group": "13",
+    "expected_conditions": {
+      "gender": "女生",
+      "color": "黑色",
+      "aesthetics": [
+        "极简"
+      ]
+    },
+    "absent_conditions": [],
+    "expected_primary_count": 5
+  },
+  {
+    "id": 14,
+    "text": "我想要蓝色、简约、能装16英寸电脑，预算200元以内。",
+    "group": "14",
+    "expected_conditions": {
+      "color": "蓝色",
+      "aesthetics": [
+        "极简"
+      ],
+      "laptop": 16,
+      "budget": 200
+    },
+    "absent_conditions": [],
+    "expected_primary_count": 5
+  },
+  {
+    "id": 15,
+    "text": "预算50元以内，要装16英寸电脑，还要适合长时间淋雨。",
+    "group": "15",
+    "expected_conditions": {
+      "budget": 50,
+      "laptop": 16,
+      "water_need": "有防水证明"
+    },
+    "absent_conditions": [],
+    "expected_primary_count": 0
+  },
+  {
+    "id": 16,
+    "text": "我想买一款蓝色背包，预算200元以内，上课用。",
+    "group": "color-change",
+    "expected_conditions": {
+      "color": "蓝色",
+      "budget": 200,
+      "scene": "校园"
+    },
+    "absent_conditions": [],
+    "expected_primary_count": 5
+  },
+  {
+    "id": 17,
+    "text": "颜色改成黑色，其他要求不变。",
+    "group": "color-change",
+    "expected_conditions": {
+      "color": "黑色",
+      "budget": 200,
+      "scene": "校园"
+    },
+    "absent_conditions": [],
+    "expected_primary_count": 5
+  },
+  {
+    "id": 18,
+    "text": "预算可以提高到300元。",
+    "group": "color-change",
+    "expected_conditions": {
+      "color": "黑色",
+      "budget": 300,
+      "scene": "校园"
+    },
+    "absent_conditions": [],
+    "expected_primary_count": 5
+  },
+  {
+    "id": 19,
+    "text": "每天带电脑通勤，想要分区多一点的背包。",
+    "group": "scene-change",
+    "expected_conditions": {
+      "needs_laptop": true,
+      "scene": "通勤",
+      "storage": true
+    },
+    "absent_conditions": [],
+    "expected_primary_count": 5
+  },
+  {
+    "id": 20,
+    "text": "其实主要是周末出门，不带电脑了，想轻便一点。",
+    "group": "scene-change",
+    "expected_conditions": {
+      "scene": "休闲",
+      "priority": "轻便"
+    },
+    "absent_conditions": [
+      "needs_laptop",
+      "laptop",
+      "protection"
+    ],
+    "expected_primary_count": 5
+  },
+  {
+    "id": 21,
+    "text": "这款空包多重，容量多大？",
+    "group": "21",
+    "expected_conditions": {},
+    "absent_conditions": [],
+    "expected_primary_count": null,
+    "action": "analysis",
+    "target_ids": [
+      2
+    ]
+  },
+  {
+    "id": 22,
+    "text": "这款最主要的缺点是什么？直接告诉我就行。",
+    "group": "22",
+    "expected_conditions": {},
+    "absent_conditions": [],
+    "expected_primary_count": null,
+    "action": "analysis",
+    "target_ids": [
+      2
+    ]
+  },
+  {
+    "id": 23,
+    "text": "评价里大家主要夸什么，又有哪些不满意的地方？",
+    "group": "23",
+    "expected_conditions": {},
+    "absent_conditions": [],
+    "expected_primary_count": null,
+    "action": "analysis",
+    "target_ids": [
+      2
+    ]
+  },
+  {
+    "id": 24,
+    "text": "这两款哪个更适合每天带电脑？选一个，并说明理由。",
+    "group": "24",
+    "expected_conditions": {},
+    "absent_conditions": [],
+    "expected_primary_count": null,
+    "action": "compare",
+    "target_ids": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": 25,
+    "text": "这两款哪个更轻？分别告诉我重量，相差多少克。",
+    "group": "25",
+    "expected_conditions": {},
+    "absent_conditions": [],
+    "expected_primary_count": null,
+    "action": "compare",
+    "target_ids": [
+      1,
+      2
+    ]
+  }
+]

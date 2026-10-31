@@ -1,0 +1,6334 @@
+[
+  {
+    "id": 0,
+    "sku": "BDN10-0001",
+    "family": "family-0001",
+    "name": "Mr.ace Homme 户外休闲旅行双肩包",
+    "brand": "Mr.ace",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 0,
+    "photo": 0,
+    "image_url": "",
+    "url": "",
+    "price": 239.2,
+    "weight": 780,
+    "capacity": 26,
+    "laptop": 15.6,
+    "dimensions": "43×30×17cm",
+    "material": "尼龙与织物拼接",
+    "color": "橙色",
+    "color_label": "橙色",
+    "variants": [
+      "橙色 / 标准款"
+    ],
+    "style": "运动",
+    "style_tags": [
+      "休闲",
+      "运动"
+    ],
+    "aesthetic_tags": [
+      "酷感机能",
+      "运动感"
+    ],
+    "categories": [
+      "户外登山包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤",
+      "旅行",
+      "运动"
+    ],
+    "feature_flags": {
+      "宽肩带": true,
+      "电脑隔层": true,
+      "胸扣": true,
+      "行李箱插带": true,
+      "防盗口袋": true,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": false
+    },
+    "shoulder_width_cm": 7.5,
+    "computer_padding": "basic",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": true,
+    "stock": 120,
+    "rating": 96.4,
+    "sales": 1800,
+    "review_count": 300,
+    "reviews": [
+      {
+        "text": "15.6英寸独立电脑隔层，书本与电脑分开放，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "橙色 / 标准款"
+      },
+      {
+        "text": "橙色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "橙色 / 标准款"
+      },
+      {
+        "text": "电脑隔层为基础缓冲，贵重设备建议加内胆包，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "橙色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "15.6英寸独立电脑隔层，书本与电脑分开放",
+      "7.5cm肩带，背部有透气网布",
+      "背部行李箱插带，出差可固定在拉杆上"
+    ],
+    "limits": [
+      "电脑隔层为基础缓冲，贵重设备建议加内胆包",
+      "包身装满后厚度会增加",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "Mr.ace箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "多点扣带结构，适合把户外装备分区固定"
+  },
+  {
+    "id": 1,
+    "sku": "BDN10-0002",
+    "family": "family-0002",
+    "name": "骆驼 户外斜挎双肩两用背包",
+    "brand": "骆驼",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 0,
+    "photo": 1,
+    "image_url": "",
+    "url": "",
+    "price": 62.1,
+    "weight": 296,
+    "capacity": 18,
+    "laptop": 13,
+    "dimensions": "39×27×13cm",
+    "material": "轻量聚酯纤维",
+    "color": "紫色",
+    "color_label": "紫色",
+    "variants": [
+      "紫色 / 标准款"
+    ],
+    "style": "运动",
+    "style_tags": [
+      "休闲",
+      "运动"
+    ],
+    "aesthetic_tags": [
+      "运动感"
+    ],
+    "categories": [
+      "休闲双肩包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤",
+      "运动"
+    ],
+    "feature_flags": {
+      "宽肩带": false,
+      "电脑隔层": true,
+      "胸扣": false,
+      "行李箱插带": false,
+      "防盗口袋": true,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": true
+    },
+    "shoulder_width_cm": 4.5,
+    "computer_padding": "basic",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": false,
+    "stock": 131,
+    "rating": 97.5,
+    "sales": 3539,
+    "review_count": 731,
+    "reviews": [
+      {
+        "text": "13英寸独立电脑隔层，书本与电脑分开放，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "紫色 / 标准款"
+      },
+      {
+        "text": "紫色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "紫色 / 标准款"
+      },
+      {
+        "text": "电脑隔层为基础缓冲，贵重设备建议加内胆包，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "紫色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "13英寸独立电脑隔层，书本与电脑分开放",
+      "4.5cm肩带，背部有透气网布",
+      "口袋数量少，拿取物品路径简单"
+    ],
+    "limits": [
+      "电脑隔层为基础缓冲，贵重设备建议加内胆包",
+      "浅色包面需要定期清洁",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "骆驼箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "外袋与主仓分开放置，小物品随手可取"
+  },
+  {
+    "id": 2,
+    "sku": "BDN10-0003",
+    "family": "family-0003",
+    "name": "波斯丹顿 休闲百搭双肩背包",
+    "brand": "波斯丹顿",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 0,
+    "photo": 2,
+    "image_url": "",
+    "url": "",
+    "price": 133.38,
+    "weight": 510,
+    "capacity": 21,
+    "laptop": 14,
+    "dimensions": "43×30×13cm",
+    "material": "聚酯纤维",
+    "color": "米色",
+    "color_label": "米色",
+    "variants": [
+      "米色 / 标准款"
+    ],
+    "style": "简约",
+    "style_tags": [
+      "休闲",
+      "简约"
+    ],
+    "aesthetic_tags": [
+      "清新少女",
+      "极简"
+    ],
+    "categories": [
+      "休闲双肩包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤"
+    ],
+    "feature_flags": {
+      "宽肩带": true,
+      "电脑隔层": true,
+      "胸扣": false,
+      "行李箱插带": false,
+      "防盗口袋": true,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": true
+    },
+    "shoulder_width_cm": 7.5,
+    "computer_padding": "basic",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": false,
+    "stock": 142,
+    "rating": 98.6,
+    "sales": 5278,
+    "review_count": 1162,
+    "reviews": [
+      {
+        "text": "14英寸独立电脑隔层，书本与电脑分开放，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "米色 / 标准款"
+      },
+      {
+        "text": "米色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "米色 / 标准款"
+      },
+      {
+        "text": "电脑隔层为基础缓冲，贵重设备建议加内胆包，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "米色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "14英寸独立电脑隔层，书本与电脑分开放",
+      "7.5cm肩带，背部有透气网布",
+      "口袋数量少，拿取物品路径简单"
+    ],
+    "limits": [
+      "电脑隔层为基础缓冲，贵重设备建议加内胆包",
+      "浅色包面需要定期清洁",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "波斯丹顿箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "包面装饰克制，轮廓简洁，适合日常穿搭"
+  },
+  {
+    "id": 3,
+    "sku": "BDN10-0004",
+    "family": "family-0004",
+    "name": "物兮物 FIFA 国际足联纪念款背包",
+    "brand": "物兮物",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 0,
+    "photo": 3,
+    "image_url": "",
+    "url": "",
+    "price": 57.2,
+    "weight": 230,
+    "capacity": 16,
+    "laptop": null,
+    "dimensions": "39×27×13cm",
+    "material": "尼龙织物",
+    "color": "粉色",
+    "color_label": "粉色",
+    "variants": [
+      "粉色 / 标准款"
+    ],
+    "style": "运动",
+    "style_tags": [
+      "休闲",
+      "运动"
+    ],
+    "aesthetic_tags": [
+      "活力撞色",
+      "运动感"
+    ],
+    "categories": [
+      "休闲双肩包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "运动"
+    ],
+    "feature_flags": {
+      "宽肩带": false,
+      "电脑隔层": false,
+      "胸扣": false,
+      "行李箱插带": false,
+      "防盗口袋": false,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": true
+    },
+    "shoulder_width_cm": 4.5,
+    "computer_padding": "none",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": false,
+    "stock": 153,
+    "rating": 96.4,
+    "sales": 7017,
+    "review_count": 1593,
+    "reviews": [
+      {
+        "text": "230g包身、16L容量，适合轻装随行，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "粉色 / 标准款"
+      },
+      {
+        "text": "粉色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "粉色 / 标准款"
+      },
+      {
+        "text": "没有独立缓冲电脑隔层，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "粉色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "230g包身、16L容量，适合轻装随行",
+      "4.5cm肩带，背部有透气网布",
+      "口袋数量少，拿取物品路径简单"
+    ],
+    "limits": [
+      "没有独立缓冲电脑隔层",
+      "容量偏小，大件衣物需要另作安排",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "物兮物箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "外袋与主仓分开放置，小物品随手可取"
+  },
+  {
+    "id": 4,
+    "sku": "BDN10-0005",
+    "family": "family-0005",
+    "name": "361° 韩系设计感双肩包",
+    "brand": "361°",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 0,
+    "photo": 4,
+    "image_url": "",
+    "url": "",
+    "price": 97.2,
+    "weight": 430,
+    "capacity": 22,
+    "laptop": 14,
+    "dimensions": "43×30×13cm",
+    "material": "聚酯纤维",
+    "color": "蓝色",
+    "color_label": "浅蓝",
+    "variants": [
+      "浅蓝 / 标准款"
+    ],
+    "style": "简约",
+    "style_tags": [
+      "休闲",
+      "简约"
+    ],
+    "aesthetic_tags": [
+      "清新少女",
+      "极简"
+    ],
+    "categories": [
+      "休闲双肩包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤"
+    ],
+    "feature_flags": {
+      "宽肩带": true,
+      "电脑隔层": true,
+      "胸扣": false,
+      "行李箱插带": true,
+      "防盗口袋": true,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": true
+    },
+    "shoulder_width_cm": 7.5,
+    "computer_padding": "basic",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": false,
+    "stock": 164,
+    "rating": 97.5,
+    "sales": 8756,
+    "review_count": 2024,
+    "reviews": [
+      {
+        "text": "14英寸独立电脑隔层，书本与电脑分开放，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "浅蓝 / 标准款"
+      },
+      {
+        "text": "浅蓝配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "浅蓝 / 标准款"
+      },
+      {
+        "text": "电脑隔层为基础缓冲，贵重设备建议加内胆包，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "浅蓝 / 标准款"
+      }
+    ],
+    "advantages": [
+      "14英寸独立电脑隔层，书本与电脑分开放",
+      "7.5cm肩带，背部有透气网布",
+      "背部行李箱插带，出差可固定在拉杆上",
+      "口袋数量少，拿取物品路径简单"
+    ],
+    "limits": [
+      "电脑隔层为基础缓冲，贵重设备建议加内胆包",
+      "浅色包面需要定期清洁",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "361°箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "背部可固定行李箱拉杆，出差转乘更方便"
+  },
+  {
+    "id": 5,
+    "sku": "BDN10-0006",
+    "family": "family-0006",
+    "name": "CULTIVATOR 原创撞色拼接双肩包",
+    "brand": "CULTIVATOR",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 0,
+    "photo": 5,
+    "image_url": "",
+    "url": "",
+    "price": 124.04,
+    "weight": 690,
+    "capacity": 25,
+    "laptop": 15.6,
+    "dimensions": "43×30×17cm",
+    "material": "帆布与拼接面料",
+    "color": "绿色",
+    "color_label": "绿色",
+    "variants": [
+      "绿色 / 标准款"
+    ],
+    "style": "休闲",
+    "style_tags": [
+      "休闲"
+    ],
+    "aesthetic_tags": [
+      "复古"
+    ],
+    "categories": [
+      "休闲双肩包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤",
+      "旅行"
+    ],
+    "feature_flags": {
+      "宽肩带": true,
+      "电脑隔层": true,
+      "胸扣": false,
+      "行李箱插带": false,
+      "防盗口袋": true,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": false
+    },
+    "shoulder_width_cm": 7.5,
+    "computer_padding": "basic",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": true,
+    "stock": 175,
+    "rating": 98.6,
+    "sales": 10495,
+    "review_count": 2455,
+    "reviews": [
+      {
+        "text": "15.6英寸独立电脑隔层，书本与电脑分开放，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "绿色 / 标准款"
+      },
+      {
+        "text": "绿色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "绿色 / 标准款"
+      },
+      {
+        "text": "电脑隔层为基础缓冲，贵重设备建议加内胆包，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "绿色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "15.6英寸独立电脑隔层，书本与电脑分开放",
+      "7.5cm肩带，背部有透气网布"
+    ],
+    "limits": [
+      "电脑隔层为基础缓冲，贵重设备建议加内胆包",
+      "包身装满后厚度会增加",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "CULTIVATOR箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "翻盖与扣带细节，偏向复古休闲搭配"
+  },
+  {
+    "id": 6,
+    "sku": "BDN10-0007",
+    "family": "family-0007",
+    "name": "留白轻行 双肩包",
+    "brand": "留白轻行",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 0,
+    "photo": 6,
+    "image_url": "",
+    "url": "",
+    "price": 159,
+    "weight": 410,
+    "capacity": 20,
+    "laptop": 14,
+    "dimensions": "43×30×13cm",
+    "material": "尼龙织物",
+    "color": "白色",
+    "color_label": "白色",
+    "variants": [
+      "白色 / 标准款"
+    ],
+    "style": "简约",
+    "style_tags": [
+      "休闲",
+      "简约"
+    ],
+    "aesthetic_tags": [
+      "清新少女",
+      "极简"
+    ],
+    "categories": [
+      "休闲双肩包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤"
+    ],
+    "feature_flags": {
+      "宽肩带": false,
+      "电脑隔层": true,
+      "胸扣": false,
+      "行李箱插带": false,
+      "防盗口袋": true,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": true
+    },
+    "shoulder_width_cm": 4.5,
+    "computer_padding": "basic",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": false,
+    "stock": 186,
+    "rating": 96.4,
+    "sales": 12234,
+    "review_count": 2886,
+    "reviews": [
+      {
+        "text": "14英寸独立电脑隔层，书本与电脑分开放，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "白色 / 标准款"
+      },
+      {
+        "text": "白色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "白色 / 标准款"
+      },
+      {
+        "text": "电脑隔层为基础缓冲，贵重设备建议加内胆包，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "白色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "14英寸独立电脑隔层，书本与电脑分开放",
+      "4.5cm肩带，背部有透气网布",
+      "口袋数量少，拿取物品路径简单"
+    ],
+    "limits": [
+      "电脑隔层为基础缓冲，贵重设备建议加内胆包",
+      "浅色包面需要定期清洁",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "留白轻行箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "包面装饰克制，轮廓简洁，适合日常穿搭"
+  },
+  {
+    "id": 7,
+    "sku": "BDN10-0008",
+    "family": "family-0008",
+    "name": "晴空日常 双肩包",
+    "brand": "晴空日常",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 0,
+    "photo": 12,
+    "image_url": "",
+    "url": "",
+    "price": 189,
+    "weight": 390,
+    "capacity": 21,
+    "laptop": 14,
+    "dimensions": "43×30×13cm",
+    "material": "耐磨聚酯纤维",
+    "color": "灰色",
+    "color_label": "灰色",
+    "variants": [
+      "灰色 / 标准款"
+    ],
+    "style": "简约",
+    "style_tags": [
+      "休闲",
+      "简约"
+    ],
+    "aesthetic_tags": [
+      "清新少女",
+      "极简"
+    ],
+    "categories": [
+      "休闲双肩包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤"
+    ],
+    "feature_flags": {
+      "宽肩带": false,
+      "电脑隔层": true,
+      "胸扣": false,
+      "行李箱插带": false,
+      "防盗口袋": true,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": true
+    },
+    "shoulder_width_cm": 4.5,
+    "computer_padding": "basic",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": false,
+    "stock": 197,
+    "rating": 97.5,
+    "sales": 13973,
+    "review_count": 3317,
+    "reviews": [
+      {
+        "text": "14英寸独立电脑隔层，书本与电脑分开放，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "灰色 / 标准款"
+      },
+      {
+        "text": "灰色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "灰色 / 标准款"
+      },
+      {
+        "text": "电脑隔层为基础缓冲，贵重设备建议加内胆包，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "灰色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "14英寸独立电脑隔层，书本与电脑分开放",
+      "4.5cm肩带，背部有透气网布",
+      "口袋数量少，拿取物品路径简单"
+    ],
+    "limits": [
+      "电脑隔层为基础缓冲，贵重设备建议加内胆包",
+      "包身装满后厚度会增加",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "晴空日常箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "包面装饰克制，轮廓简洁，适合日常穿搭"
+  },
+  {
+    "id": 8,
+    "sku": "BDN10-0009",
+    "family": "family-0009",
+    "name": "城市有序 双肩包",
+    "brand": "城市有序",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 0,
+    "photo": 7,
+    "image_url": "",
+    "url": "",
+    "price": 269,
+    "weight": 720,
+    "capacity": 25,
+    "laptop": 16,
+    "dimensions": "43×30×17cm",
+    "material": "耐磨聚酯纤维",
+    "color": "蓝色",
+    "color_label": "藏蓝",
+    "variants": [
+      "藏蓝 / 标准款"
+    ],
+    "style": "商务",
+    "style_tags": [
+      "商务",
+      "休闲",
+      "简约"
+    ],
+    "aesthetic_tags": [
+      "酷感机能",
+      "极简",
+      "商务"
+    ],
+    "categories": [
+      "通勤电脑双肩包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤",
+      "旅行"
+    ],
+    "feature_flags": {
+      "宽肩带": true,
+      "电脑隔层": true,
+      "胸扣": false,
+      "行李箱插带": true,
+      "防盗口袋": true,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": false
+    },
+    "shoulder_width_cm": 7.5,
+    "computer_padding": "air",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": true,
+    "stock": 208,
+    "rating": 98.6,
+    "sales": 15712,
+    "review_count": 3748,
+    "reviews": [
+      {
+        "text": "16英寸独立电脑隔层，加厚缓冲保护，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "藏蓝 / 标准款"
+      },
+      {
+        "text": "藏蓝配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "藏蓝 / 标准款"
+      },
+      {
+        "text": "加厚电脑仓占用部分主仓空间，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "藏蓝 / 标准款"
+      }
+    ],
+    "advantages": [
+      "16英寸独立电脑隔层，加厚缓冲保护",
+      "7.5cm肩带，背部有透气网布",
+      "背部行李箱插带，出差可固定在拉杆上"
+    ],
+    "limits": [
+      "加厚电脑仓占用部分主仓空间",
+      "空包720g，更适合带电脑或装备时使用",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "城市有序箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "背部可固定行李箱拉杆，出差转乘更方便"
+  },
+  {
+    "id": 9,
+    "sku": "BDN10-0010",
+    "family": "family-0010",
+    "name": "山野翻盖 双肩包",
+    "brand": "山野翻盖",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 0,
+    "photo": 8,
+    "image_url": "",
+    "url": "",
+    "price": 219,
+    "weight": 550,
+    "capacity": 24,
+    "laptop": 15.6,
+    "dimensions": "43×30×17cm",
+    "material": "尼龙织物",
+    "color": "绿色",
+    "color_label": "绿色",
+    "variants": [
+      "绿色 / 标准款"
+    ],
+    "style": "休闲",
+    "style_tags": [
+      "休闲"
+    ],
+    "aesthetic_tags": [
+      "复古"
+    ],
+    "categories": [
+      "休闲双肩包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤",
+      "旅行"
+    ],
+    "feature_flags": {
+      "宽肩带": true,
+      "电脑隔层": true,
+      "胸扣": false,
+      "行李箱插带": false,
+      "防盗口袋": true,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": false
+    },
+    "shoulder_width_cm": 7.5,
+    "computer_padding": "basic",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": true,
+    "stock": 219,
+    "rating": 96.4,
+    "sales": 17451,
+    "review_count": 4179,
+    "reviews": [
+      {
+        "text": "15.6英寸独立电脑隔层，书本与电脑分开放，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "绿色 / 标准款"
+      },
+      {
+        "text": "绿色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "绿色 / 标准款"
+      },
+      {
+        "text": "电脑隔层为基础缓冲，贵重设备建议加内胆包，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "绿色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "15.6英寸独立电脑隔层，书本与电脑分开放",
+      "7.5cm肩带，背部有透气网布"
+    ],
+    "limits": [
+      "电脑隔层为基础缓冲，贵重设备建议加内胆包",
+      "包身装满后厚度会增加",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "山野翻盖箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "翻盖与扣带细节，偏向复古休闲搭配"
+  },
+  {
+    "id": 10,
+    "sku": "BDN10-0011",
+    "family": "family-0011",
+    "name": "海岸拼色 双肩包",
+    "brand": "海岸拼色",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 0,
+    "photo": 11,
+    "image_url": "",
+    "url": "",
+    "price": 129,
+    "weight": 460,
+    "capacity": 22,
+    "laptop": 14,
+    "dimensions": "43×30×13cm",
+    "material": "耐磨聚酯纤维",
+    "color": "粉色",
+    "color_label": "粉色",
+    "variants": [
+      "粉色 / 标准款"
+    ],
+    "style": "休闲",
+    "style_tags": [
+      "休闲"
+    ],
+    "aesthetic_tags": [
+      "清新少女",
+      "活力撞色"
+    ],
+    "categories": [
+      "休闲双肩包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤"
+    ],
+    "feature_flags": {
+      "宽肩带": true,
+      "电脑隔层": true,
+      "胸扣": false,
+      "行李箱插带": false,
+      "防盗口袋": true,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": false
+    },
+    "shoulder_width_cm": 7.5,
+    "computer_padding": "basic",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": true,
+    "stock": 230,
+    "rating": 97.5,
+    "sales": 19190,
+    "review_count": 4610,
+    "reviews": [
+      {
+        "text": "14英寸独立电脑隔层，书本与电脑分开放，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "粉色 / 标准款"
+      },
+      {
+        "text": "粉色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "粉色 / 标准款"
+      },
+      {
+        "text": "电脑隔层为基础缓冲，贵重设备建议加内胆包，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "粉色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "14英寸独立电脑隔层，书本与电脑分开放",
+      "7.5cm肩带，背部有透气网布"
+    ],
+    "limits": [
+      "电脑隔层为基础缓冲，贵重设备建议加内胆包",
+      "浅色包面需要定期清洁",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "海岸拼色箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "外袋与主仓分开放置，小物品随手可取"
+  },
+  {
+    "id": 11,
+    "sku": "BDN10-0012",
+    "family": "family-0012",
+    "name": "周末远行 双肩包",
+    "brand": "周末远行",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 0,
+    "photo": 23,
+    "image_url": "",
+    "url": "",
+    "price": 329,
+    "weight": 890,
+    "capacity": 32,
+    "laptop": 16,
+    "dimensions": "48×30×17cm",
+    "material": "耐磨聚酯纤维",
+    "color": "蓝色",
+    "color_label": "宝蓝",
+    "variants": [
+      "宝蓝 / 标准款"
+    ],
+    "style": "运动",
+    "style_tags": [
+      "休闲",
+      "运动"
+    ],
+    "aesthetic_tags": [
+      "酷感机能",
+      "运动感"
+    ],
+    "categories": [
+      "户外登山包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤",
+      "旅行",
+      "运动"
+    ],
+    "feature_flags": {
+      "宽肩带": true,
+      "电脑隔层": true,
+      "胸扣": true,
+      "行李箱插带": false,
+      "防盗口袋": true,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": false
+    },
+    "shoulder_width_cm": 7.5,
+    "computer_padding": "basic",
+    "water": true,
+    "water_protection": "有防水证明",
+    "water_test": "IPX6包体防喷水测试（闭合状态）",
+    "storage": true,
+    "stock": 241,
+    "rating": 98.6,
+    "sales": 20929,
+    "review_count": 5041,
+    "reviews": [
+      {
+        "text": "16英寸独立电脑隔层，书本与电脑分开放，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "宝蓝 / 标准款"
+      },
+      {
+        "text": "宝蓝配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "宝蓝 / 标准款"
+      },
+      {
+        "text": "电脑隔层为基础缓冲，贵重设备建议加内胆包，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "宝蓝 / 标准款"
+      }
+    ],
+    "advantages": [
+      "16英寸独立电脑隔层，书本与电脑分开放",
+      "7.5cm肩带，背部有透气网布"
+    ],
+    "limits": [
+      "电脑隔层为基础缓冲，贵重设备建议加内胆包",
+      "装满后包身厚度会增加，拥挤通勤时需留意空间",
+      "闭合包体可应对雨天喷淋，长时间浸水仍不在适用范围"
+    ],
+    "shop_name": "周末远行箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "多点扣带结构，适合把户外装备分区固定"
+  },
+  {
+    "id": 12,
+    "sku": "BDN10-0013",
+    "family": "family-0013",
+    "name": "雨巷通勤 双肩包",
+    "brand": "雨巷卷口",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 0,
+    "photo": 9,
+    "image_url": "",
+    "url": "",
+    "price": 179,
+    "weight": 680,
+    "capacity": 26,
+    "laptop": 16,
+    "dimensions": "43×30×17cm",
+    "material": "尼龙织物",
+    "color": "黑色",
+    "color_label": "黑色",
+    "variants": [
+      "黑色 / 标准款"
+    ],
+    "style": "商务",
+    "style_tags": [
+      "商务",
+      "休闲",
+      "简约"
+    ],
+    "aesthetic_tags": [
+      "酷感机能",
+      "商务",
+      "极简"
+    ],
+    "categories": [
+      "通勤电脑双肩包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤",
+      "旅行"
+    ],
+    "feature_flags": {
+      "宽肩带": true,
+      "电脑隔层": true,
+      "胸扣": false,
+      "行李箱插带": true,
+      "防盗口袋": true,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": false
+    },
+    "shoulder_width_cm": 7.5,
+    "computer_padding": "air",
+    "water": true,
+    "water_protection": "日常防雨",
+    "water_test": "",
+    "storage": true,
+    "stock": 252,
+    "rating": 96.4,
+    "sales": 22668,
+    "review_count": 5472,
+    "reviews": [
+      {
+        "text": "16英寸独立电脑隔层，加厚缓冲保护，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "黑色 / 标准款"
+      },
+      {
+        "text": "黑色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "黑色 / 标准款"
+      },
+      {
+        "text": "加厚电脑仓占用部分主仓空间，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "黑色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "16英寸独立电脑隔层，加厚缓冲保护",
+      "7.5cm肩带，背部有透气网布",
+      "背部行李箱插带，出差可固定在拉杆上"
+    ],
+    "limits": [
+      "加厚电脑仓占用部分主仓空间",
+      "空包680g，更适合带电脑或装备时使用",
+      "短时小雨可用，暴雨和浸水需额外防护"
+    ],
+    "shop_name": "雨巷卷口箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "背部可固定行李箱拉杆，出差转乘更方便"
+  },
+  {
+    "id": 13,
+    "sku": "BDN10-0014",
+    "family": "family-0014",
+    "name": "布谷收纳 双肩包",
+    "brand": "布谷收纳",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 0,
+    "photo": 18,
+    "image_url": "",
+    "url": "",
+    "price": 179,
+    "weight": 570,
+    "capacity": 25,
+    "laptop": 15.6,
+    "dimensions": "43×30×17cm",
+    "material": "耐磨聚酯纤维",
+    "color": "灰色",
+    "color_label": "灰色",
+    "variants": [
+      "灰色 / 标准款"
+    ],
+    "style": "简约",
+    "style_tags": [
+      "休闲",
+      "简约"
+    ],
+    "aesthetic_tags": [
+      "极简"
+    ],
+    "categories": [
+      "休闲双肩包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤",
+      "旅行"
+    ],
+    "feature_flags": {
+      "宽肩带": true,
+      "电脑隔层": true,
+      "胸扣": false,
+      "行李箱插带": false,
+      "防盗口袋": true,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": false
+    },
+    "shoulder_width_cm": 7.5,
+    "computer_padding": "basic",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": true,
+    "stock": 263,
+    "rating": 97.5,
+    "sales": 24407,
+    "review_count": 5903,
+    "reviews": [
+      {
+        "text": "15.6英寸独立电脑隔层，书本与电脑分开放，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "灰色 / 标准款"
+      },
+      {
+        "text": "灰色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "灰色 / 标准款"
+      },
+      {
+        "text": "电脑隔层为基础缓冲，贵重设备建议加内胆包，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "灰色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "15.6英寸独立电脑隔层，书本与电脑分开放",
+      "7.5cm肩带，背部有透气网布"
+    ],
+    "limits": [
+      "电脑隔层为基础缓冲，贵重设备建议加内胆包",
+      "包身装满后厚度会增加",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "布谷收纳箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "包面装饰克制，轮廓简洁，适合日常穿搭"
+  },
+  {
+    "id": 14,
+    "sku": "BDN10-0015",
+    "family": "family-0015",
+    "name": "酒棠轻装 双肩包",
+    "brand": "轻羽两用",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 0,
+    "photo": 22,
+    "image_url": "",
+    "url": "",
+    "price": 99,
+    "weight": 280,
+    "capacity": 15,
+    "laptop": null,
+    "dimensions": "39×27×13cm",
+    "material": "耐磨聚酯纤维",
+    "color": "红色",
+    "color_label": "红色",
+    "variants": [
+      "红色 / 标准款"
+    ],
+    "style": "休闲",
+    "style_tags": [
+      "休闲"
+    ],
+    "aesthetic_tags": [
+      "复古"
+    ],
+    "categories": [
+      "休闲双肩包"
+    ],
+    "scene": [
+      "休闲",
+      "校园"
+    ],
+    "feature_flags": {
+      "宽肩带": false,
+      "电脑隔层": false,
+      "胸扣": false,
+      "行李箱插带": false,
+      "防盗口袋": false,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": true
+    },
+    "shoulder_width_cm": 4.5,
+    "computer_padding": "none",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": false,
+    "stock": 274,
+    "rating": 98.6,
+    "sales": 26146,
+    "review_count": 6334,
+    "reviews": [
+      {
+        "text": "280g包身、15L容量，适合轻装随行，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "红色 / 标准款"
+      },
+      {
+        "text": "红色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "红色 / 标准款"
+      },
+      {
+        "text": "没有独立缓冲电脑隔层，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "红色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "280g包身、15L容量，适合轻装随行",
+      "4.5cm肩带，背部有透气网布",
+      "口袋数量少，拿取物品路径简单"
+    ],
+    "limits": [
+      "没有独立缓冲电脑隔层",
+      "容量偏小，大件衣物需要另作安排",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "轻羽两用箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "翻盖与扣带细节，偏向复古休闲搭配"
+  },
+  {
+    "id": 15,
+    "sku": "BDN10-0016",
+    "family": "family-0016",
+    "name": "海青轻旅 双肩包",
+    "brand": "极简小方",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 0,
+    "photo": 15,
+    "image_url": "",
+    "url": "",
+    "price": 199,
+    "weight": 490,
+    "capacity": 16,
+    "laptop": 13,
+    "dimensions": "39×27×13cm",
+    "material": "尼龙织物",
+    "color": "绿色",
+    "color_label": "绿色",
+    "variants": [
+      "绿色 / 标准款"
+    ],
+    "style": "运动",
+    "style_tags": [
+      "运动",
+      "休闲"
+    ],
+    "aesthetic_tags": [
+      "运动感"
+    ],
+    "categories": [
+      "休闲双肩包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤"
+    ],
+    "feature_flags": {
+      "宽肩带": true,
+      "电脑隔层": true,
+      "胸扣": false,
+      "行李箱插带": false,
+      "防盗口袋": true,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": true
+    },
+    "shoulder_width_cm": 7.5,
+    "computer_padding": "basic",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": false,
+    "stock": 285,
+    "rating": 96.4,
+    "sales": 27885,
+    "review_count": 6765,
+    "reviews": [
+      {
+        "text": "13英寸独立电脑隔层，书本与电脑分开放，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "绿色 / 标准款"
+      },
+      {
+        "text": "绿色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "绿色 / 标准款"
+      },
+      {
+        "text": "电脑隔层为基础缓冲，贵重设备建议加内胆包，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "绿色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "13英寸独立电脑隔层，书本与电脑分开放",
+      "7.5cm肩带，背部有透气网布",
+      "口袋数量少，拿取物品路径简单"
+    ],
+    "limits": [
+      "电脑隔层为基础缓冲，贵重设备建议加内胆包",
+      "包身装满后厚度会增加",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "极简小方箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "外袋与主仓分开放置，小物品随手可取"
+  },
+  {
+    "id": 16,
+    "sku": "BDN10-0017",
+    "family": "family-0017",
+    "name": "林间卷口 双肩包",
+    "brand": "林间束口",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 0,
+    "photo": 21,
+    "image_url": "",
+    "url": "",
+    "price": 239,
+    "weight": 610,
+    "capacity": 24,
+    "laptop": 14,
+    "dimensions": "43×30×17cm",
+    "material": "耐磨聚酯纤维",
+    "color": "绿色",
+    "color_label": "绿色",
+    "variants": [
+      "绿色 / 标准款"
+    ],
+    "style": "休闲",
+    "style_tags": [
+      "休闲"
+    ],
+    "aesthetic_tags": [
+      "复古"
+    ],
+    "categories": [
+      "休闲双肩包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤",
+      "旅行"
+    ],
+    "feature_flags": {
+      "宽肩带": true,
+      "电脑隔层": true,
+      "胸扣": false,
+      "行李箱插带": true,
+      "防盗口袋": true,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": false
+    },
+    "shoulder_width_cm": 7.5,
+    "computer_padding": "basic",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": true,
+    "stock": 296,
+    "rating": 97.5,
+    "sales": 29624,
+    "review_count": 396,
+    "reviews": [
+      {
+        "text": "14英寸独立电脑隔层，书本与电脑分开放，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "绿色 / 标准款"
+      },
+      {
+        "text": "绿色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "绿色 / 标准款"
+      },
+      {
+        "text": "电脑隔层为基础缓冲，贵重设备建议加内胆包，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "绿色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "14英寸独立电脑隔层，书本与电脑分开放",
+      "7.5cm肩带，背部有透气网布",
+      "背部行李箱插带，出差可固定在拉杆上"
+    ],
+    "limits": [
+      "电脑隔层为基础缓冲，贵重设备建议加内胆包",
+      "包身装满后厚度会增加",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "林间束口箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "卷口闭合结构，主仓开口利落"
+  },
+  {
+    "id": 17,
+    "sku": "BDN10-0018",
+    "family": "family-0018",
+    "name": "橘野徒步 双肩包",
+    "brand": "橘野徒步",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 0,
+    "photo": 17,
+    "image_url": "",
+    "url": "",
+    "price": 299,
+    "weight": 740,
+    "capacity": 30,
+    "laptop": null,
+    "dimensions": "48×30×17cm",
+    "material": "耐磨聚酯纤维",
+    "color": "绿色",
+    "color_label": "绿色",
+    "variants": [
+      "绿色 / 标准款"
+    ],
+    "style": "运动",
+    "style_tags": [
+      "休闲",
+      "运动"
+    ],
+    "aesthetic_tags": [
+      "酷感机能",
+      "运动感"
+    ],
+    "categories": [
+      "户外登山包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "旅行",
+      "运动"
+    ],
+    "feature_flags": {
+      "宽肩带": true,
+      "电脑隔层": false,
+      "胸扣": true,
+      "行李箱插带": false,
+      "防盗口袋": false,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": false
+    },
+    "shoulder_width_cm": 7.5,
+    "computer_padding": "none",
+    "water": true,
+    "water_protection": "有防水证明",
+    "water_test": "IPX6包体防喷水测试（闭合状态）",
+    "storage": false,
+    "stock": 307,
+    "rating": 98.6,
+    "sales": 31363,
+    "review_count": 827,
+    "reviews": [
+      {
+        "text": "740g包身、30L容量，适合轻装随行，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "绿色 / 标准款"
+      },
+      {
+        "text": "绿色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "绿色 / 标准款"
+      },
+      {
+        "text": "没有独立缓冲电脑隔层，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "绿色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "740g包身、30L容量，适合轻装随行",
+      "7.5cm肩带，背部有透气网布"
+    ],
+    "limits": [
+      "没有独立缓冲电脑隔层",
+      "装满较重物品时需合理分配重量",
+      "闭合包体可应对雨天喷淋，长时间浸水仍不在适用范围"
+    ],
+    "shop_name": "橘野徒步箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "多点扣带结构，适合把户外装备分区固定"
+  },
+  {
+    "id": 18,
+    "sku": "BDN10-0019",
+    "family": "family-0019",
+    "name": "墨线职场 双肩包",
+    "brand": "墨线职场",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 0,
+    "photo": 14,
+    "image_url": "",
+    "url": "",
+    "price": 359,
+    "weight": 810,
+    "capacity": 28,
+    "laptop": 16,
+    "dimensions": "48×30×17cm",
+    "material": "尼龙织物",
+    "color": "蓝色",
+    "color_label": "藏蓝",
+    "variants": [
+      "藏蓝 / 标准款"
+    ],
+    "style": "商务",
+    "style_tags": [
+      "商务",
+      "休闲",
+      "简约"
+    ],
+    "aesthetic_tags": [
+      "酷感机能",
+      "极简",
+      "商务"
+    ],
+    "categories": [
+      "通勤电脑双肩包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤",
+      "旅行"
+    ],
+    "feature_flags": {
+      "宽肩带": true,
+      "电脑隔层": true,
+      "胸扣": false,
+      "行李箱插带": true,
+      "防盗口袋": true,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": false
+    },
+    "shoulder_width_cm": 7.5,
+    "computer_padding": "air",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": true,
+    "stock": 318,
+    "rating": 96.4,
+    "sales": 33102,
+    "review_count": 1258,
+    "reviews": [
+      {
+        "text": "16英寸独立电脑隔层，加厚缓冲保护，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "藏蓝 / 标准款"
+      },
+      {
+        "text": "藏蓝配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "藏蓝 / 标准款"
+      },
+      {
+        "text": "加厚电脑仓占用部分主仓空间，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "藏蓝 / 标准款"
+      }
+    ],
+    "advantages": [
+      "16英寸独立电脑隔层，加厚缓冲保护",
+      "7.5cm肩带，背部有透气网布",
+      "背部行李箱插带，出差可固定在拉杆上"
+    ],
+    "limits": [
+      "加厚电脑仓占用部分主仓空间",
+      "空包810g，更适合带电脑或装备时使用",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "墨线职场箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "背部可固定行李箱拉杆，出差转乘更方便"
+  },
+  {
+    "id": 19,
+    "sku": "BDN10-0020",
+    "family": "family-0020",
+    "name": "轻橙出游 双肩包",
+    "brand": "轻橙出游",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 0,
+    "photo": 13,
+    "image_url": "",
+    "url": "",
+    "price": 149,
+    "weight": 330,
+    "capacity": 18,
+    "laptop": null,
+    "dimensions": "39×27×13cm",
+    "material": "耐磨聚酯纤维",
+    "color": "橙色",
+    "color_label": "橙色",
+    "variants": [
+      "橙色 / 标准款"
+    ],
+    "style": "运动",
+    "style_tags": [
+      "休闲",
+      "运动"
+    ],
+    "aesthetic_tags": [
+      "酷感机能",
+      "运动感"
+    ],
+    "categories": [
+      "休闲双肩包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "运动"
+    ],
+    "feature_flags": {
+      "宽肩带": false,
+      "电脑隔层": false,
+      "胸扣": false,
+      "行李箱插带": false,
+      "防盗口袋": false,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": false
+    },
+    "shoulder_width_cm": 4.5,
+    "computer_padding": "none",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": false,
+    "stock": 329,
+    "rating": 97.5,
+    "sales": 34841,
+    "review_count": 1689,
+    "reviews": [
+      {
+        "text": "330g包身、18L容量，适合轻装随行，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "橙色 / 标准款"
+      },
+      {
+        "text": "橙色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "橙色 / 标准款"
+      },
+      {
+        "text": "没有独立缓冲电脑隔层，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "橙色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "330g包身、18L容量，适合轻装随行",
+      "4.5cm肩带，背部有透气网布"
+    ],
+    "limits": [
+      "没有独立缓冲电脑隔层",
+      "装满较重物品时需合理分配重量",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "轻橙出游箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "外袋与主仓分开放置，小物品随手可取"
+  },
+  {
+    "id": 20,
+    "sku": "BDN10-0021",
+    "family": "family-0021",
+    "name": "云白校园 双肩包",
+    "brand": "云白校园",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 0,
+    "photo": 16,
+    "image_url": "",
+    "url": "",
+    "price": 229,
+    "weight": 480,
+    "capacity": 23,
+    "laptop": 15.6,
+    "dimensions": "43×30×13cm",
+    "material": "耐磨聚酯纤维",
+    "color": "米色",
+    "color_label": "米色",
+    "variants": [
+      "米色 / 标准款"
+    ],
+    "style": "简约",
+    "style_tags": [
+      "休闲",
+      "简约"
+    ],
+    "aesthetic_tags": [
+      "清新少女",
+      "极简"
+    ],
+    "categories": [
+      "休闲双肩包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤"
+    ],
+    "feature_flags": {
+      "宽肩带": true,
+      "电脑隔层": true,
+      "胸扣": false,
+      "行李箱插带": true,
+      "防盗口袋": true,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": true
+    },
+    "shoulder_width_cm": 7.5,
+    "computer_padding": "basic",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": false,
+    "stock": 340,
+    "rating": 98.6,
+    "sales": 2580,
+    "review_count": 2120,
+    "reviews": [
+      {
+        "text": "15.6英寸独立电脑隔层，书本与电脑分开放，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "米色 / 标准款"
+      },
+      {
+        "text": "米色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "米色 / 标准款"
+      },
+      {
+        "text": "电脑隔层为基础缓冲，贵重设备建议加内胆包，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "米色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "15.6英寸独立电脑隔层，书本与电脑分开放",
+      "7.5cm肩带，背部有透气网布",
+      "背部行李箱插带，出差可固定在拉杆上",
+      "口袋数量少，拿取物品路径简单"
+    ],
+    "limits": [
+      "电脑隔层为基础缓冲，贵重设备建议加内胆包",
+      "浅色包面需要定期清洁",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "云白校园箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "背部可固定行李箱拉杆，出差转乘更方便"
+  },
+  {
+    "id": 21,
+    "sku": "BDN10-0022",
+    "family": "family-0022",
+    "name": "青岚帆布 双肩包",
+    "brand": "青岚帆布",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 0,
+    "photo": 20,
+    "image_url": "",
+    "url": "",
+    "price": 169,
+    "weight": 530,
+    "capacity": 22,
+    "laptop": 14,
+    "dimensions": "43×30×13cm",
+    "material": "尼龙织物",
+    "color": "米色",
+    "color_label": "米色",
+    "variants": [
+      "米色 / 标准款"
+    ],
+    "style": "休闲",
+    "style_tags": [
+      "休闲"
+    ],
+    "aesthetic_tags": [
+      "复古"
+    ],
+    "categories": [
+      "休闲双肩包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤"
+    ],
+    "feature_flags": {
+      "宽肩带": true,
+      "电脑隔层": true,
+      "胸扣": false,
+      "行李箱插带": false,
+      "防盗口袋": true,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": false
+    },
+    "shoulder_width_cm": 7.5,
+    "computer_padding": "basic",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": true,
+    "stock": 351,
+    "rating": 96.4,
+    "sales": 4319,
+    "review_count": 2551,
+    "reviews": [
+      {
+        "text": "14英寸独立电脑隔层，书本与电脑分开放，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "米色 / 标准款"
+      },
+      {
+        "text": "米色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "米色 / 标准款"
+      },
+      {
+        "text": "电脑隔层为基础缓冲，贵重设备建议加内胆包，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "米色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "14英寸独立电脑隔层，书本与电脑分开放",
+      "7.5cm肩带，背部有透气网布"
+    ],
+    "limits": [
+      "电脑隔层为基础缓冲，贵重设备建议加内胆包",
+      "浅色包面需要定期清洁",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "青岚帆布箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "翻盖与扣带细节，偏向复古休闲搭配"
+  },
+  {
+    "id": 22,
+    "sku": "BDN10-0023",
+    "family": "family-0023",
+    "name": "晴海 轻量电脑背包",
+    "brand": "晴海",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 1,
+    "photo": 0,
+    "image_url": "",
+    "url": "",
+    "price": 129,
+    "weight": 390,
+    "capacity": 22,
+    "laptop": 16,
+    "dimensions": "43×30×13cm",
+    "material": "聚酯纤维",
+    "color": "蓝色",
+    "color_label": "浅蓝",
+    "variants": [
+      "浅蓝 / 标准款"
+    ],
+    "style": "简约",
+    "style_tags": [
+      "休闲",
+      "简约"
+    ],
+    "aesthetic_tags": [
+      "极简",
+      "清新少女"
+    ],
+    "categories": [
+      "通勤电脑双肩包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤"
+    ],
+    "feature_flags": {
+      "宽肩带": false,
+      "电脑隔层": true,
+      "胸扣": false,
+      "行李箱插带": false,
+      "防盗口袋": true,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": true
+    },
+    "shoulder_width_cm": 4.5,
+    "computer_padding": "basic",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": false,
+    "stock": 362,
+    "rating": 97.5,
+    "sales": 6058,
+    "review_count": 2982,
+    "reviews": [
+      {
+        "text": "16英寸独立电脑隔层，书本与电脑分开放，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "浅蓝 / 标准款"
+      },
+      {
+        "text": "浅蓝配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "浅蓝 / 标准款"
+      },
+      {
+        "text": "电脑隔层为基础缓冲，贵重设备建议加内胆包，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "浅蓝 / 标准款"
+      }
+    ],
+    "advantages": [
+      "16英寸独立电脑隔层，书本与电脑分开放",
+      "4.5cm肩带，背部有透气网布",
+      "口袋数量少，拿取物品路径简单"
+    ],
+    "limits": [
+      "电脑隔层为基础缓冲，贵重设备建议加内胆包",
+      "浅色包面需要定期清洁",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "晴海箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "包面装饰克制，轮廓简洁，适合日常穿搭"
+  },
+  {
+    "id": 23,
+    "sku": "BDN10-0024",
+    "family": "family-0024",
+    "name": "泡泡弧 可爱校园背包",
+    "brand": "泡泡弧",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 1,
+    "photo": 1,
+    "image_url": "",
+    "url": "",
+    "price": 99,
+    "weight": 350,
+    "capacity": 19,
+    "laptop": 14,
+    "dimensions": "39×27×13cm",
+    "material": "聚酯纤维",
+    "color": "蓝色",
+    "color_label": "浅蓝",
+    "variants": [
+      "浅蓝 / 标准款"
+    ],
+    "style": "休闲",
+    "style_tags": [
+      "休闲"
+    ],
+    "aesthetic_tags": [
+      "清新少女"
+    ],
+    "categories": [
+      "休闲双肩包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤"
+    ],
+    "feature_flags": {
+      "宽肩带": false,
+      "电脑隔层": true,
+      "胸扣": false,
+      "行李箱插带": false,
+      "防盗口袋": true,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": true
+    },
+    "shoulder_width_cm": 4.5,
+    "computer_padding": "basic",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": false,
+    "stock": 373,
+    "rating": 98.6,
+    "sales": 7797,
+    "review_count": 3413,
+    "reviews": [
+      {
+        "text": "14英寸独立电脑隔层，书本与电脑分开放，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "浅蓝 / 标准款"
+      },
+      {
+        "text": "浅蓝配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "浅蓝 / 标准款"
+      },
+      {
+        "text": "电脑隔层为基础缓冲，贵重设备建议加内胆包，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "浅蓝 / 标准款"
+      }
+    ],
+    "advantages": [
+      "14英寸独立电脑隔层，书本与电脑分开放",
+      "4.5cm肩带，背部有透气网布",
+      "口袋数量少，拿取物品路径简单"
+    ],
+    "limits": [
+      "电脑隔层为基础缓冲，贵重设备建议加内胆包",
+      "浅色包面需要定期清洁",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "泡泡弧箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "弧形袋盖和波浪前袋，细节偏柔和可爱"
+  },
+  {
+    "id": 24,
+    "sku": "BDN10-0025",
+    "family": "family-0025",
+    "name": "深潮 轻薄通勤电脑包",
+    "brand": "深潮",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 1,
+    "photo": 2,
+    "image_url": "",
+    "url": "",
+    "price": 159,
+    "weight": 440,
+    "capacity": 23,
+    "laptop": 16,
+    "dimensions": "43×30×13cm",
+    "material": "聚酯纤维",
+    "color": "蓝色",
+    "color_label": "藏蓝",
+    "variants": [
+      "藏蓝 / 标准款"
+    ],
+    "style": "商务",
+    "style_tags": [
+      "商务",
+      "休闲",
+      "简约"
+    ],
+    "aesthetic_tags": [
+      "极简",
+      "商务"
+    ],
+    "categories": [
+      "通勤电脑双肩包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤"
+    ],
+    "feature_flags": {
+      "宽肩带": true,
+      "电脑隔层": true,
+      "胸扣": false,
+      "行李箱插带": true,
+      "防盗口袋": true,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": false
+    },
+    "shoulder_width_cm": 7.5,
+    "computer_padding": "air",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": true,
+    "stock": 384,
+    "rating": 96.4,
+    "sales": 9536,
+    "review_count": 3844,
+    "reviews": [
+      {
+        "text": "16英寸独立电脑隔层，加厚缓冲保护，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "藏蓝 / 标准款"
+      },
+      {
+        "text": "藏蓝配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "藏蓝 / 标准款"
+      },
+      {
+        "text": "加厚电脑仓占用部分主仓空间，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "藏蓝 / 标准款"
+      }
+    ],
+    "advantages": [
+      "16英寸独立电脑隔层，加厚缓冲保护",
+      "7.5cm肩带，背部有透气网布",
+      "背部行李箱插带，出差可固定在拉杆上"
+    ],
+    "limits": [
+      "加厚电脑仓占用部分主仓空间",
+      "空包440g，更适合带电脑或装备时使用",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "深潮箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "背部可固定行李箱拉杆，出差转乘更方便"
+  },
+  {
+    "id": 25,
+    "sku": "BDN10-0026",
+    "family": "family-0026",
+    "name": "雨际 城市防雨卷口包",
+    "brand": "雨际",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 1,
+    "photo": 3,
+    "image_url": "",
+    "url": "",
+    "price": 189,
+    "weight": 520,
+    "capacity": 25,
+    "laptop": 16,
+    "dimensions": "43×30×17cm",
+    "material": "聚酯纤维",
+    "color": "蓝色",
+    "color_label": "宝蓝",
+    "variants": [
+      "宝蓝 / 标准款"
+    ],
+    "style": "简约",
+    "style_tags": [
+      "休闲",
+      "简约"
+    ],
+    "aesthetic_tags": [
+      "极简",
+      "酷感机能"
+    ],
+    "categories": [
+      "通勤电脑双肩包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤",
+      "旅行"
+    ],
+    "feature_flags": {
+      "宽肩带": true,
+      "电脑隔层": true,
+      "胸扣": false,
+      "行李箱插带": false,
+      "防盗口袋": true,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": false
+    },
+    "shoulder_width_cm": 7.5,
+    "computer_padding": "air",
+    "water": true,
+    "water_protection": "日常防雨",
+    "water_test": "",
+    "storage": true,
+    "stock": 395,
+    "rating": 97.5,
+    "sales": 11275,
+    "review_count": 4275,
+    "reviews": [
+      {
+        "text": "16英寸独立电脑隔层，加厚缓冲保护，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "宝蓝 / 标准款"
+      },
+      {
+        "text": "宝蓝配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "宝蓝 / 标准款"
+      },
+      {
+        "text": "加厚电脑仓占用部分主仓空间，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "宝蓝 / 标准款"
+      }
+    ],
+    "advantages": [
+      "16英寸独立电脑隔层，加厚缓冲保护",
+      "7.5cm肩带，背部有透气网布"
+    ],
+    "limits": [
+      "加厚电脑仓占用部分主仓空间",
+      "空包520g，更适合带电脑或装备时使用",
+      "短时小雨可用，暴雨和浸水需额外防护"
+    ],
+    "shop_name": "雨际箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "卷口闭合结构，主仓开口利落"
+  },
+  {
+    "id": 26,
+    "sku": "BDN10-0027",
+    "family": "family-0027",
+    "name": "桃雾 轻甜校园背包",
+    "brand": "桃雾",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 1,
+    "photo": 4,
+    "image_url": "",
+    "url": "",
+    "price": 89,
+    "weight": 320,
+    "capacity": 18,
+    "laptop": 14,
+    "dimensions": "39×27×13cm",
+    "material": "聚酯纤维",
+    "color": "粉色",
+    "color_label": "粉色",
+    "variants": [
+      "粉色 / 标准款"
+    ],
+    "style": "休闲",
+    "style_tags": [
+      "休闲"
+    ],
+    "aesthetic_tags": [
+      "清新少女"
+    ],
+    "categories": [
+      "休闲双肩包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤"
+    ],
+    "feature_flags": {
+      "宽肩带": false,
+      "电脑隔层": true,
+      "胸扣": false,
+      "行李箱插带": false,
+      "防盗口袋": true,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": true
+    },
+    "shoulder_width_cm": 4.5,
+    "computer_padding": "basic",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": false,
+    "stock": 406,
+    "rating": 98.6,
+    "sales": 13014,
+    "review_count": 4706,
+    "reviews": [
+      {
+        "text": "14英寸独立电脑隔层，书本与电脑分开放，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "粉色 / 标准款"
+      },
+      {
+        "text": "粉色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "粉色 / 标准款"
+      },
+      {
+        "text": "电脑隔层为基础缓冲，贵重设备建议加内胆包，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "粉色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "14英寸独立电脑隔层，书本与电脑分开放",
+      "4.5cm肩带，背部有透气网布",
+      "口袋数量少，拿取物品路径简单"
+    ],
+    "limits": [
+      "电脑隔层为基础缓冲，贵重设备建议加内胆包",
+      "浅色包面需要定期清洁",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "桃雾箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "外袋与主仓分开放置，小物品随手可取"
+  },
+  {
+    "id": 27,
+    "sku": "BDN10-0028",
+    "family": "family-0028",
+    "name": "奶桃 拼色书本背包",
+    "brand": "奶桃",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 1,
+    "photo": 5,
+    "image_url": "",
+    "url": "",
+    "price": 139,
+    "weight": 410,
+    "capacity": 23,
+    "laptop": 15.6,
+    "dimensions": "43×30×13cm",
+    "material": "聚酯纤维",
+    "color": "粉色",
+    "color_label": "粉色",
+    "variants": [
+      "粉色 / 标准款"
+    ],
+    "style": "休闲",
+    "style_tags": [
+      "休闲"
+    ],
+    "aesthetic_tags": [
+      "清新少女",
+      "活力撞色"
+    ],
+    "categories": [
+      "休闲双肩包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤"
+    ],
+    "feature_flags": {
+      "宽肩带": false,
+      "电脑隔层": true,
+      "胸扣": false,
+      "行李箱插带": false,
+      "防盗口袋": true,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": false
+    },
+    "shoulder_width_cm": 4.5,
+    "computer_padding": "basic",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": true,
+    "stock": 417,
+    "rating": 96.4,
+    "sales": 14753,
+    "review_count": 5137,
+    "reviews": [
+      {
+        "text": "15.6英寸独立电脑隔层，书本与电脑分开放，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "粉色 / 标准款"
+      },
+      {
+        "text": "粉色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "粉色 / 标准款"
+      },
+      {
+        "text": "电脑隔层为基础缓冲，贵重设备建议加内胆包，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "粉色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "15.6英寸独立电脑隔层，书本与电脑分开放",
+      "4.5cm肩带，背部有透气网布"
+    ],
+    "limits": [
+      "电脑隔层为基础缓冲，贵重设备建议加内胆包",
+      "浅色包面需要定期清洁",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "奶桃箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "外袋与主仓分开放置，小物品随手可取"
+  },
+  {
+    "id": 28,
+    "sku": "BDN10-0029",
+    "family": "family-0029",
+    "name": "芋圆 小巧日常背包",
+    "brand": "芋圆",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 1,
+    "photo": 6,
+    "image_url": "",
+    "url": "",
+    "price": 79,
+    "weight": 280,
+    "capacity": 14,
+    "laptop": null,
+    "dimensions": "39×27×13cm",
+    "material": "聚酯纤维",
+    "color": "紫色",
+    "color_label": "紫色",
+    "variants": [
+      "紫色 / 标准款"
+    ],
+    "style": "简约",
+    "style_tags": [
+      "休闲",
+      "简约"
+    ],
+    "aesthetic_tags": [
+      "清新少女",
+      "极简"
+    ],
+    "categories": [
+      "休闲双肩包"
+    ],
+    "scene": [
+      "休闲",
+      "校园"
+    ],
+    "feature_flags": {
+      "宽肩带": false,
+      "电脑隔层": false,
+      "胸扣": false,
+      "行李箱插带": true,
+      "防盗口袋": false,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": true
+    },
+    "shoulder_width_cm": 4.5,
+    "computer_padding": "none",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": false,
+    "stock": 428,
+    "rating": 97.5,
+    "sales": 16492,
+    "review_count": 5568,
+    "reviews": [
+      {
+        "text": "280g包身、14L容量，适合轻装随行，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "紫色 / 标准款"
+      },
+      {
+        "text": "紫色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "紫色 / 标准款"
+      },
+      {
+        "text": "没有独立缓冲电脑隔层，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "紫色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "280g包身、14L容量，适合轻装随行",
+      "4.5cm肩带，背部有透气网布",
+      "背部行李箱插带，出差可固定在拉杆上",
+      "口袋数量少，拿取物品路径简单"
+    ],
+    "limits": [
+      "没有独立缓冲电脑隔层",
+      "容量偏小，大件衣物需要另作安排",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "芋圆箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "背部可固定行李箱拉杆，出差转乘更方便"
+  },
+  {
+    "id": 29,
+    "sku": "BDN10-0030",
+    "family": "family-0030",
+    "name": "奶油 双用手提背包",
+    "brand": "奶油",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 1,
+    "photo": 7,
+    "image_url": "",
+    "url": "",
+    "price": 149,
+    "weight": 420,
+    "capacity": 21,
+    "laptop": 14,
+    "dimensions": "43×30×13cm",
+    "material": "聚酯纤维",
+    "color": "米色",
+    "color_label": "米色",
+    "variants": [
+      "米色 / 标准款"
+    ],
+    "style": "简约",
+    "style_tags": [
+      "休闲",
+      "简约"
+    ],
+    "aesthetic_tags": [
+      "极简",
+      "清新少女"
+    ],
+    "categories": [
+      "休闲双肩包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤"
+    ],
+    "feature_flags": {
+      "宽肩带": false,
+      "电脑隔层": true,
+      "胸扣": false,
+      "行李箱插带": false,
+      "防盗口袋": true,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": true
+    },
+    "shoulder_width_cm": 4.5,
+    "computer_padding": "basic",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": false,
+    "stock": 439,
+    "rating": 98.6,
+    "sales": 18231,
+    "review_count": 5999,
+    "reviews": [
+      {
+        "text": "14英寸独立电脑隔层，书本与电脑分开放，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "米色 / 标准款"
+      },
+      {
+        "text": "米色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "米色 / 标准款"
+      },
+      {
+        "text": "电脑隔层为基础缓冲，贵重设备建议加内胆包，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "米色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "14英寸独立电脑隔层，书本与电脑分开放",
+      "4.5cm肩带，背部有透气网布",
+      "口袋数量少，拿取物品路径简单"
+    ],
+    "limits": [
+      "电脑隔层为基础缓冲，贵重设备建议加内胆包",
+      "浅色包面需要定期清洁",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "奶油箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "包面装饰克制，轮廓简洁，适合日常穿搭"
+  },
+  {
+    "id": 30,
+    "sku": "BDN10-0031",
+    "family": "family-0031",
+    "name": "夜巡 城市机能背包",
+    "brand": "夜巡",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 1,
+    "photo": 8,
+    "image_url": "",
+    "url": "",
+    "price": 189,
+    "weight": 610,
+    "capacity": 27,
+    "laptop": 16,
+    "dimensions": "48×30×17cm",
+    "material": "聚酯纤维",
+    "color": "黑色",
+    "color_label": "黑色",
+    "variants": [
+      "黑色 / 标准款"
+    ],
+    "style": "休闲",
+    "style_tags": [
+      "休闲"
+    ],
+    "aesthetic_tags": [
+      "酷感机能"
+    ],
+    "categories": [
+      "通勤电脑双肩包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤",
+      "旅行"
+    ],
+    "feature_flags": {
+      "宽肩带": true,
+      "电脑隔层": true,
+      "胸扣": false,
+      "行李箱插带": false,
+      "防盗口袋": true,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": false
+    },
+    "shoulder_width_cm": 7.5,
+    "computer_padding": "air",
+    "water": true,
+    "water_protection": "日常防雨",
+    "water_test": "",
+    "storage": true,
+    "stock": 450,
+    "rating": 96.4,
+    "sales": 19970,
+    "review_count": 6430,
+    "reviews": [
+      {
+        "text": "16英寸独立电脑隔层，加厚缓冲保护，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "黑色 / 标准款"
+      },
+      {
+        "text": "黑色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "黑色 / 标准款"
+      },
+      {
+        "text": "加厚电脑仓占用部分主仓空间，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "黑色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "16英寸独立电脑隔层，加厚缓冲保护",
+      "7.5cm肩带，背部有透气网布"
+    ],
+    "limits": [
+      "加厚电脑仓占用部分主仓空间",
+      "空包610g，更适合带电脑或装备时使用",
+      "短时小雨可用，暴雨和浸水需额外防护"
+    ],
+    "shop_name": "夜巡箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "外袋与主仓分开放置，小物品随手可取"
+  },
+  {
+    "id": 31,
+    "sku": "BDN10-0032",
+    "family": "family-0032",
+    "name": "墨页 极简电脑背包",
+    "brand": "墨页",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 1,
+    "photo": 9,
+    "image_url": "",
+    "url": "",
+    "price": 169,
+    "weight": 450,
+    "capacity": 22,
+    "laptop": 16,
+    "dimensions": "43×30×13cm",
+    "material": "聚酯纤维",
+    "color": "黑色",
+    "color_label": "黑色",
+    "variants": [
+      "黑色 / 标准款"
+    ],
+    "style": "商务",
+    "style_tags": [
+      "商务",
+      "休闲",
+      "简约"
+    ],
+    "aesthetic_tags": [
+      "极简",
+      "商务"
+    ],
+    "categories": [
+      "通勤电脑双肩包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤"
+    ],
+    "feature_flags": {
+      "宽肩带": true,
+      "电脑隔层": true,
+      "胸扣": false,
+      "行李箱插带": true,
+      "防盗口袋": true,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": true
+    },
+    "shoulder_width_cm": 7.5,
+    "computer_padding": "air",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": false,
+    "stock": 461,
+    "rating": 97.5,
+    "sales": 21709,
+    "review_count": 6861,
+    "reviews": [
+      {
+        "text": "16英寸独立电脑隔层，加厚缓冲保护，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "黑色 / 标准款"
+      },
+      {
+        "text": "黑色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "黑色 / 标准款"
+      },
+      {
+        "text": "加厚电脑仓占用部分主仓空间，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "黑色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "16英寸独立电脑隔层，加厚缓冲保护",
+      "7.5cm肩带，背部有透气网布",
+      "背部行李箱插带，出差可固定在拉杆上",
+      "口袋数量少，拿取物品路径简单"
+    ],
+    "limits": [
+      "加厚电脑仓占用部分主仓空间",
+      "空包450g，更适合带电脑或装备时使用",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "墨页箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "背部可固定行李箱拉杆，出差转乘更方便"
+  },
+  {
+    "id": 32,
+    "sku": "BDN10-0033",
+    "family": "family-0033",
+    "name": "暗流 机能卷口背包",
+    "brand": "暗流",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 1,
+    "photo": 10,
+    "image_url": "",
+    "url": "",
+    "price": 199,
+    "weight": 560,
+    "capacity": 26,
+    "laptop": 16,
+    "dimensions": "43×30×17cm",
+    "material": "聚酯纤维",
+    "color": "黑色",
+    "color_label": "黑色",
+    "variants": [
+      "黑色 / 标准款"
+    ],
+    "style": "简约",
+    "style_tags": [
+      "休闲",
+      "简约"
+    ],
+    "aesthetic_tags": [
+      "酷感机能",
+      "极简"
+    ],
+    "categories": [
+      "通勤电脑双肩包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤",
+      "旅行"
+    ],
+    "feature_flags": {
+      "宽肩带": true,
+      "电脑隔层": true,
+      "胸扣": false,
+      "行李箱插带": true,
+      "防盗口袋": true,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": true
+    },
+    "shoulder_width_cm": 7.5,
+    "computer_padding": "air",
+    "water": true,
+    "water_protection": "日常防雨",
+    "water_test": "",
+    "storage": false,
+    "stock": 472,
+    "rating": 98.6,
+    "sales": 23448,
+    "review_count": 492,
+    "reviews": [
+      {
+        "text": "16英寸独立电脑隔层，加厚缓冲保护，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "黑色 / 标准款"
+      },
+      {
+        "text": "黑色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "黑色 / 标准款"
+      },
+      {
+        "text": "加厚电脑仓占用部分主仓空间，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "黑色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "16英寸独立电脑隔层，加厚缓冲保护",
+      "7.5cm肩带，背部有透气网布",
+      "背部行李箱插带，出差可固定在拉杆上",
+      "口袋数量少，拿取物品路径简单"
+    ],
+    "limits": [
+      "加厚电脑仓占用部分主仓空间",
+      "空包560g，更适合带电脑或装备时使用",
+      "短时小雨可用，暴雨和浸水需额外防护"
+    ],
+    "shop_name": "暗流箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "卷口闭合结构，主仓开口利落"
+  },
+  {
+    "id": 33,
+    "sku": "BDN10-0034",
+    "family": "family-0034",
+    "name": "黑羽 轻装日用背包",
+    "brand": "黑羽",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 1,
+    "photo": 11,
+    "image_url": "",
+    "url": "",
+    "price": 89,
+    "weight": 290,
+    "capacity": 17,
+    "laptop": 13,
+    "dimensions": "39×27×13cm",
+    "material": "聚酯纤维",
+    "color": "黑色",
+    "color_label": "黑色",
+    "variants": [
+      "黑色 / 标准款"
+    ],
+    "style": "简约",
+    "style_tags": [
+      "休闲",
+      "简约"
+    ],
+    "aesthetic_tags": [
+      "极简"
+    ],
+    "categories": [
+      "休闲双肩包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤"
+    ],
+    "feature_flags": {
+      "宽肩带": false,
+      "电脑隔层": true,
+      "胸扣": false,
+      "行李箱插带": false,
+      "防盗口袋": true,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": true
+    },
+    "shoulder_width_cm": 4.5,
+    "computer_padding": "basic",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": false,
+    "stock": 483,
+    "rating": 96.4,
+    "sales": 25187,
+    "review_count": 923,
+    "reviews": [
+      {
+        "text": "13英寸独立电脑隔层，书本与电脑分开放，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "黑色 / 标准款"
+      },
+      {
+        "text": "黑色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "黑色 / 标准款"
+      },
+      {
+        "text": "电脑隔层为基础缓冲，贵重设备建议加内胆包，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "黑色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "13英寸独立电脑隔层，书本与电脑分开放",
+      "4.5cm肩带，背部有透气网布",
+      "口袋数量少，拿取物品路径简单"
+    ],
+    "limits": [
+      "电脑隔层为基础缓冲，贵重设备建议加内胆包",
+      "包身装满后厚度会增加",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "黑羽箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "包面装饰克制，轮廓简洁，适合日常穿搭"
+  },
+  {
+    "id": 34,
+    "sku": "BDN10-0035",
+    "family": "family-0035",
+    "name": "苔原 复古帆布背包",
+    "brand": "苔原",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 1,
+    "photo": 12,
+    "image_url": "",
+    "url": "",
+    "price": 179,
+    "weight": 620,
+    "capacity": 24,
+    "laptop": 15.6,
+    "dimensions": "43×30×17cm",
+    "material": "帆布",
+    "color": "绿色",
+    "color_label": "绿色",
+    "variants": [
+      "绿色 / 标准款"
+    ],
+    "style": "休闲",
+    "style_tags": [
+      "休闲"
+    ],
+    "aesthetic_tags": [
+      "复古"
+    ],
+    "categories": [
+      "休闲双肩包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤",
+      "旅行"
+    ],
+    "feature_flags": {
+      "宽肩带": true,
+      "电脑隔层": true,
+      "胸扣": false,
+      "行李箱插带": false,
+      "防盗口袋": true,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": false
+    },
+    "shoulder_width_cm": 7.5,
+    "computer_padding": "basic",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": true,
+    "stock": 494,
+    "rating": 97.5,
+    "sales": 26926,
+    "review_count": 1354,
+    "reviews": [
+      {
+        "text": "15.6英寸独立电脑隔层，书本与电脑分开放，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "绿色 / 标准款"
+      },
+      {
+        "text": "绿色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "绿色 / 标准款"
+      },
+      {
+        "text": "电脑隔层为基础缓冲，贵重设备建议加内胆包，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "绿色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "15.6英寸独立电脑隔层，书本与电脑分开放",
+      "7.5cm肩带，背部有透气网布"
+    ],
+    "limits": [
+      "电脑隔层为基础缓冲，贵重设备建议加内胆包",
+      "包身装满后厚度会增加",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "苔原箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "翻盖与扣带细节，偏向复古休闲搭配"
+  },
+  {
+    "id": 35,
+    "sku": "BDN10-0036",
+    "family": "family-0036",
+    "name": "砂砾 干净帆布书包",
+    "brand": "砂砾",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 1,
+    "photo": 13,
+    "image_url": "",
+    "url": "",
+    "price": 119,
+    "weight": 460,
+    "capacity": 22,
+    "laptop": 14,
+    "dimensions": "43×30×13cm",
+    "material": "帆布",
+    "color": "米色",
+    "color_label": "米色",
+    "variants": [
+      "米色 / 标准款"
+    ],
+    "style": "简约",
+    "style_tags": [
+      "休闲",
+      "简约"
+    ],
+    "aesthetic_tags": [
+      "复古",
+      "极简"
+    ],
+    "categories": [
+      "休闲双肩包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤"
+    ],
+    "feature_flags": {
+      "宽肩带": true,
+      "电脑隔层": true,
+      "胸扣": false,
+      "行李箱插带": false,
+      "防盗口袋": true,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": true
+    },
+    "shoulder_width_cm": 7.5,
+    "computer_padding": "basic",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": false,
+    "stock": 505,
+    "rating": 98.6,
+    "sales": 28665,
+    "review_count": 1785,
+    "reviews": [
+      {
+        "text": "14英寸独立电脑隔层，书本与电脑分开放，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "米色 / 标准款"
+      },
+      {
+        "text": "米色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "米色 / 标准款"
+      },
+      {
+        "text": "电脑隔层为基础缓冲，贵重设备建议加内胆包，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "米色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "14英寸独立电脑隔层，书本与电脑分开放",
+      "7.5cm肩带，背部有透气网布",
+      "口袋数量少，拿取物品路径简单"
+    ],
+    "limits": [
+      "电脑隔层为基础缓冲，贵重设备建议加内胆包",
+      "浅色包面需要定期清洁",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "砂砾箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "包面装饰克制，轮廓简洁，适合日常穿搭"
+  },
+  {
+    "id": 36,
+    "sku": "BDN10-0037",
+    "family": "family-0037",
+    "name": "纸云 轻装托特包",
+    "brand": "纸云",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 1,
+    "photo": 14,
+    "image_url": "",
+    "url": "",
+    "price": 79,
+    "weight": 260,
+    "capacity": 16,
+    "laptop": null,
+    "dimensions": "39×27×13cm",
+    "material": "聚酯纤维",
+    "color": "米色",
+    "color_label": "米色",
+    "variants": [
+      "米色 / 标准款"
+    ],
+    "style": "简约",
+    "style_tags": [
+      "休闲",
+      "简约"
+    ],
+    "aesthetic_tags": [
+      "极简"
+    ],
+    "categories": [
+      "托特包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤"
+    ],
+    "feature_flags": {
+      "宽肩带": false,
+      "电脑隔层": false,
+      "胸扣": false,
+      "行李箱插带": true,
+      "防盗口袋": false,
+      "水杯侧袋": false,
+      "背部透气": false,
+      "少分区": true
+    },
+    "shoulder_width_cm": 4.5,
+    "computer_padding": "none",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": false,
+    "stock": 516,
+    "rating": 96.4,
+    "sales": 30404,
+    "review_count": 2216,
+    "reviews": [
+      {
+        "text": "260g包身、16L容量，适合轻装随行，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "米色 / 标准款"
+      },
+      {
+        "text": "米色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "米色 / 标准款"
+      },
+      {
+        "text": "没有独立缓冲电脑隔层，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "米色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "260g包身、16L容量，适合轻装随行",
+      "4.5cm肩带，日常携带方便",
+      "背部行李箱插带，出差可固定在拉杆上",
+      "口袋数量少，拿取物品路径简单"
+    ],
+    "limits": [
+      "没有独立缓冲电脑隔层",
+      "容量偏小，大件衣物需要另作安排",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "纸云箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "手提与肩背结构，开口较大，取放书本方便"
+  },
+  {
+    "id": 37,
+    "sku": "BDN10-0038",
+    "family": "family-0038",
+    "name": "格序 电脑通勤托特",
+    "brand": "格序",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 1,
+    "photo": 15,
+    "image_url": "",
+    "url": "",
+    "price": 189,
+    "weight": 510,
+    "capacity": 22,
+    "laptop": 15.6,
+    "dimensions": "43×30×13cm",
+    "material": "聚酯纤维",
+    "color": "灰色",
+    "color_label": "灰色",
+    "variants": [
+      "灰色 / 标准款"
+    ],
+    "style": "商务",
+    "style_tags": [
+      "商务",
+      "休闲",
+      "简约"
+    ],
+    "aesthetic_tags": [
+      "商务",
+      "极简"
+    ],
+    "categories": [
+      "托特包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤"
+    ],
+    "feature_flags": {
+      "宽肩带": true,
+      "电脑隔层": true,
+      "胸扣": false,
+      "行李箱插带": true,
+      "防盗口袋": true,
+      "水杯侧袋": false,
+      "背部透气": false,
+      "少分区": false
+    },
+    "shoulder_width_cm": 7.5,
+    "computer_padding": "air",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": true,
+    "stock": 527,
+    "rating": 97.5,
+    "sales": 32143,
+    "review_count": 2647,
+    "reviews": [
+      {
+        "text": "15.6英寸独立电脑隔层，加厚缓冲保护，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "灰色 / 标准款"
+      },
+      {
+        "text": "灰色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "灰色 / 标准款"
+      },
+      {
+        "text": "加厚电脑仓占用部分主仓空间，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "灰色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "15.6英寸独立电脑隔层，加厚缓冲保护",
+      "7.5cm肩带，日常携带方便",
+      "背部行李箱插带，出差可固定在拉杆上"
+    ],
+    "limits": [
+      "加厚电脑仓占用部分主仓空间",
+      "空包510g，更适合带电脑或装备时使用",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "格序箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "手提与肩背结构，开口较大，取放书本方便"
+  },
+  {
+    "id": 38,
+    "sku": "BDN10-0039",
+    "family": "family-0039",
+    "name": "山径 轻徒步背包",
+    "brand": "山径",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 1,
+    "photo": 16,
+    "image_url": "",
+    "url": "",
+    "price": 239,
+    "weight": 680,
+    "capacity": 30,
+    "laptop": null,
+    "dimensions": "48×30×17cm",
+    "material": "尼龙",
+    "color": "绿色",
+    "color_label": "绿色",
+    "variants": [
+      "绿色 / 标准款"
+    ],
+    "style": "运动",
+    "style_tags": [
+      "休闲",
+      "运动"
+    ],
+    "aesthetic_tags": [
+      "运动感",
+      "酷感机能"
+    ],
+    "categories": [
+      "户外登山包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "旅行",
+      "运动"
+    ],
+    "feature_flags": {
+      "宽肩带": true,
+      "电脑隔层": false,
+      "胸扣": true,
+      "行李箱插带": false,
+      "防盗口袋": false,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": false
+    },
+    "shoulder_width_cm": 7.5,
+    "computer_padding": "none",
+    "water": true,
+    "water_protection": "日常防雨",
+    "water_test": "",
+    "storage": false,
+    "stock": 538,
+    "rating": 98.6,
+    "sales": 33882,
+    "review_count": 3078,
+    "reviews": [
+      {
+        "text": "680g包身、30L容量，适合轻装随行，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "绿色 / 标准款"
+      },
+      {
+        "text": "绿色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "绿色 / 标准款"
+      },
+      {
+        "text": "没有独立缓冲电脑隔层，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "绿色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "680g包身、30L容量，适合轻装随行",
+      "7.5cm肩带，背部有透气网布"
+    ],
+    "limits": [
+      "没有独立缓冲电脑隔层",
+      "装满较重物品时需合理分配重量",
+      "短时小雨可用，暴雨和浸水需额外防护"
+    ],
+    "shop_name": "山径箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "多点扣带结构，适合把户外装备分区固定"
+  },
+  {
+    "id": 39,
+    "sku": "BDN10-0040",
+    "family": "family-0040",
+    "name": "远峰 腰带徒步背包",
+    "brand": "远峰",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 1,
+    "photo": 17,
+    "image_url": "",
+    "url": "",
+    "price": 299,
+    "weight": 820,
+    "capacity": 38,
+    "laptop": null,
+    "dimensions": "48×30×17cm",
+    "material": "尼龙",
+    "color": "蓝色",
+    "color_label": "宝蓝",
+    "variants": [
+      "宝蓝 / 标准款"
+    ],
+    "style": "运动",
+    "style_tags": [
+      "休闲",
+      "运动"
+    ],
+    "aesthetic_tags": [
+      "运动感"
+    ],
+    "categories": [
+      "户外登山包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "旅行",
+      "运动"
+    ],
+    "feature_flags": {
+      "宽肩带": true,
+      "电脑隔层": false,
+      "胸扣": true,
+      "行李箱插带": false,
+      "防盗口袋": false,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": false
+    },
+    "shoulder_width_cm": 7.5,
+    "computer_padding": "none",
+    "water": true,
+    "water_protection": "日常防雨",
+    "water_test": "",
+    "storage": false,
+    "stock": 549,
+    "rating": 96.4,
+    "sales": 35621,
+    "review_count": 3509,
+    "reviews": [
+      {
+        "text": "820g包身、38L容量，适合轻装随行，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "宝蓝 / 标准款"
+      },
+      {
+        "text": "宝蓝配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "宝蓝 / 标准款"
+      },
+      {
+        "text": "没有独立缓冲电脑隔层，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "宝蓝 / 标准款"
+      }
+    ],
+    "advantages": [
+      "820g包身、38L容量，适合轻装随行",
+      "7.5cm肩带，背部有透气网布"
+    ],
+    "limits": [
+      "没有独立缓冲电脑隔层",
+      "装满较重物品时需合理分配重量",
+      "短时小雨可用，暴雨和浸水需额外防护"
+    ],
+    "shop_name": "远峰箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "多点扣带结构，适合把户外装备分区固定"
+  },
+  {
+    "id": 40,
+    "sku": "BDN10-0041",
+    "family": "family-0041",
+    "name": "赤岩 装备登山背包",
+    "brand": "赤岩",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 1,
+    "photo": 18,
+    "image_url": "",
+    "url": "",
+    "price": 359,
+    "weight": 980,
+    "capacity": 45,
+    "laptop": null,
+    "dimensions": "48×30×17cm",
+    "material": "聚酯纤维",
+    "color": "橙色",
+    "color_label": "橙色",
+    "variants": [
+      "橙色 / 标准款"
+    ],
+    "style": "运动",
+    "style_tags": [
+      "休闲",
+      "运动"
+    ],
+    "aesthetic_tags": [
+      "运动感",
+      "酷感机能"
+    ],
+    "categories": [
+      "户外登山包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "旅行",
+      "运动"
+    ],
+    "feature_flags": {
+      "宽肩带": true,
+      "电脑隔层": false,
+      "胸扣": true,
+      "行李箱插带": true,
+      "防盗口袋": false,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": false
+    },
+    "shoulder_width_cm": 7.5,
+    "computer_padding": "none",
+    "water": true,
+    "water_protection": "日常防雨",
+    "water_test": "",
+    "storage": false,
+    "stock": 560,
+    "rating": 97.5,
+    "sales": 3360,
+    "review_count": 3940,
+    "reviews": [
+      {
+        "text": "980g包身、45L容量，适合轻装随行，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "橙色 / 标准款"
+      },
+      {
+        "text": "橙色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "橙色 / 标准款"
+      },
+      {
+        "text": "没有独立缓冲电脑隔层，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "橙色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "980g包身、45L容量，适合轻装随行",
+      "7.5cm肩带，背部有透气网布",
+      "背部行李箱插带，出差可固定在拉杆上"
+    ],
+    "limits": [
+      "没有独立缓冲电脑隔层",
+      "装满较重物品时需合理分配重量",
+      "短时小雨可用，暴雨和浸水需额外防护"
+    ],
+    "shop_name": "赤岩箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "多点扣带结构，适合把户外装备分区固定"
+  },
+  {
+    "id": 41,
+    "sku": "BDN10-0042",
+    "family": "family-0042",
+    "name": "雨盾 密封防水背包",
+    "brand": "雨盾",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 1,
+    "photo": 19,
+    "image_url": "",
+    "url": "",
+    "price": 329,
+    "weight": 710,
+    "capacity": 28,
+    "laptop": 16,
+    "dimensions": "48×30×17cm",
+    "material": "涂层尼龙",
+    "color": "灰色",
+    "color_label": "灰色",
+    "variants": [
+      "灰色 / 标准款"
+    ],
+    "style": "运动",
+    "style_tags": [
+      "休闲",
+      "简约",
+      "运动"
+    ],
+    "aesthetic_tags": [
+      "酷感机能",
+      "极简"
+    ],
+    "categories": [
+      "户外登山包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤",
+      "旅行"
+    ],
+    "feature_flags": {
+      "宽肩带": true,
+      "电脑隔层": true,
+      "胸扣": true,
+      "行李箱插带": false,
+      "防盗口袋": true,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": true
+    },
+    "shoulder_width_cm": 7.5,
+    "computer_padding": "air",
+    "water": true,
+    "water_protection": "有防水证明",
+    "water_test": "IPX6包体防喷水测试（闭合状态）",
+    "storage": false,
+    "stock": 571,
+    "rating": 98.6,
+    "sales": 5099,
+    "review_count": 4371,
+    "reviews": [
+      {
+        "text": "16英寸独立电脑隔层，加厚缓冲保护，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "灰色 / 标准款"
+      },
+      {
+        "text": "灰色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "灰色 / 标准款"
+      },
+      {
+        "text": "加厚电脑仓占用部分主仓空间，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "灰色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "16英寸独立电脑隔层，加厚缓冲保护",
+      "7.5cm肩带，背部有透气网布",
+      "口袋数量少，拿取物品路径简单"
+    ],
+    "limits": [
+      "加厚电脑仓占用部分主仓空间",
+      "空包710g，更适合带电脑或装备时使用",
+      "防水测试范围为包体闭合状态，不包含长时间浸水",
+      "闭合包体可应对雨天喷淋，长时间浸水仍不在适用范围"
+    ],
+    "shop_name": "雨盾箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "卷口闭合结构，主仓开口利落"
+  },
+  {
+    "id": 42,
+    "sku": "BDN10-0043",
+    "family": "family-0043",
+    "name": "月弧 随身斜挎包",
+    "brand": "月弧",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 1,
+    "photo": 20,
+    "image_url": "",
+    "url": "",
+    "price": 89,
+    "weight": 190,
+    "capacity": 5,
+    "laptop": null,
+    "dimensions": "24×20×9cm",
+    "material": "聚酯纤维",
+    "color": "黑色",
+    "color_label": "黑色",
+    "variants": [
+      "黑色 / 标准款"
+    ],
+    "style": "简约",
+    "style_tags": [
+      "休闲",
+      "简约"
+    ],
+    "aesthetic_tags": [
+      "极简",
+      "酷感机能"
+    ],
+    "categories": [
+      "斜挎包"
+    ],
+    "scene": [
+      "休闲",
+      "旅行",
+      "运动"
+    ],
+    "feature_flags": {
+      "宽肩带": false,
+      "电脑隔层": false,
+      "胸扣": false,
+      "行李箱插带": false,
+      "防盗口袋": true,
+      "水杯侧袋": false,
+      "背部透气": false,
+      "少分区": true
+    },
+    "shoulder_width_cm": 4.5,
+    "computer_padding": "none",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": false,
+    "stock": 582,
+    "rating": 96.4,
+    "sales": 6838,
+    "review_count": 4802,
+    "reviews": [
+      {
+        "text": "190g包身、5L容量，适合轻装随行，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "黑色 / 标准款"
+      },
+      {
+        "text": "黑色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "黑色 / 标准款"
+      },
+      {
+        "text": "没有独立缓冲电脑隔层，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "黑色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "190g包身、5L容量，适合轻装随行",
+      "4.5cm肩带，日常携带方便",
+      "口袋数量少，拿取物品路径简单"
+    ],
+    "limits": [
+      "没有独立缓冲电脑隔层",
+      "容量偏小，大件衣物需要另作安排",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "月弧箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "小巧斜挎轮廓，适合手机、钥匙和钱包随行"
+  },
+  {
+    "id": 43,
+    "sku": "BDN10-0044",
+    "family": "family-0044",
+    "name": "方糖 轻巧斜挎包",
+    "brand": "方糖",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 1,
+    "photo": 21,
+    "image_url": "",
+    "url": "",
+    "price": 99,
+    "weight": 220,
+    "capacity": 6,
+    "laptop": null,
+    "dimensions": "24×20×9cm",
+    "material": "聚酯纤维",
+    "color": "米色",
+    "color_label": "米色",
+    "variants": [
+      "米色 / 标准款"
+    ],
+    "style": "简约",
+    "style_tags": [
+      "休闲",
+      "简约"
+    ],
+    "aesthetic_tags": [
+      "清新少女",
+      "极简"
+    ],
+    "categories": [
+      "斜挎包"
+    ],
+    "scene": [
+      "休闲",
+      "旅行",
+      "运动"
+    ],
+    "feature_flags": {
+      "宽肩带": false,
+      "电脑隔层": false,
+      "胸扣": false,
+      "行李箱插带": false,
+      "防盗口袋": true,
+      "水杯侧袋": false,
+      "背部透气": false,
+      "少分区": true
+    },
+    "shoulder_width_cm": 4.5,
+    "computer_padding": "none",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": false,
+    "stock": 593,
+    "rating": 97.5,
+    "sales": 8577,
+    "review_count": 5233,
+    "reviews": [
+      {
+        "text": "220g包身、6L容量，适合轻装随行，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "米色 / 标准款"
+      },
+      {
+        "text": "米色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "米色 / 标准款"
+      },
+      {
+        "text": "没有独立缓冲电脑隔层，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "米色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "220g包身、6L容量，适合轻装随行",
+      "4.5cm肩带，日常携带方便",
+      "口袋数量少，拿取物品路径简单"
+    ],
+    "limits": [
+      "没有独立缓冲电脑隔层",
+      "容量偏小，大件衣物需要另作安排",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "方糖箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "小巧斜挎轮廓，适合手机、钥匙和钱包随行"
+  },
+  {
+    "id": 44,
+    "sku": "BDN10-0045",
+    "family": "family-0045",
+    "name": "灰隼 运动胸包",
+    "brand": "灰隼",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 1,
+    "photo": 22,
+    "image_url": "",
+    "url": "",
+    "price": 109,
+    "weight": 240,
+    "capacity": 7,
+    "laptop": null,
+    "dimensions": "24×20×9cm",
+    "material": "聚酯纤维",
+    "color": "灰色",
+    "color_label": "灰色",
+    "variants": [
+      "灰色 / 标准款"
+    ],
+    "style": "运动",
+    "style_tags": [
+      "休闲",
+      "运动"
+    ],
+    "aesthetic_tags": [
+      "运动感",
+      "酷感机能"
+    ],
+    "categories": [
+      "胸包"
+    ],
+    "scene": [
+      "休闲",
+      "运动",
+      "旅行"
+    ],
+    "feature_flags": {
+      "宽肩带": false,
+      "电脑隔层": false,
+      "胸扣": false,
+      "行李箱插带": true,
+      "防盗口袋": true,
+      "水杯侧袋": false,
+      "背部透气": true,
+      "少分区": true
+    },
+    "shoulder_width_cm": 4.5,
+    "computer_padding": "none",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": false,
+    "stock": 604,
+    "rating": 98.6,
+    "sales": 10316,
+    "review_count": 5664,
+    "reviews": [
+      {
+        "text": "240g包身、7L容量，适合轻装随行，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "灰色 / 标准款"
+      },
+      {
+        "text": "灰色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "灰色 / 标准款"
+      },
+      {
+        "text": "没有独立缓冲电脑隔层，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "灰色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "240g包身、7L容量，适合轻装随行",
+      "4.5cm肩带，背部有透气网布",
+      "背部行李箱插带，出差可固定在拉杆上",
+      "口袋数量少，拿取物品路径简单"
+    ],
+    "limits": [
+      "没有独立缓冲电脑隔层",
+      "容量偏小，大件衣物需要另作安排",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "灰隼箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "斜向单肩结构，随身物品放在身前容易拿取"
+  },
+  {
+    "id": 45,
+    "sku": "BDN10-0046",
+    "family": "family-0046",
+    "name": "紫电 小型胸包",
+    "brand": "紫电",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 1,
+    "photo": 23,
+    "image_url": "",
+    "url": "",
+    "price": 89,
+    "weight": 210,
+    "capacity": 5,
+    "laptop": null,
+    "dimensions": "24×20×9cm",
+    "material": "聚酯纤维",
+    "color": "紫色",
+    "color_label": "紫色",
+    "variants": [
+      "紫色 / 标准款"
+    ],
+    "style": "运动",
+    "style_tags": [
+      "休闲",
+      "运动"
+    ],
+    "aesthetic_tags": [
+      "运动感",
+      "活力撞色"
+    ],
+    "categories": [
+      "胸包"
+    ],
+    "scene": [
+      "休闲",
+      "运动",
+      "旅行"
+    ],
+    "feature_flags": {
+      "宽肩带": false,
+      "电脑隔层": false,
+      "胸扣": false,
+      "行李箱插带": false,
+      "防盗口袋": true,
+      "水杯侧袋": false,
+      "背部透气": true,
+      "少分区": true
+    },
+    "shoulder_width_cm": 4.5,
+    "computer_padding": "none",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": false,
+    "stock": 615,
+    "rating": 96.4,
+    "sales": 12055,
+    "review_count": 6095,
+    "reviews": [
+      {
+        "text": "210g包身、5L容量，适合轻装随行，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "紫色 / 标准款"
+      },
+      {
+        "text": "紫色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "紫色 / 标准款"
+      },
+      {
+        "text": "没有独立缓冲电脑隔层，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "紫色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "210g包身、5L容量，适合轻装随行",
+      "4.5cm肩带，背部有透气网布",
+      "口袋数量少，拿取物品路径简单"
+    ],
+    "limits": [
+      "没有独立缓冲电脑隔层",
+      "容量偏小，大件衣物需要另作安排",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "紫电箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "斜向单肩结构，随身物品放在身前容易拿取"
+  },
+  {
+    "id": 46,
+    "sku": "BDN10-0047",
+    "family": "family-0047",
+    "name": "冰川 清爽电脑背包",
+    "brand": "冰川",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 2,
+    "photo": 0,
+    "image_url": "",
+    "url": "",
+    "price": 149,
+    "weight": 410,
+    "capacity": 24,
+    "laptop": 16,
+    "dimensions": "43×30×17cm",
+    "material": "聚酯纤维",
+    "color": "蓝色",
+    "color_label": "浅蓝",
+    "variants": [
+      "浅蓝 / 标准款"
+    ],
+    "style": "简约",
+    "style_tags": [
+      "休闲",
+      "简约"
+    ],
+    "aesthetic_tags": [
+      "极简",
+      "清新少女"
+    ],
+    "categories": [
+      "通勤电脑双肩包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤",
+      "旅行"
+    ],
+    "feature_flags": {
+      "宽肩带": false,
+      "电脑隔层": true,
+      "胸扣": false,
+      "行李箱插带": false,
+      "防盗口袋": true,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": true
+    },
+    "shoulder_width_cm": 4.5,
+    "computer_padding": "basic",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": false,
+    "stock": 626,
+    "rating": 97.5,
+    "sales": 13794,
+    "review_count": 6526,
+    "reviews": [
+      {
+        "text": "16英寸独立电脑隔层，书本与电脑分开放，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "浅蓝 / 标准款"
+      },
+      {
+        "text": "浅蓝配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "浅蓝 / 标准款"
+      },
+      {
+        "text": "电脑隔层为基础缓冲，贵重设备建议加内胆包，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "浅蓝 / 标准款"
+      }
+    ],
+    "advantages": [
+      "16英寸独立电脑隔层，书本与电脑分开放",
+      "4.5cm肩带，背部有透气网布",
+      "口袋数量少，拿取物品路径简单"
+    ],
+    "limits": [
+      "电脑隔层为基础缓冲，贵重设备建议加内胆包",
+      "浅色包面需要定期清洁",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "冰川箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "包面装饰克制，轮廓简洁，适合日常穿搭"
+  },
+  {
+    "id": 47,
+    "sku": "BDN10-0048",
+    "family": "family-0048",
+    "name": "蓝鲸 大开口校园背包",
+    "brand": "蓝鲸",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 2,
+    "photo": 1,
+    "image_url": "",
+    "url": "",
+    "price": 139,
+    "weight": 430,
+    "capacity": 25,
+    "laptop": 16,
+    "dimensions": "43×30×17cm",
+    "material": "聚酯纤维",
+    "color": "蓝色",
+    "color_label": "藏蓝",
+    "variants": [
+      "藏蓝 / 标准款"
+    ],
+    "style": "简约",
+    "style_tags": [
+      "休闲",
+      "简约"
+    ],
+    "aesthetic_tags": [
+      "极简"
+    ],
+    "categories": [
+      "休闲双肩包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤",
+      "旅行"
+    ],
+    "feature_flags": {
+      "宽肩带": true,
+      "电脑隔层": true,
+      "胸扣": false,
+      "行李箱插带": false,
+      "防盗口袋": true,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": false
+    },
+    "shoulder_width_cm": 7.5,
+    "computer_padding": "basic",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": true,
+    "stock": 637,
+    "rating": 98.6,
+    "sales": 15533,
+    "review_count": 6957,
+    "reviews": [
+      {
+        "text": "16英寸独立电脑隔层，书本与电脑分开放，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "藏蓝 / 标准款"
+      },
+      {
+        "text": "藏蓝配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "藏蓝 / 标准款"
+      },
+      {
+        "text": "电脑隔层为基础缓冲，贵重设备建议加内胆包，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "藏蓝 / 标准款"
+      }
+    ],
+    "advantages": [
+      "16英寸独立电脑隔层，书本与电脑分开放",
+      "7.5cm肩带，背部有透气网布"
+    ],
+    "limits": [
+      "电脑隔层为基础缓冲，贵重设备建议加内胆包",
+      "装满后包身厚度会增加，拥挤通勤时需留意空间",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "蓝鲸箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "包面装饰克制，轮廓简洁，适合日常穿搭"
+  },
+  {
+    "id": 48,
+    "sku": "BDN10-0049",
+    "family": "family-0049",
+    "name": "海盐 翻盖通勤背包",
+    "brand": "海盐",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 2,
+    "photo": 2,
+    "image_url": "",
+    "url": "",
+    "price": 179,
+    "weight": 470,
+    "capacity": 24,
+    "laptop": 16,
+    "dimensions": "43×30×17cm",
+    "material": "聚酯纤维",
+    "color": "绿色",
+    "color_label": "薄荷绿",
+    "variants": [
+      "薄荷绿 / 标准款"
+    ],
+    "style": "简约",
+    "style_tags": [
+      "休闲",
+      "简约"
+    ],
+    "aesthetic_tags": [
+      "极简",
+      "清新少女"
+    ],
+    "categories": [
+      "通勤电脑双肩包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤",
+      "旅行"
+    ],
+    "feature_flags": {
+      "宽肩带": true,
+      "电脑隔层": true,
+      "胸扣": false,
+      "行李箱插带": true,
+      "防盗口袋": true,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": true
+    },
+    "shoulder_width_cm": 7.5,
+    "computer_padding": "air",
+    "water": true,
+    "water_protection": "日常防雨",
+    "water_test": "",
+    "storage": false,
+    "stock": 648,
+    "rating": 96.4,
+    "sales": 17272,
+    "review_count": 588,
+    "reviews": [
+      {
+        "text": "16英寸独立电脑隔层，加厚缓冲保护，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "薄荷绿 / 标准款"
+      },
+      {
+        "text": "薄荷绿配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "薄荷绿 / 标准款"
+      },
+      {
+        "text": "加厚电脑仓占用部分主仓空间，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "薄荷绿 / 标准款"
+      }
+    ],
+    "advantages": [
+      "16英寸独立电脑隔层，加厚缓冲保护",
+      "7.5cm肩带，背部有透气网布",
+      "背部行李箱插带，出差可固定在拉杆上",
+      "口袋数量少，拿取物品路径简单"
+    ],
+    "limits": [
+      "加厚电脑仓占用部分主仓空间",
+      "空包470g，更适合带电脑或装备时使用",
+      "短时小雨可用，暴雨和浸水需额外防护"
+    ],
+    "shop_name": "海盐箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "背部可固定行李箱拉杆，出差转乘更方便"
+  },
+  {
+    "id": 49,
+    "sku": "BDN10-0050",
+    "family": "family-0050",
+    "name": "雾港 宽肩带电脑包",
+    "brand": "雾港",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 2,
+    "photo": 3,
+    "image_url": "",
+    "url": "",
+    "price": 239,
+    "weight": 590,
+    "capacity": 28,
+    "laptop": 17.3,
+    "dimensions": "48×30×17cm",
+    "material": "聚酯纤维",
+    "color": "蓝色",
+    "color_label": "雾蓝",
+    "variants": [
+      "雾蓝 / 标准款"
+    ],
+    "style": "商务",
+    "style_tags": [
+      "商务",
+      "休闲",
+      "简约"
+    ],
+    "aesthetic_tags": [
+      "商务",
+      "极简"
+    ],
+    "categories": [
+      "通勤电脑双肩包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤",
+      "旅行"
+    ],
+    "feature_flags": {
+      "宽肩带": true,
+      "电脑隔层": true,
+      "胸扣": false,
+      "行李箱插带": true,
+      "防盗口袋": true,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": false
+    },
+    "shoulder_width_cm": 7.5,
+    "computer_padding": "air",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": true,
+    "stock": 659,
+    "rating": 97.5,
+    "sales": 19011,
+    "review_count": 1019,
+    "reviews": [
+      {
+        "text": "17.3英寸独立电脑隔层，加厚缓冲保护，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "雾蓝 / 标准款"
+      },
+      {
+        "text": "雾蓝配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "雾蓝 / 标准款"
+      },
+      {
+        "text": "加厚电脑仓占用部分主仓空间，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "雾蓝 / 标准款"
+      }
+    ],
+    "advantages": [
+      "17.3英寸独立电脑隔层，加厚缓冲保护",
+      "7.5cm肩带，背部有透气网布",
+      "背部行李箱插带，出差可固定在拉杆上"
+    ],
+    "limits": [
+      "加厚电脑仓占用部分主仓空间",
+      "空包590g，更适合带电脑或装备时使用",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "雾港箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "背部可固定行李箱拉杆，出差转乘更方便"
+  },
+  {
+    "id": 50,
+    "sku": "BDN10-0051",
+    "family": "family-0051",
+    "name": "桃心 圆袋校园背包",
+    "brand": "桃心",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 2,
+    "photo": 4,
+    "image_url": "",
+    "url": "",
+    "price": 109,
+    "weight": 330,
+    "capacity": 18,
+    "laptop": 14,
+    "dimensions": "39×27×13cm",
+    "material": "聚酯纤维",
+    "color": "粉色",
+    "color_label": "粉色",
+    "variants": [
+      "粉色 / 标准款"
+    ],
+    "style": "休闲",
+    "style_tags": [
+      "休闲"
+    ],
+    "aesthetic_tags": [
+      "清新少女"
+    ],
+    "categories": [
+      "休闲双肩包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤"
+    ],
+    "feature_flags": {
+      "宽肩带": false,
+      "电脑隔层": true,
+      "胸扣": false,
+      "行李箱插带": false,
+      "防盗口袋": true,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": true
+    },
+    "shoulder_width_cm": 4.5,
+    "computer_padding": "basic",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": false,
+    "stock": 670,
+    "rating": 98.6,
+    "sales": 20750,
+    "review_count": 1450,
+    "reviews": [
+      {
+        "text": "14英寸独立电脑隔层，书本与电脑分开放，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "粉色 / 标准款"
+      },
+      {
+        "text": "粉色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "粉色 / 标准款"
+      },
+      {
+        "text": "电脑隔层为基础缓冲，贵重设备建议加内胆包，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "粉色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "14英寸独立电脑隔层，书本与电脑分开放",
+      "4.5cm肩带，背部有透气网布",
+      "口袋数量少，拿取物品路径简单"
+    ],
+    "limits": [
+      "电脑隔层为基础缓冲，贵重设备建议加内胆包",
+      "浅色包面需要定期清洁",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "桃心箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "外袋与主仓分开放置，小物品随手可取"
+  },
+  {
+    "id": 51,
+    "sku": "BDN10-0052",
+    "family": "family-0052",
+    "name": "紫岚 轻巧书本背包",
+    "brand": "紫岚",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 2,
+    "photo": 5,
+    "image_url": "",
+    "url": "",
+    "price": 119,
+    "weight": 360,
+    "capacity": 21,
+    "laptop": 14,
+    "dimensions": "43×30×13cm",
+    "material": "聚酯纤维",
+    "color": "紫色",
+    "color_label": "紫色",
+    "variants": [
+      "紫色 / 标准款"
+    ],
+    "style": "简约",
+    "style_tags": [
+      "休闲",
+      "简约"
+    ],
+    "aesthetic_tags": [
+      "清新少女",
+      "极简"
+    ],
+    "categories": [
+      "休闲双肩包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤"
+    ],
+    "feature_flags": {
+      "宽肩带": false,
+      "电脑隔层": true,
+      "胸扣": false,
+      "行李箱插带": false,
+      "防盗口袋": true,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": true
+    },
+    "shoulder_width_cm": 4.5,
+    "computer_padding": "basic",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": false,
+    "stock": 681,
+    "rating": 96.4,
+    "sales": 22489,
+    "review_count": 1881,
+    "reviews": [
+      {
+        "text": "14英寸独立电脑隔层，书本与电脑分开放，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "紫色 / 标准款"
+      },
+      {
+        "text": "紫色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "紫色 / 标准款"
+      },
+      {
+        "text": "电脑隔层为基础缓冲，贵重设备建议加内胆包，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "紫色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "14英寸独立电脑隔层，书本与电脑分开放",
+      "4.5cm肩带，背部有透气网布",
+      "口袋数量少，拿取物品路径简单"
+    ],
+    "limits": [
+      "电脑隔层为基础缓冲，贵重设备建议加内胆包",
+      "浅色包面需要定期清洁",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "紫岚箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "包面装饰克制，轮廓简洁，适合日常穿搭"
+  },
+  {
+    "id": 52,
+    "sku": "BDN10-0053",
+    "family": "family-0053",
+    "name": "柠云 奶黄拼色背包",
+    "brand": "柠云",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 2,
+    "photo": 6,
+    "image_url": "",
+    "url": "",
+    "price": 129,
+    "weight": 380,
+    "capacity": 20,
+    "laptop": 14,
+    "dimensions": "43×30×13cm",
+    "material": "聚酯纤维",
+    "color": "米色",
+    "color_label": "米色",
+    "variants": [
+      "米色 / 标准款"
+    ],
+    "style": "休闲",
+    "style_tags": [
+      "休闲"
+    ],
+    "aesthetic_tags": [
+      "清新少女",
+      "活力撞色"
+    ],
+    "categories": [
+      "休闲双肩包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤"
+    ],
+    "feature_flags": {
+      "宽肩带": false,
+      "电脑隔层": true,
+      "胸扣": false,
+      "行李箱插带": true,
+      "防盗口袋": true,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": false
+    },
+    "shoulder_width_cm": 4.5,
+    "computer_padding": "basic",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": true,
+    "stock": 692,
+    "rating": 97.5,
+    "sales": 24228,
+    "review_count": 2312,
+    "reviews": [
+      {
+        "text": "14英寸独立电脑隔层，书本与电脑分开放，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "米色 / 标准款"
+      },
+      {
+        "text": "米色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "米色 / 标准款"
+      },
+      {
+        "text": "电脑隔层为基础缓冲，贵重设备建议加内胆包，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "米色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "14英寸独立电脑隔层，书本与电脑分开放",
+      "4.5cm肩带，背部有透气网布",
+      "背部行李箱插带，出差可固定在拉杆上"
+    ],
+    "limits": [
+      "电脑隔层为基础缓冲，贵重设备建议加内胆包",
+      "浅色包面需要定期清洁",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "柠云箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "背部可固定行李箱拉杆，出差转乘更方便"
+  },
+  {
+    "id": 53,
+    "sku": "BDN10-0054",
+    "family": "family-0054",
+    "name": "白屿 干净通勤背包",
+    "brand": "白屿",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 2,
+    "photo": 7,
+    "image_url": "",
+    "url": "",
+    "price": 159,
+    "weight": 420,
+    "capacity": 23,
+    "laptop": 15.6,
+    "dimensions": "43×30×13cm",
+    "material": "聚酯纤维",
+    "color": "白色",
+    "color_label": "白色",
+    "variants": [
+      "白色 / 标准款"
+    ],
+    "style": "简约",
+    "style_tags": [
+      "休闲",
+      "简约"
+    ],
+    "aesthetic_tags": [
+      "极简",
+      "清新少女"
+    ],
+    "categories": [
+      "通勤电脑双肩包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤"
+    ],
+    "feature_flags": {
+      "宽肩带": false,
+      "电脑隔层": true,
+      "胸扣": false,
+      "行李箱插带": false,
+      "防盗口袋": true,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": true
+    },
+    "shoulder_width_cm": 4.5,
+    "computer_padding": "basic",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": false,
+    "stock": 703,
+    "rating": 98.6,
+    "sales": 25967,
+    "review_count": 2743,
+    "reviews": [
+      {
+        "text": "15.6英寸独立电脑隔层，书本与电脑分开放，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "白色 / 标准款"
+      },
+      {
+        "text": "白色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "白色 / 标准款"
+      },
+      {
+        "text": "电脑隔层为基础缓冲，贵重设备建议加内胆包，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "白色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "15.6英寸独立电脑隔层，书本与电脑分开放",
+      "4.5cm肩带，背部有透气网布",
+      "口袋数量少，拿取物品路径简单"
+    ],
+    "limits": [
+      "电脑隔层为基础缓冲，贵重设备建议加内胆包",
+      "浅色包面需要定期清洁",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "白屿箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "包面装饰克制，轮廓简洁，适合日常穿搭"
+  },
+  {
+    "id": 54,
+    "sku": "BDN10-0055",
+    "family": "family-0055",
+    "name": "夜翼 机能单肩胸包",
+    "brand": "夜翼",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 2,
+    "photo": 8,
+    "image_url": "",
+    "url": "",
+    "price": 129,
+    "weight": 290,
+    "capacity": 9,
+    "laptop": null,
+    "dimensions": "24×20×9cm",
+    "material": "聚酯纤维",
+    "color": "黑色",
+    "color_label": "黑色",
+    "variants": [
+      "黑色 / 标准款"
+    ],
+    "style": "休闲",
+    "style_tags": [
+      "休闲"
+    ],
+    "aesthetic_tags": [
+      "酷感机能"
+    ],
+    "categories": [
+      "胸包"
+    ],
+    "scene": [
+      "休闲",
+      "旅行",
+      "运动"
+    ],
+    "feature_flags": {
+      "宽肩带": false,
+      "电脑隔层": false,
+      "胸扣": false,
+      "行李箱插带": false,
+      "防盗口袋": true,
+      "水杯侧袋": false,
+      "背部透气": true,
+      "少分区": false
+    },
+    "shoulder_width_cm": 4.5,
+    "computer_padding": "none",
+    "water": true,
+    "water_protection": "日常防雨",
+    "water_test": "",
+    "storage": false,
+    "stock": 714,
+    "rating": 96.4,
+    "sales": 27706,
+    "review_count": 3174,
+    "reviews": [
+      {
+        "text": "290g包身、9L容量，适合轻装随行，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "黑色 / 标准款"
+      },
+      {
+        "text": "黑色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "黑色 / 标准款"
+      },
+      {
+        "text": "没有独立缓冲电脑隔层，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "黑色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "290g包身、9L容量，适合轻装随行",
+      "4.5cm肩带，背部有透气网布"
+    ],
+    "limits": [
+      "没有独立缓冲电脑隔层",
+      "容量偏小，大件衣物需要另作安排",
+      "短时小雨可用，暴雨和浸水需额外防护"
+    ],
+    "shop_name": "夜翼箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "斜向单肩结构，随身物品放在身前容易拿取"
+  },
+  {
+    "id": 55,
+    "sku": "BDN10-0056",
+    "family": "family-0056",
+    "name": "行程 差旅电脑背包",
+    "brand": "行程",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 2,
+    "photo": 9,
+    "image_url": "",
+    "url": "",
+    "price": 279,
+    "weight": 650,
+    "capacity": 30,
+    "laptop": 17.3,
+    "dimensions": "48×30×17cm",
+    "material": "聚酯纤维",
+    "color": "黑色",
+    "color_label": "黑色",
+    "variants": [
+      "黑色 / 标准款"
+    ],
+    "style": "商务",
+    "style_tags": [
+      "商务",
+      "休闲",
+      "简约"
+    ],
+    "aesthetic_tags": [
+      "商务",
+      "极简"
+    ],
+    "categories": [
+      "通勤电脑双肩包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤",
+      "旅行"
+    ],
+    "feature_flags": {
+      "宽肩带": true,
+      "电脑隔层": true,
+      "胸扣": false,
+      "行李箱插带": true,
+      "防盗口袋": true,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": false
+    },
+    "shoulder_width_cm": 7.5,
+    "computer_padding": "air",
+    "water": true,
+    "water_protection": "日常防雨",
+    "water_test": "",
+    "storage": true,
+    "stock": 725,
+    "rating": 97.5,
+    "sales": 29445,
+    "review_count": 3605,
+    "reviews": [
+      {
+        "text": "17.3英寸独立电脑隔层，加厚缓冲保护，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "黑色 / 标准款"
+      },
+      {
+        "text": "黑色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "黑色 / 标准款"
+      },
+      {
+        "text": "加厚电脑仓占用部分主仓空间，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "黑色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "17.3英寸独立电脑隔层，加厚缓冲保护",
+      "7.5cm肩带，背部有透气网布",
+      "背部行李箱插带，出差可固定在拉杆上"
+    ],
+    "limits": [
+      "加厚电脑仓占用部分主仓空间",
+      "空包650g，更适合带电脑或装备时使用",
+      "短时小雨可用，暴雨和浸水需额外防护"
+    ],
+    "shop_name": "行程箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "背部可固定行李箱拉杆，出差转乘更方便"
+  },
+  {
+    "id": 56,
+    "sku": "BDN10-0057",
+    "family": "family-0057",
+    "name": "层云 城市卷口背包",
+    "brand": "层云",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 2,
+    "photo": 10,
+    "image_url": "",
+    "url": "",
+    "price": 199,
+    "weight": 540,
+    "capacity": 26,
+    "laptop": 16,
+    "dimensions": "43×30×17cm",
+    "material": "聚酯纤维",
+    "color": "灰色",
+    "color_label": "灰色",
+    "variants": [
+      "灰色 / 标准款"
+    ],
+    "style": "简约",
+    "style_tags": [
+      "休闲",
+      "简约"
+    ],
+    "aesthetic_tags": [
+      "极简",
+      "酷感机能"
+    ],
+    "categories": [
+      "通勤电脑双肩包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤",
+      "旅行"
+    ],
+    "feature_flags": {
+      "宽肩带": true,
+      "电脑隔层": true,
+      "胸扣": false,
+      "行李箱插带": true,
+      "防盗口袋": true,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": true
+    },
+    "shoulder_width_cm": 7.5,
+    "computer_padding": "air",
+    "water": true,
+    "water_protection": "日常防雨",
+    "water_test": "",
+    "storage": false,
+    "stock": 736,
+    "rating": 98.6,
+    "sales": 31184,
+    "review_count": 4036,
+    "reviews": [
+      {
+        "text": "16英寸独立电脑隔层，加厚缓冲保护，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "灰色 / 标准款"
+      },
+      {
+        "text": "灰色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "灰色 / 标准款"
+      },
+      {
+        "text": "加厚电脑仓占用部分主仓空间，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "灰色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "16英寸独立电脑隔层，加厚缓冲保护",
+      "7.5cm肩带，背部有透气网布",
+      "背部行李箱插带，出差可固定在拉杆上",
+      "口袋数量少，拿取物品路径简单"
+    ],
+    "limits": [
+      "加厚电脑仓占用部分主仓空间",
+      "空包540g，更适合带电脑或装备时使用",
+      "短时小雨可用，暴雨和浸水需额外防护"
+    ],
+    "shop_name": "层云箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "卷口闭合结构，主仓开口利落"
+  },
+  {
+    "id": 57,
+    "sku": "BDN10-0058",
+    "family": "family-0058",
+    "name": "青墨 低调日常背包",
+    "brand": "青墨",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 2,
+    "photo": 11,
+    "image_url": "",
+    "url": "",
+    "price": 129,
+    "weight": 370,
+    "capacity": 20,
+    "laptop": 14,
+    "dimensions": "43×30×13cm",
+    "material": "聚酯纤维",
+    "color": "绿色",
+    "color_label": "绿色",
+    "variants": [
+      "绿色 / 标准款"
+    ],
+    "style": "简约",
+    "style_tags": [
+      "休闲",
+      "简约"
+    ],
+    "aesthetic_tags": [
+      "极简"
+    ],
+    "categories": [
+      "休闲双肩包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤"
+    ],
+    "feature_flags": {
+      "宽肩带": false,
+      "电脑隔层": true,
+      "胸扣": false,
+      "行李箱插带": false,
+      "防盗口袋": true,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": true
+    },
+    "shoulder_width_cm": 4.5,
+    "computer_padding": "basic",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": false,
+    "stock": 747,
+    "rating": 96.4,
+    "sales": 32923,
+    "review_count": 4467,
+    "reviews": [
+      {
+        "text": "14英寸独立电脑隔层，书本与电脑分开放，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "绿色 / 标准款"
+      },
+      {
+        "text": "绿色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "绿色 / 标准款"
+      },
+      {
+        "text": "电脑隔层为基础缓冲，贵重设备建议加内胆包，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "绿色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "14英寸独立电脑隔层，书本与电脑分开放",
+      "4.5cm肩带，背部有透气网布",
+      "口袋数量少，拿取物品路径简单"
+    ],
+    "limits": [
+      "电脑隔层为基础缓冲，贵重设备建议加内胆包",
+      "包身装满后厚度会增加",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "青墨箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "包面装饰克制，轮廓简洁，适合日常穿搭"
+  },
+  {
+    "id": 58,
+    "sku": "BDN10-0059",
+    "family": "family-0059",
+    "name": "松野 帆布卷口背包",
+    "brand": "松野",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 2,
+    "photo": 12,
+    "image_url": "",
+    "url": "",
+    "price": 189,
+    "weight": 650,
+    "capacity": 27,
+    "laptop": 15.6,
+    "dimensions": "48×30×17cm",
+    "material": "帆布",
+    "color": "绿色",
+    "color_label": "绿色",
+    "variants": [
+      "绿色 / 标准款"
+    ],
+    "style": "休闲",
+    "style_tags": [
+      "休闲"
+    ],
+    "aesthetic_tags": [
+      "复古"
+    ],
+    "categories": [
+      "休闲双肩包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤",
+      "旅行"
+    ],
+    "feature_flags": {
+      "宽肩带": true,
+      "电脑隔层": true,
+      "胸扣": false,
+      "行李箱插带": false,
+      "防盗口袋": true,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": false
+    },
+    "shoulder_width_cm": 7.5,
+    "computer_padding": "basic",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": true,
+    "stock": 758,
+    "rating": 97.5,
+    "sales": 34662,
+    "review_count": 4898,
+    "reviews": [
+      {
+        "text": "15.6英寸独立电脑隔层，书本与电脑分开放，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "绿色 / 标准款"
+      },
+      {
+        "text": "绿色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "绿色 / 标准款"
+      },
+      {
+        "text": "电脑隔层为基础缓冲，贵重设备建议加内胆包，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "绿色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "15.6英寸独立电脑隔层，书本与电脑分开放",
+      "7.5cm肩带，背部有透气网布"
+    ],
+    "limits": [
+      "电脑隔层为基础缓冲，贵重设备建议加内胆包",
+      "包身装满后厚度会增加",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "松野箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "卷口闭合结构，主仓开口利落"
+  },
+  {
+    "id": 59,
+    "sku": "BDN10-0060",
+    "family": "family-0060",
+    "name": "旧巷 双扣复古背包",
+    "brand": "旧巷",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 2,
+    "photo": 13,
+    "image_url": "",
+    "url": "",
+    "price": 199,
+    "weight": 690,
+    "capacity": 25,
+    "laptop": 15.6,
+    "dimensions": "43×30×17cm",
+    "material": "帆布",
+    "color": "米色",
+    "color_label": "米色",
+    "variants": [
+      "米色 / 标准款"
+    ],
+    "style": "休闲",
+    "style_tags": [
+      "休闲"
+    ],
+    "aesthetic_tags": [
+      "复古"
+    ],
+    "categories": [
+      "休闲双肩包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤",
+      "旅行"
+    ],
+    "feature_flags": {
+      "宽肩带": true,
+      "电脑隔层": true,
+      "胸扣": false,
+      "行李箱插带": false,
+      "防盗口袋": true,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": false
+    },
+    "shoulder_width_cm": 7.5,
+    "computer_padding": "basic",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": true,
+    "stock": 769,
+    "rating": 98.6,
+    "sales": 2401,
+    "review_count": 5329,
+    "reviews": [
+      {
+        "text": "15.6英寸独立电脑隔层，书本与电脑分开放，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "米色 / 标准款"
+      },
+      {
+        "text": "米色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "米色 / 标准款"
+      },
+      {
+        "text": "电脑隔层为基础缓冲，贵重设备建议加内胆包，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "米色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "15.6英寸独立电脑隔层，书本与电脑分开放",
+      "7.5cm肩带，背部有透气网布"
+    ],
+    "limits": [
+      "电脑隔层为基础缓冲，贵重设备建议加内胆包",
+      "浅色包面需要定期清洁",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "旧巷箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "翻盖与扣带细节，偏向复古休闲搭配"
+  },
+  {
+    "id": 60,
+    "sku": "BDN10-0061",
+    "family": "family-0061",
+    "name": "麦田 通勤托特包",
+    "brand": "麦田",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 2,
+    "photo": 14,
+    "image_url": "",
+    "url": "",
+    "price": 119,
+    "weight": 310,
+    "capacity": 18,
+    "laptop": 14,
+    "dimensions": "39×27×13cm",
+    "material": "聚酯纤维",
+    "color": "米色",
+    "color_label": "米色",
+    "variants": [
+      "米色 / 标准款"
+    ],
+    "style": "简约",
+    "style_tags": [
+      "休闲",
+      "简约"
+    ],
+    "aesthetic_tags": [
+      "极简",
+      "复古"
+    ],
+    "categories": [
+      "托特包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤"
+    ],
+    "feature_flags": {
+      "宽肩带": false,
+      "电脑隔层": true,
+      "胸扣": false,
+      "行李箱插带": true,
+      "防盗口袋": true,
+      "水杯侧袋": false,
+      "背部透气": false,
+      "少分区": true
+    },
+    "shoulder_width_cm": 4.5,
+    "computer_padding": "basic",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": false,
+    "stock": 780,
+    "rating": 96.4,
+    "sales": 4140,
+    "review_count": 5760,
+    "reviews": [
+      {
+        "text": "14英寸独立电脑隔层，书本与电脑分开放，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "米色 / 标准款"
+      },
+      {
+        "text": "米色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "米色 / 标准款"
+      },
+      {
+        "text": "电脑隔层为基础缓冲，贵重设备建议加内胆包，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "米色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "14英寸独立电脑隔层，书本与电脑分开放",
+      "4.5cm肩带，日常携带方便",
+      "背部行李箱插带，出差可固定在拉杆上",
+      "口袋数量少，拿取物品路径简单"
+    ],
+    "limits": [
+      "电脑隔层为基础缓冲，贵重设备建议加内胆包",
+      "浅色包面需要定期清洁",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "麦田箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "手提与肩背结构，开口较大，取放书本方便"
+  },
+  {
+    "id": 61,
+    "sku": "BDN10-0062",
+    "family": "family-0062",
+    "name": "墨格 商务电脑托特",
+    "brand": "墨格",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 2,
+    "photo": 15,
+    "image_url": "",
+    "url": "",
+    "price": 229,
+    "weight": 560,
+    "capacity": 24,
+    "laptop": 16,
+    "dimensions": "43×30×17cm",
+    "material": "聚酯纤维",
+    "color": "黑色",
+    "color_label": "黑色",
+    "variants": [
+      "黑色 / 标准款"
+    ],
+    "style": "商务",
+    "style_tags": [
+      "商务",
+      "休闲",
+      "简约"
+    ],
+    "aesthetic_tags": [
+      "商务",
+      "极简"
+    ],
+    "categories": [
+      "托特包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "通勤",
+      "旅行"
+    ],
+    "feature_flags": {
+      "宽肩带": true,
+      "电脑隔层": true,
+      "胸扣": false,
+      "行李箱插带": true,
+      "防盗口袋": true,
+      "水杯侧袋": false,
+      "背部透气": false,
+      "少分区": false
+    },
+    "shoulder_width_cm": 7.5,
+    "computer_padding": "air",
+    "water": true,
+    "water_protection": "防泼水",
+    "water_test": "",
+    "storage": true,
+    "stock": 791,
+    "rating": 97.5,
+    "sales": 5879,
+    "review_count": 6191,
+    "reviews": [
+      {
+        "text": "16英寸独立电脑隔层，加厚缓冲保护，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "黑色 / 标准款"
+      },
+      {
+        "text": "黑色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "黑色 / 标准款"
+      },
+      {
+        "text": "加厚电脑仓占用部分主仓空间，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "黑色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "16英寸独立电脑隔层，加厚缓冲保护",
+      "7.5cm肩带，日常携带方便",
+      "背部行李箱插带，出差可固定在拉杆上"
+    ],
+    "limits": [
+      "加厚电脑仓占用部分主仓空间",
+      "空包560g，更适合带电脑或装备时使用",
+      "面料应对短时水滴，持续淋雨需使用防雨罩"
+    ],
+    "shop_name": "墨格箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "手提与肩背结构，开口较大，取放书本方便"
+  },
+  {
+    "id": 62,
+    "sku": "BDN10-0063",
+    "family": "family-0063",
+    "name": "金岚 户外徒步背包",
+    "brand": "金岚",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 2,
+    "photo": 16,
+    "image_url": "",
+    "url": "",
+    "price": 269,
+    "weight": 760,
+    "capacity": 34,
+    "laptop": null,
+    "dimensions": "48×30×17cm",
+    "material": "尼龙",
+    "color": "黄色",
+    "color_label": "黄色",
+    "variants": [
+      "黄色 / 标准款"
+    ],
+    "style": "运动",
+    "style_tags": [
+      "休闲",
+      "运动"
+    ],
+    "aesthetic_tags": [
+      "运动感"
+    ],
+    "categories": [
+      "户外登山包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "旅行",
+      "运动"
+    ],
+    "feature_flags": {
+      "宽肩带": true,
+      "电脑隔层": false,
+      "胸扣": true,
+      "行李箱插带": false,
+      "防盗口袋": false,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": false
+    },
+    "shoulder_width_cm": 7.5,
+    "computer_padding": "none",
+    "water": true,
+    "water_protection": "有防水证明",
+    "water_test": "IPX6包体防喷水测试（闭合状态）",
+    "storage": false,
+    "stock": 802,
+    "rating": 98.6,
+    "sales": 7618,
+    "review_count": 6622,
+    "reviews": [
+      {
+        "text": "760g包身、34L容量，适合轻装随行，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "黄色 / 标准款"
+      },
+      {
+        "text": "黄色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "黄色 / 标准款"
+      },
+      {
+        "text": "没有独立缓冲电脑隔层，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "黄色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "760g包身、34L容量，适合轻装随行",
+      "7.5cm肩带，背部有透气网布"
+    ],
+    "limits": [
+      "没有独立缓冲电脑隔层",
+      "装满较重物品时需合理分配重量",
+      "闭合包体可应对雨天喷淋，长时间浸水仍不在适用范围"
+    ],
+    "shop_name": "金岚箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "多点扣带结构，适合把户外装备分区固定"
+  },
+  {
+    "id": 63,
+    "sku": "BDN10-0064",
+    "family": "family-0064",
+    "name": "碧岭 透气徒步背包",
+    "brand": "碧岭",
+    "kind": "simulated",
+    "simulated": true,
+    "photo_sheet": 2,
+    "photo": 17,
+    "image_url": "",
+    "url": "",
+    "price": 259,
+    "weight": 720,
+    "capacity": 32,
+    "laptop": null,
+    "dimensions": "48×30×17cm",
+    "material": "尼龙",
+    "color": "绿色",
+    "color_label": "绿色",
+    "variants": [
+      "绿色 / 标准款"
+    ],
+    "style": "运动",
+    "style_tags": [
+      "休闲",
+      "运动"
+    ],
+    "aesthetic_tags": [
+      "运动感",
+      "酷感机能"
+    ],
+    "categories": [
+      "户外登山包"
+    ],
+    "scene": [
+      "休闲",
+      "校园",
+      "旅行",
+      "运动"
+    ],
+    "feature_flags": {
+      "宽肩带": true,
+      "电脑隔层": false,
+      "胸扣": true,
+      "行李箱插带": false,
+      "防盗口袋": false,
+      "水杯侧袋": true,
+      "背部透气": true,
+      "少分区": false
+    },
+    "shoulder_width_cm": 7.5,
+    "computer_padding": "none",
+    "water": true,
+    "water_protection": "有防水证明",
+    "water_test": "IPX6包体防喷水测试（闭合状态）",
+    "storage": false,
+    "stock": 813,
+    "rating": 96.4,
+    "sales": 9357,
+    "review_count": 7053,
+    "reviews": [
+      {
+        "text": "720g包身、32L容量，适合轻装随行，上下班或出门拿取都挺方便。",
+        "score": 5,
+        "variant": "绿色 / 标准款"
+      },
+      {
+        "text": "绿色配色和整体轮廓比较好搭衣服，做工整齐。",
+        "score": 5,
+        "variant": "绿色 / 标准款"
+      },
+      {
+        "text": "没有独立缓冲电脑隔层，按自己的携带习惯选更合适。",
+        "score": 3,
+        "variant": "绿色 / 标准款"
+      }
+    ],
+    "advantages": [
+      "720g包身、32L容量，适合轻装随行",
+      "7.5cm肩带，背部有透气网布"
+    ],
+    "limits": [
+      "没有独立缓冲电脑隔层",
+      "装满较重物品时需合理分配重量",
+      "闭合包体可应对雨天喷淋，长时间浸水仍不在适用范围"
+    ],
+    "shop_name": "碧岭箱包专营店",
+    "service_tags": [
+      "7天无理由退货",
+      "运费险"
+    ],
+    "shipping": "预计1—3天送达",
+    "source": "作品模拟商品库",
+    "attribute_note": "",
+    "parameter_note": "",
+    "demo_parameters": [],
+    "design_note": "多点扣带结构，适合把户外装备分区固定"
+  }
+]

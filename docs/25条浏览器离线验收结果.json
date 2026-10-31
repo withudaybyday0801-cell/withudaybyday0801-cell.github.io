@@ -1,0 +1,352 @@
+{
+  "scope": "offline-browser-real-requests-no-model",
+  "results": [
+    {
+      "id": 1,
+      "status": "passed",
+      "conditions": {},
+      "primary_ids": []
+    },
+    {
+      "id": 2,
+      "status": "passed",
+      "conditions": {
+        "color": "蓝色",
+        "excluded_colors": []
+      },
+      "primary_ids": [
+        39,
+        18,
+        11,
+        8,
+        47
+      ]
+    },
+    {
+      "id": 3,
+      "status": "passed",
+      "conditions": {
+        "excluded_colors": [
+          "粉色"
+        ],
+        "aesthetics": [
+          "清新少女"
+        ]
+      },
+      "primary_ids": [
+        53,
+        52,
+        29,
+        51,
+        28
+      ]
+    },
+    {
+      "id": 4,
+      "status": "passed",
+      "conditions": {
+        "aesthetics": [
+          "酷感机能"
+        ]
+      },
+      "primary_ids": [
+        38,
+        17,
+        56,
+        19,
+        32
+      ]
+    },
+    {
+      "id": 5,
+      "status": "passed",
+      "conditions": {
+        "aesthetics": [
+          "极简"
+        ],
+        "features": [
+          "少分区"
+        ]
+      },
+      "primary_ids": [
+        56,
+        35,
+        53,
+        32,
+        57
+      ]
+    },
+    {
+      "id": 6,
+      "status": "passed",
+      "conditions": {
+        "budget": 150,
+        "scene": "校园"
+      },
+      "primary_ids": [
+        35,
+        19,
+        14,
+        57,
+        50
+      ]
+    },
+    {
+      "id": 7,
+      "status": "passed",
+      "conditions": {
+        "laptop": 16,
+        "needs_laptop": true,
+        "scene": "通勤"
+      },
+      "primary_ids": [
+        31,
+        56,
+        48,
+        32,
+        24
+      ]
+    },
+    {
+      "id": 8,
+      "status": "passed",
+      "conditions": {
+        "maxweight": 450,
+        "priority": "轻便"
+      },
+      "primary_ids": [
+        3,
+        14,
+        28,
+        33,
+        19
+      ]
+    },
+    {
+      "id": 9,
+      "status": "passed",
+      "conditions": {
+        "needs_laptop": true,
+        "features": [
+          "宽肩带"
+        ]
+      },
+      "primary_ids": [
+        31,
+        56,
+        48,
+        32,
+        24
+      ]
+    },
+    {
+      "id": 10,
+      "status": "passed",
+      "conditions": {
+        "features": [
+          "少分区"
+        ]
+      },
+      "primary_ids": [
+        56,
+        35,
+        14,
+        53,
+        32
+      ]
+    },
+    {
+      "id": 11,
+      "status": "passed",
+      "conditions": {
+        "water_need": "日常防雨"
+      },
+      "primary_ids": [
+        38,
+        17,
+        56,
+        55,
+        32
+      ]
+    },
+    {
+      "id": 12,
+      "status": "passed",
+      "conditions": {
+        "water_need": "有防水证明"
+      },
+      "primary_ids": [
+        17,
+        11,
+        62,
+        63,
+        41
+      ]
+    },
+    {
+      "id": 13,
+      "status": "passed",
+      "conditions": {
+        "color": "黑色",
+        "excluded_colors": [],
+        "gender": "女生",
+        "aesthetics": [
+          "极简"
+        ]
+      },
+      "primary_ids": [
+        55,
+        32,
+        31,
+        33,
+        12
+      ]
+    },
+    {
+      "id": 14,
+      "status": "passed",
+      "conditions": {
+        "color": "蓝色",
+        "excluded_colors": [],
+        "budget": 200,
+        "laptop": 16,
+        "needs_laptop": true,
+        "aesthetics": [
+          "极简"
+        ]
+      },
+      "primary_ids": [
+        24,
+        25,
+        47,
+        46,
+        22
+      ]
+    },
+    {
+      "id": 15,
+      "status": "passed",
+      "conditions": {
+        "budget": 50,
+        "laptop": 16,
+        "needs_laptop": true,
+        "water_need": "有防水证明"
+      },
+      "primary_ids": []
+    },
+    {
+      "id": 16,
+      "status": "passed",
+      "conditions": {
+        "color": "蓝色",
+        "excluded_colors": [],
+        "budget": 200,
+        "scene": "校园"
+      },
+      "primary_ids": [
+        47,
+        46,
+        25,
+        23,
+        4
+      ]
+    },
+    {
+      "id": 17,
+      "status": "passed",
+      "conditions": {
+        "color": "黑色",
+        "excluded_colors": [],
+        "budget": 200,
+        "scene": "校园"
+      },
+      "primary_ids": [
+        32,
+        31,
+        33,
+        12,
+        30
+      ]
+    },
+    {
+      "id": 18,
+      "status": "passed",
+      "conditions": {
+        "color": "黑色",
+        "excluded_colors": [],
+        "budget": 300,
+        "scene": "校园"
+      },
+      "primary_ids": [
+        55,
+        32,
+        31,
+        33,
+        12
+      ]
+    },
+    {
+      "id": 19,
+      "status": "passed",
+      "conditions": {
+        "needs_laptop": true,
+        "scene": "通勤",
+        "storage": true,
+        "priority": "收纳"
+      },
+      "primary_ids": [
+        58,
+        16,
+        55,
+        34,
+        18
+      ]
+    },
+    {
+      "id": 20,
+      "status": "passed",
+      "conditions": {
+        "scene": "休闲",
+        "storage": true,
+        "priority": "轻便"
+      },
+      "primary_ids": [
+        52,
+        27,
+        47,
+        24,
+        10
+      ]
+    },
+    {
+      "id": 21,
+      "status": "passed",
+      "conditions": {},
+      "primary_ids": []
+    },
+    {
+      "id": 22,
+      "status": "passed",
+      "conditions": {},
+      "primary_ids": []
+    },
+    {
+      "id": 23,
+      "status": "passed",
+      "conditions": {},
+      "primary_ids": []
+    },
+    {
+      "id": 24,
+      "status": "passed",
+      "conditions": {},
+      "primary_ids": []
+    },
+    {
+      "id": 25,
+      "status": "passed",
+      "conditions": {},
+      "primary_ids": []
+    }
+  ]
+}
